@@ -112,7 +112,7 @@ class MyGraph():
         self.edges_between = coll_edges_between
 
 
-    def show_graph(self):
+    def save_graph(self, file_name):
         # Draw graph
         pos = nx.spring_layout(self.G)
 
@@ -132,7 +132,8 @@ class MyGraph():
                                edgelist=self.edges_between,
                                width=2,alpha=0.5,edge_color='y')
 
-        plt.show() # TODO
+        plt.savefig(file_name)
+        return pos
 
 
 

@@ -5,12 +5,15 @@ from kivy.app import App
 from kivy.uix.button import Button
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.gridlayout import GridLayout
-from kivy.uix.image import Image
+from kivy.uix.image import Image, AsyncImage
 from kivy.uix.widget import Widget
 from kivy.uix.textinput import TextInput
 from kivy.lang import Builder
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.label import Label
+from kivy.clock import Clock
+
+from functools import partial
 
 # to change the kivy default settings we use this module config
 from kivy.config import Config
@@ -26,7 +29,7 @@ blue =  [0,0,1,1]
 purple = [1,0,1,1]
 
 
-img_before = '''
+img_before =  '''
 Image:
         source: 'before.png'
         allow_stretch: False
@@ -36,6 +39,7 @@ Image:
         width: 500
         height: self.width/self.image_ratio
         '''
+
 
 img_after = '''
 Image:
@@ -54,13 +58,6 @@ GENERATE = False
 LOAD = True
 
 colors = [red, green, blue, purple]
-
-class MyWidget(BoxLayout):
-
-    def __init__(self, **kwargs):
-
-        super().__init__(**kwargs)
-
 
 ########################################################################
 class NestedLayoutExample(App):
@@ -105,7 +102,8 @@ class NestedLayoutExample(App):
 
         # First Column
         first_ver_layout = BoxLayout(orientation='vertical')
-        first_ver_layout.add_widget(Builder.load_string((img_before)))
+        self.before_img = Builder.load_string((img_before))
+        first_ver_layout.add_widget(self.before_img)
         # first row:
         # N
         box_N = BoxLayout(orientation='horizontal', spacing=20)
@@ -154,12 +152,12 @@ class NestedLayoutExample(App):
         second_ver_layout.add_widget(Builder.load_string((img_after)))
         # first row:
         # number of edges in between: num_edges_between
-        box_N = BoxLayout(orientation='horizontal', spacing=20)
-        box_N.add_widget(Label(text='No. Add\'Edges', halign='left', size_hint=(.5,.4), markup=True))
-        self.N_input = TextInput(hint_text='60', size_hint=(.5,.4))
-        self.N_input.text = '100'
-        box_N.add_widget(self.N_input)
-        second_ver_layout.add_widget(box_N)
+        box_A = BoxLayout(orientation='horizontal', spacing=20)
+        box_A.add_widget(Label(text='No. Add\'Edges', halign='left', size_hint=(.5,.4), markup=True))
+        self.A_input = TextInput(hint_text='60', size_hint=(.5,.4))
+        self.A_input.text = '100'
+        box_A.add_widget(self.A_input)
+        second_ver_layout.add_widget(box_A)
 
         # display the evaluation result
         box_T = BoxLayout(orientation='horizontal', spacing=20)
@@ -193,7 +191,7 @@ class NestedLayoutExample(App):
 
         # finally, a button to update the parameters
         box = BoxLayout(orientation='horizontal', spacing=20)
-        btn = Button(text='Go', on_press= self.update_parameter, size_hint=(.1,.2))
+        btn = Button(text='Go', on_press= self.go, size_hint=(.1,.2))
         box.add_widget(btn)
         second_ver_layout.add_widget(box)
 
@@ -214,9 +212,24 @@ class NestedLayoutExample(App):
 
         Window.size = (1000, 1200)
 
+        # for i in range(100, 0, -1):
+        #     Clock.schedule_once(partial(self.before_img.update, str(i)), 10-i)
+
+
         return main_layout
 
-    def update_parameter(self, instance):
+    def go (self, instance):
+        print ('update the parameter')
+        self.update_parameter()
+        self.create_graphs()
+        self.solve_graphs()
+        self.save_to_png()
+        self.before_img.reload()
+
+
+
+
+    def update_parameter(self):
         print ('C = ', self.C_input.text)
         # column 1
         self.C = int(self.C_input.text)
@@ -225,9 +238,9 @@ class NestedLayoutExample(App):
         self.alpha = float(self.alpha_input.text)
         self.beta = float(self.beta_input.text)
         # column 2
-        self.edges_between = int (self.edges_between_input.text)
+        self.num_additional_edges = int (self.A_input.text)
         # column 3
-        self.num_graph = int(self.num_graph_input.text)
+        # self.num_graph = int(self.A_input.text)
 
 
 
@@ -239,18 +252,32 @@ class NestedLayoutExample(App):
     #
     #     self.app = NestedLayoutExample()
     #
-    def create_graphs(self, num_graph):
+    def create_graphs(self):
+        self.num_graph = 1
         for i in range (self.num_graph):
-            g = MyGraph(concepts_size = 15, N =100, M = 5, alpha = 0.05, beta = 3)
-            self.graphs.append(g)
-    #
+            mg = MyGraph(concepts_size = self.C, N = self.N, M = self.M, alpha = self.alpha, beta = self.beta)
+            mg.create_graph()
+            # mg.show_graph()
+            print ('how many nodes are there? ', len(mg.G.nodes))
+            self.graphs.append(mg)
+
     def solve_graphs(self):
         for i in range (self.num_graph):
-            self.graphs.append(self.num_graph)
-    #
-    #
-    # def show_UI(self):
-    #     self.app.run()
+            # num_additional_edges = 6060
+            s = GraphSolver(self.graphs[i], self.num_additional_edges)
+            s.solve()
+            s.obtain_statistics_and_graph()
+            # s.print_info()
+            self.count_TN = s.count_TN
+            self.count_TP = s.count_TP
+            self.count_FN = s.count_FP
+            self.count_FN = s.count_FN
+
+    def save_to_png(self):
+        print ('save_to_png: before and after')
+        pos = self.graphs[0].save_graph('before.png')
+
+
 
 
 
@@ -323,25 +350,6 @@ if __name__ == "__main__":
 
 
 
-# kvWidget_before = """
-#
-# MyWidget:
-#
-#     orientation: 'vertical'
-#
-#     canvas:
-#
-#         Rectangle:
-#
-#             size: self.size
-#
-#             pos: self.pos
-#
-#             source: 'before.png'
-#
-#             keep_ratio: True
-#
-# """
 
 
 #

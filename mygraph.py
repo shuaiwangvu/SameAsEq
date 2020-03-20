@@ -89,7 +89,7 @@ class MyGraph():
 
         coll_edges_between = []
 
-        BETA = int(random.betavariate(2, 2) * self.beta * self.concepts_size) +1
+        BETA = int(self.beta * self.concepts_size) +1
         # create random links between the these subgraphs
         print ('BETA (pairs chosen) = ', BETA)
         chosen_pairs = []
@@ -99,7 +99,7 @@ class MyGraph():
                 [a, b] = random.sample(list(range(self.concepts_size)), 2)
             chosen_pairs.append((a,b))
             ALPHA = int (random.betavariate(2, 5) * self.alpha * self.N) + 1
-            print ('ALPHA (additional edges in between) = ', ALPHA)
+            print ('ALPHA (edges in between) = ', ALPHA)
             for i in range (ALPHA):
                 # print ('chose a = ', a, ' and b =', b)
                 # print('this subgraph has len nodes = ', len (self.subgraphs[a].nodes))
@@ -112,15 +112,17 @@ class MyGraph():
         self.edges_between = coll_edges_between
 
 
-    def save_graph(self, file_name):
+    def save_graph(self, file_name, colors):
         # Draw graph
+        tmpG = self.G.remove_edges_from(self.edges_between)
         pos = nx.spring_layout(self.G)
+        self.G.add_edges_from(self.edges_between)
 
         for i in self.subgraphs.keys():
             g = self.subgraphs[i]
             nx.draw_networkx_nodes(self.G, pos,
                                    nodelist= g.nodes,
-                                   node_color=random.choice(['r', 'g', 'b', 'b', 'r']), # TODO: subgraphs_representative
+                                   node_color=colors[i], # TODO: subgraphs_representative
                                    node_size=5,
                                alpha=0.8)
             nx.draw_networkx_edges(self.G, pos,
@@ -133,6 +135,7 @@ class MyGraph():
                                width=2,alpha=0.5,edge_color='y')
 
         plt.savefig(file_name)
+        plt.close()
         return pos
 
 
@@ -153,13 +156,19 @@ class MyGraph():
 
 class GraphSolver():
 
-    def __init__(self, myG, num_additional_edges):
+    def __init__(self, myG, ratio_additional_edges):
         self.G = myG.G
-        self.edges_between = myG.edges_between
+        self.Gsubgraphs = myG.subgraphs
+        self.Gsubgraphs_representative = myG.subgraphs_representative
+
+        self.Gedges_between = myG.edges_between
+
+        self.Hedges_between = []
+
         self.H = nx.Graph()
         self.Hsubgraphs = {}
 
-        self.num_additional_edges = num_additional_edges
+        self.ratio_additional_edges = ratio_additional_edges
         self.test_between_groups = myG.test_between_groups
         self.test_same_groups = myG.test_same_groups
 
@@ -196,7 +205,7 @@ class GraphSolver():
             self.o.add_soft(self.id2encode[l] == self.id2encode[r], w) # each edge within graphs
         # add the edges between groups, with negative weights
         i = 0
-        while i < self.num_additional_edges:
+        while i < int(self.ratio_additional_edges * len(self.Gedges_between)):
             i1 = random.choice(list(self.G.nodes))
             i2 = random.choice(list(self.G.nodes))
             if (i1 != i2):
@@ -215,6 +224,7 @@ class GraphSolver():
             (id1, id2) = e
             decision = self.m.evaluate(self.id2encode[id1] == self.id2encode[id2])
             if decision:
+                # print ('the ids: ',id1, id2)
                 self.H.add_edge(id1, id2)
 
             if self.test_same_groups(id1, id2)== True and decision == True:
@@ -228,14 +238,26 @@ class GraphSolver():
                 self.count_FP +=1
 
 
-        for n in self.G.nodes:
-            group_id = self.m.evaluate(self.id2encode[n])
-            if group_id in self.Hsubgraphs.keys():
-                self.Hsubgraphs[group_id].append(n)
-            else:
-                self.Hsubgraphs[group_id] = [n]
+        for i in self.Gsubgraphs.keys():
+            self.Hsubgraphs[i] = nx.Graph()
+            g = self.Gsubgraphs[i]
+            for e in g.edges:
+                (id1, id2) = e
+                decision = self.m.evaluate(self.id2encode[id1] == self.id2encode[id2])
+                if decision:
+                    self.Hsubgraphs[i].add_edge(id1, id2)
+                #else, add it to a faulty edge set?
+        for e in self.Gedges_between:
+            (id1, id2) = e
+            decision = self.m.evaluate(self.id2encode[id1] == self.id2encode[id2])
+            if decision:
+                self.Hedges_between.append(e)
 
-    def print_info (self):
+        # remove z3 model and solver to free the memory?
+
+        print ('G: THE EDGES BETWEEN: ', len (self.Gedges_between))
+        print ('H: THE EDGES BETWEEN: ', len (self.Hedges_between))
+
 
         print ('total edges', len(self.G.edges))
 
@@ -253,12 +275,55 @@ class GraphSolver():
 
         self.accuracy = (self.count_TN + self.count_TP) / len(self.G.edges)
 
+    def save_graph(self, file_name, pos, colors):
+        # print ('pos = ', pos)
+        pps = nx.spring_layout(self.H)
+        print ('saving it accoring to the position')
+        for i in self.Hsubgraphs.keys():
+            g = self.Hsubgraphs[i]
+            nx.draw_networkx_nodes(self.H, pos,
+                                   nodelist= g.nodes,
+                                   node_color=colors[i], # TODO: subgraphs_representative
+                                   node_size=5,
+                               alpha=0.8)
+            nx.draw_networkx_edges(self.H, pos,
+                                   edgelist=g.edges,
+                                   width=2,alpha=0.5,edge_color='b')
+
+
+        nx.draw_networkx_edges(self.H, pos,
+                               edgelist=self.Hedges_between,
+                               width=2,alpha=0.5,edge_color='y')
+
+        plt.savefig(file_name)
+        plt.close()
+        return pos
+
+
+        # for i in self.subgraphs.keys():
+        #     g = self.subgraphs[i]
+        #     nx.draw_networkx_nodes(self.G, pos,
+        #                            nodelist= g.nodes,
+        #                            node_color=colors[i], # TODO: subgraphs_representative
+        #                            node_size=5,
+        #                        alpha=0.8)
+        #     nx.draw_networkx_edges(self.G, pos,
+        #                            edgelist=g.edges,
+        #                            width=2,alpha=0.5,edge_color='b')
+        #
+        #
+        # nx.draw_networkx_edges(self.G, pos,
+        #                        edgelist=self.edges_between,
+        #                        width=2,alpha=0.5,edge_color='y')
+        #
+        # plt.savefig(file_name)
+
 # g = MyGraph(concepts_size = 15, N =100, M = 5, alpha = 0.05, beta = 3)
 # g.create_graph()
 # # g.show_graph()
 #
-# num_additional_edges = 6060
-# s = GraphSolver(g, num_additional_edges)
+# ratio_additional_edges = 6060
+# s = GraphSolver(g, ratio_additional_edges)
 # s.solve()
 # s.obtain_statistics_and_graph()
 # s.print_info()

@@ -1,6 +1,9 @@
 from mygraph import GraphSolver, MyGraph
 import kivy
 import random
+
+import datetime
+import time
 from kivy.app import App
 from kivy.uix.button import Button
 from kivy.uix.boxlayout import BoxLayout
@@ -83,7 +86,7 @@ class NestedLayoutExample(App):
         self.alpha = 0 # how many edges in between each pair
         self.beta = 0 # how many pairs chosen
         # parameters in the second column
-        self.num_additional_edges = 1
+        self.ratio_additional_edges = 1.0
 
         self.count_TN = 0.0
         self.count_FN = 0.0
@@ -94,8 +97,8 @@ class NestedLayoutExample(App):
         self.recall = 0.0
         self.accuracy = 0.0
 
-        self.one_time = 0.0
-        self.all_time = 0.0
+        self.one_time = "NONE"
+        self.all_time = "NONE"
 
         # main_layout = BoxLayout(padding=10, orientation="horizontal")
         main_layout = GridLayout(cols=3)
@@ -123,21 +126,21 @@ class NestedLayoutExample(App):
         box_C = BoxLayout(orientation='horizontal')
         box_C.add_widget(Label(text='C', halign='left', size_hint=(None,.4), markup=True))
         self.C_input = TextInput(hint_text='5', size_hint=(.5,.4))
-        self.C_input.text = '5'
+        self.C_input.text = '10'
         box_C.add_widget(self.C_input)
         first_ver_layout.add_widget(box_C)
         # alpha
         box_alpha = BoxLayout(orientation='horizontal', spacing=20)
         box_alpha.add_widget(Label(text='alpha', halign='left', size_hint=(None,.4), markup=True))
-        self.alpha_input = TextInput(hint_text='1.5', size_hint=(.5,.4))
-        self.alpha_input.text = '1.5'
+        self.alpha_input = TextInput(hint_text='0.1', size_hint=(.5,.4))
+        self.alpha_input.text = '0.1'
         box_alpha.add_widget(self.alpha_input)
         first_ver_layout.add_widget(box_alpha)
         # beta
         box_beta = BoxLayout(orientation='horizontal', spacing=20)
         box_beta.add_widget(Label(text='beta', halign='left', size_hint=(None,.4), markup=True))
-        self.beta_input = TextInput(hint_text='1.0', size_hint=(.5,.4))
-        self.beta_input.text = '1.0'
+        self.beta_input = TextInput(hint_text='2.5', size_hint=(.5,.4))
+        self.beta_input.text = '2.0'
         box_beta.add_widget(self.beta_input)
         first_ver_layout.add_widget(box_beta)
 
@@ -149,40 +152,49 @@ class NestedLayoutExample(App):
 
         # Second Column
         second_ver_layout = BoxLayout(orientation='vertical')
-        second_ver_layout.add_widget(Builder.load_string((img_after)))
+        self.after_img = Builder.load_string((img_after))
+        second_ver_layout.add_widget(self.after_img)
         # first row:
         # number of edges in between: num_edges_between
         box_A = BoxLayout(orientation='horizontal', spacing=20)
-        box_A.add_widget(Label(text='No. Add\'Edges', halign='left', size_hint=(.5,.4), markup=True))
-        self.A_input = TextInput(hint_text='60', size_hint=(.5,.4))
-        self.A_input.text = '100'
+        box_A.add_widget(Label(text='Ratio. Add\'Edges', halign='left', size_hint=(.5,.4), markup=True))
+        self.A_input = TextInput(hint_text='1.4', size_hint=(.5,.4))
+        self.A_input.text = '1.4'
         box_A.add_widget(self.A_input)
         second_ver_layout.add_widget(box_A)
 
         # display the evaluation result
         box_T = BoxLayout(orientation='horizontal', spacing=20)
-        box_T.add_widget(Label(text='TP = ' + str(self.count_TP), halign='left', size_hint=(None,.4), markup=True))
+        self.TP_label = Label(text='TP = ' + str(self.count_TP), halign='left', size_hint=(None,.4), markup=True)
+        box_T.add_widget(self.TP_label)
         # second_ver_layout.add_widget(box_TP)
-        box_T.add_widget(Label(text='TN = ' + str(self.count_TN), halign='left', size_hint=(None,.4), markup=True))
+        self.TN_label = Label(text='TN = ' + str(self.count_TN), halign='left', size_hint=(None,.4), markup=True)
+        box_T.add_widget(self.TN_label)
         second_ver_layout.add_widget(box_T)
 
 
         box_F = BoxLayout(orientation='horizontal', spacing=20)
-        box_F.add_widget(Label(text='FP = ' + str(self.count_FP), halign='left', size_hint=(None,.4), markup=True))
+        self.FP_label = Label(text='FP = ' + str(self.count_FP), halign='left', size_hint=(None,.4), markup=True)
+        box_F.add_widget(self.FP_label)
         # second_ver_layout.add_widget(box_TP)
-        box_F.add_widget(Label(text='FN = ' + str(self.count_FN), halign='left', size_hint=(None,.4), markup=True))
+        self.FN_label = Label(text='FN = ' + str(self.count_FN), halign='left', size_hint=(None,.4), markup=True)
+        box_F.add_widget(self.FN_label)
         second_ver_layout.add_widget(box_F)
 
 
         box_X = BoxLayout(orientation='horizontal', spacing=20)
-        box_X.add_widget(Label(text='precision = ' + str(self.precision), halign='left', size_hint=(None,.4), markup=True))
+        self.precision_label = Label(text='precision = ' + str(self.precision), halign='left', size_hint=(None,.4), markup=True)
+        box_X.add_widget(self.precision_label)
         # second_ver_layout.add_widget(box_TP)
-        box_X.add_widget(Label(text='recall = ' + str(self.recall), halign='left', size_hint=(None,.4), markup=True))
-        box_X.add_widget(Label(text='accuracy = ' + str(self.accuracy), halign='left', size_hint=(None,.4), markup=True))
+        self.recall_label = Label(text='recall = ' + str(self.recall), halign='left', size_hint=(None,.4), markup=True)
+        box_X.add_widget(self.recall_label)
+        self.accuracy_label = Label(text='accuracy = ' + str(self.accuracy), halign='left', size_hint=(None,.4), markup=True)
+        box_X.add_widget(self.accuracy_label)
         second_ver_layout.add_widget(box_X)
 
         box_Y = BoxLayout(orientation='horizontal', spacing=20)
-        box_Y.add_widget(Label(text='time4it = ' + str(self.one_time), halign='left', size_hint=(None,.9), markup=False))
+        self.one_time_label = Label(text='time4it = ' + str(self.one_time), halign='left', size_hint=(None,.9), markup=False)
+        box_Y.add_widget(self.one_time_label)
         # second_ver_layout.add_widget(box_TP)
         # box_X.add_widget(Label(text='recall = ' + str(self.recall), halign='left', size_hint=(None,.4), markup=True))
         # box_X.add_widget(Label(text='accuracy = ' + str(self.accuracy), halign='left', size_hint=(None,.4), markup=True))
@@ -215,7 +227,6 @@ class NestedLayoutExample(App):
         # for i in range(100, 0, -1):
         #     Clock.schedule_once(partial(self.before_img.update, str(i)), 10-i)
 
-
         return main_layout
 
     def go (self, instance):
@@ -224,9 +235,7 @@ class NestedLayoutExample(App):
         self.create_graphs()
         self.solve_graphs()
         self.save_to_png()
-        self.before_img.reload()
-
-
+        self.refresh_UI()
 
 
     def update_parameter(self):
@@ -238,7 +247,7 @@ class NestedLayoutExample(App):
         self.alpha = float(self.alpha_input.text)
         self.beta = float(self.beta_input.text)
         # column 2
-        self.num_additional_edges = int (self.A_input.text)
+        self.ratio_additional_edges = float (self.A_input.text)
         # column 3
         # self.num_graph = int(self.A_input.text)
 
@@ -253,6 +262,8 @@ class NestedLayoutExample(App):
     #     self.app = NestedLayoutExample()
     #
     def create_graphs(self):
+        self.graphs = []
+        self.graph_solvers = []
         self.num_graph = 1
         for i in range (self.num_graph):
             mg = MyGraph(concepts_size = self.C, N = self.N, M = self.M, alpha = self.alpha, beta = self.beta)
@@ -262,9 +273,12 @@ class NestedLayoutExample(App):
             self.graphs.append(mg)
 
     def solve_graphs(self):
+        round_start = time.time()
+        # ====
         for i in range (self.num_graph):
-            # num_additional_edges = 6060
-            s = GraphSolver(self.graphs[i], self.num_additional_edges)
+            # ratio_additional_edges = 6060
+            s = GraphSolver(self.graphs[i], self.ratio_additional_edges)
+            self.graph_solvers.append(s)
             s.solve()
             s.obtain_statistics_and_graph()
             # s.print_info()
@@ -272,13 +286,34 @@ class NestedLayoutExample(App):
             self.count_TP = s.count_TP
             self.count_FN = s.count_FP
             self.count_FN = s.count_FN
+            self.precision = s.precision
+            self.recall = s.recall
+            self.accuracy = s.accuracy
+
+        round_end = time.time()
+        hours, rem = divmod(round_end - round_start, 3600)
+        minutes, seconds = divmod(rem, 60)
+        self.one_time = "Time: {:0>2}:{:0>2}:{:05.2f}".format(int(hours),int(minutes),seconds)
 
     def save_to_png(self):
         print ('save_to_png: before and after')
-        pos = self.graphs[0].save_graph('before.png')
+        colors = ['b', 'g', 'r'] * self.graphs[0].N
+        before_pos = self.graphs[0].save_graph('before.png', colors = colors)
+        self.graph_solvers[0].save_graph('after.png', pos = before_pos, colors = colors)
 
 
+    def refresh_UI(self):
 
+        self.before_img.reload()
+        self.after_img.reload()
+        self.TP_label.text = '*TP = '+str(self.count_TP)
+        self.TN_label.text = '*TN = '+str(self.count_TN)
+        self.FP_label.text = '*FP = '+str(self.count_FP)
+        self.FN_label.text = '*FN = '+str(self.count_FN)
+        self.precision_label.text = '*precision = %.2f'%self.precision
+        self.recall_label.text = '*recall = %.2f'%self.recall
+        self.accuracy_label.text = '*accuracy = %.2f'%self.accuracy
+        self.one_time_label.text = self.one_time
 
 
 if __name__ == "__main__":
@@ -341,8 +376,8 @@ if __name__ == "__main__":
 # g.create_graph()
 # # g.show_graph()
 #
-# num_additional_edges = 60
-# s = GraphSolver(g, num_additional_edges)
+# ratio_additional_edges = 60
+# s = GraphSolver(g, ratio_additional_edges)
 # s.solve()
 # s.obtain_statistics_and_graph()
 # s.print_info()

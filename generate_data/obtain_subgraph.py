@@ -5,7 +5,7 @@ import random
 from hdt import HDTDocument, IdentifierPosition
 import networkx as nx
 
-sameas = "http://www.w3.org/2002/07/owl#equivalentClass"
+sameas = "http://www.w3.org/2002/07/owl#sameAs"
 PATH_LOD = "/scratch/wbeek/data/LOD-a-lot/data.hdt"
 hdt = HDTDocument(PATH_LOD)
 
@@ -17,6 +17,7 @@ def obtain_graph(list_terms):
     g.add_nodes_from(list_terms)
     for n in list_terms:
         (triples, cardi) = hdt.search_triples(n, sameas, '')
+        print (n, ' has cardi', cardi)
         for (_,_,o) in triples:
             if o in list_terms:
                 g.add_edge(n, o)

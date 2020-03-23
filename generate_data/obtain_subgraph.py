@@ -43,8 +43,8 @@ for i in range(40):
         nx.write_edgelist(g, export_filename)
         index += 1
 
-        h = nx.read_edgelist(export_filename)
-        print ('H- No. Edges: ', len(h.edges))
+        # h = nx.read_edgelist(export_filename)
+        # print ('H- No. Edges: ', len(h.edges))
 
 
 
@@ -64,5 +64,5 @@ for i in range(10):
         nx.write_edgelist(g, export_filename)
         index += 1
 
-        h = nx.read_edgelist(export_filename)
-        print ('H- No. Edges: ', len(h.edges))
+        # h = nx.read_edgelist(export_filename)
+        # print ('H- No. Edges: ', len(h.edges))

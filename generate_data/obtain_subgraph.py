@@ -7,7 +7,7 @@ import networkx as nx
 
 sameas = "http://www.w3.org/2002/07/owl#sameAs"
 PATH_LOD = "/scratch/wbeek/data/LOD-a-lot/data.hdt"
-hdt = HDTDocument(PATH_LOD)
+hdt_file = HDTDocument(PATH_LOD)
 
 
 
@@ -16,15 +16,15 @@ def obtain_graph(list_terms):
     # add these nodes in it
     g.add_nodes_from(list_terms)
     for n in list_terms:
-        (triples, cardi) = hdt.search_triples(n, "", "")
-        # print (n, ' has cardi', cardi, ' as subject')
+        (triples, cardi) = hdt_file.search_triples(n, "", "")
+        print (n, ' has cardi', cardi, ' as subject')
         for (_,p,o) in triples:
             # print ('p = ', p)
             # print ('o = ', o)
             if o in list_terms:
                 g.add_edge(n, o)
-        (triples, cardi) = hdt.search_triples("", "", n)
-        # print (n, ' has cardi', cardi, ' as object')
+        (triples, cardi) = hdt_file.search_triples("", "", n)
+        print (n, ' has cardi', cardi, ' as object')
         for (s,p,_) in triples:
             if s in list_terms:
                 g.add_edge(s, n)

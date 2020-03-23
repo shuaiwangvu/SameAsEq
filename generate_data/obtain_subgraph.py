@@ -38,6 +38,7 @@ reader = csv.reader(eq_file, delimiter=',')
 index = 0
 for row in reader:
     print (index, ' has length ', len (row))
+    row = [ r[1:-1] for r in row]
     g = obtain_graph(row)
     print ('#nodes', len(g.nodes))
     print ('#edges', len(g.edges))

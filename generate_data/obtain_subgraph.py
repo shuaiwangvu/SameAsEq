@@ -36,7 +36,11 @@ for row in reader:
     print (index, ' has length ', len (row))
     row = [ r[1:-1] for r in row]
     g = obtain_graph(row)
+    print ('G- No. Edges: ', len(g.edges))
     # export the graph
     export_filename = str(index) + ".edgelist"
     nx.write_edgelist(g, export_filename)
     index += 1
+
+    h = nx.read_edgelist(export_filename)
+    print ('H- No. Edges: ', len(h.edges))

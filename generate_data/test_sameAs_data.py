@@ -25,7 +25,7 @@ sameAs_dic = {}
 # path = '/Users/sw-works/Documents/backbone/sameAs_data/id2terms_0-99.csv'
 path = '/closure_all/id2terms_all.csv'
 
-with open() as csv_file:
+with open(path) as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=' ')
     # count = 0
     for row in csv_reader:

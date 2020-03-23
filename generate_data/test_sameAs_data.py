@@ -3,7 +3,7 @@
 import csv
 import matplotlib.pyplot as plt
 import numpy as np
-
+import random
 
 sameAs_dic = {}
 # def read_line (line):
@@ -49,18 +49,25 @@ for k in sameAs_dic.keys():
 
 print('max = ', max)
 
-X = list (range(max + 1))
-Y = [0] * len(range(max + 1))
 
-for k in sameAs_dic.keys():
-    l = len (sameAs_dic[k])
-    # print ('l = ',l)
-    Y[l] += 1
+sample_size = 100
+# Generate the VM group
+# sameAs_dic
+for V in range (40): # 0 - 199, 40 groups
+    collect_data_VM = []
+    for k in sameAs_dic.keys():
+        terms = sameAs_dic[k] # k = group_id
+        VM_id = int(l / 5) # an VM id
+        if VM_id == V:
+            collect_data_VM.append((k,sameAs_dic[k]))
+    # select 100 randomly from them # size
+    Vsample = random.sample(collect_data_VM, sample_size)
+    # export these 100 to a file
+    file_name = 'V' + str(V) + '.csv'
+    file =  open(file_name, 'w', newline='')
+    writer = csv.writer(file)
+    writer.writerow([ "GROUP_ID", "TERMS"])
+    for (k, terms) in Vsample:
+        writer.writerow([k, terms])
 
-
-for x in range(max):
-    print (X[x], ' ', Y[x])
-
-plt.plot(X, Y, 'bo')
-
-plt.show()
+    print ('finished exporting for ', V)

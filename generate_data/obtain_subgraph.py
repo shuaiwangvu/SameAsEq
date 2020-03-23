@@ -34,10 +34,10 @@ for i in range(40):
 
     index = 0
     for row in reader:
-        print (index, ' has length ', len (row))
+        # print (index, ' has length ', len (row))
         row = [ r[1:-1] for r in row]
         g = obtain_graph(row)
-        print ('G- No. Edges: ', len(g.edges))
+        # print ('G- No. Edges: ', len(g.edges))
         # export the graph
         export_filename = 'V' + str(i) + '_' + str(index) + ".edgelist"
         nx.write_edgelist(g, export_filename)
@@ -46,7 +46,7 @@ for i in range(40):
         # h = nx.read_edgelist(export_filename)
         # print ('H- No. Edges: ', len(h.edges))
 
-
+print('now dealing with SA')
 
 # read the file
 for i in range(10):
@@ -55,10 +55,10 @@ for i in range(10):
 
     index = 0
     for row in reader:
-        print (index, ' has length ', len (row))
+        # print (index, ' has length ', len (row))
         row = [ r[1:-1] for r in row]
         g = obtain_graph(row)
-        print ('G- No. Edges: ', len(g.edges))
+        # print ('G- No. Edges: ', len(g.edges))
         # export the graph
         export_filename = 'V' + str(i) + '_' + str(index) + ".edgelist"
         nx.write_edgelist(g, export_filename)

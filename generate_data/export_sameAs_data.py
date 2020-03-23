@@ -74,7 +74,7 @@ print('max = ', max)
 #
 
 # step 2:
-sample_size = 50
+sample_size = 20
 # Generate the VM group
 # sameAs_dic
 for V in range (10): # 0 - 999, 10 groups

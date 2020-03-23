@@ -38,7 +38,7 @@ with open(path) as csv_file:
         sameAs_dic[index] = terms
         # print ('\n')
         # count += 1
-        # if count > 1000000:
+        # if count > 10000:
         #     break
 
 max = 0
@@ -57,7 +57,7 @@ for V in range (40): # 0 - 199, 40 groups
     collect_data_VM = []
     for k in sameAs_dic.keys():
         terms = sameAs_dic[k] # k = group_id
-        VM_id = int(l / 5) # an VM id
+        VM_id = int(len(terms) / 5) # an VM id
         if VM_id == V:
             collect_data_VM.append((k,sameAs_dic[k]))
     # select 100 randomly from them # size
@@ -66,8 +66,18 @@ for V in range (40): # 0 - 199, 40 groups
     file_name = 'V' + str(V) + '.csv'
     file =  open(file_name, 'w', newline='')
     writer = csv.writer(file)
-    writer.writerow([ "GROUP_ID", "TERMS"])
+    # writer.writerow([ "GROUP_ID", "TERMS"])
     for (k, terms) in Vsample:
-        writer.writerow([k, terms])
+        writer.writerow(terms)
 
     print ('finished exporting for ', V)
+#
+# # read the file
+# eq_file = open('V0.csv', 'r')
+# reader = csv.reader(eq_file, delimiter=',')
+# index = 0
+# for row in reader:
+#     print (index, ' has length ', len (row))
+#     index +=1
+#     for t in row:
+#         print ('\t', t)

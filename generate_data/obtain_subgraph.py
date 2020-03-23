@@ -30,7 +30,7 @@ def obtain_graph(list_terms):
 
 
 # read the file
-eq_file = open('V12.csv', 'r')
+eq_file = open('V23.csv', 'r')
 reader = csv.reader(eq_file, delimiter=',')
 
 index = 0

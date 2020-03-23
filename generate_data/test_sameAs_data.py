@@ -85,6 +85,7 @@ for V in range (10): # 0 - 199, 40 groups
         if VM_id == V:
             collect_data_VM.append((k,sameAs_dic[k]))
     # select 100 randomly from them # size
+    print ('size = ', len (collect_data_VM))
     Vsample = random.sample(collect_data_VM, sample_size)
     # export these 100 to a file
     file_name = 'SA' + str(V) + '.csv'

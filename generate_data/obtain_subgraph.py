@@ -16,16 +16,12 @@ def obtain_graph(list_terms):
     # add these nodes in it
     g.add_nodes_from(list_terms)
     for n in list_terms:
-        (triples, cardi) = hdt_file.search_triples(n, "", "")
-        print (n, ' has cardi', cardi, ' as subject')
-        for (_,p,o) in triples:
-            # print ('p = ', p)
-            # print ('o = ', o)
+        (triples, cardi) = hdt_file.search_triples(n, sameas, "")
+        for (_,_,o) in triples:
             if o in list_terms:
                 g.add_edge(n, o)
-        (triples, cardi) = hdt_file.search_triples("", "", n)
-        print (n, ' has cardi', cardi, ' as object')
-        for (s,p,_) in triples:
+        (triples, cardi) = hdt_file.search_triples("", sameas, n)
+        for (s,_,_) in triples:
             if s in list_terms:
                 g.add_edge(s, n)
     return g
@@ -40,8 +36,6 @@ for row in reader:
     print (index, ' has length ', len (row))
     row = [ r[1:-1] for r in row]
     g = obtain_graph(row)
-    print ('#nodes', len(g.nodes))
-    print ('#edges', len(g.edges))
     # export the graph
     export_filename = str(index) + ".edgelist"
     nx.write_edgelist(g, export_filename)

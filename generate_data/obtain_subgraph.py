@@ -31,7 +31,9 @@ index = 0
 for row in reader:
     print (index, ' has length ', len (row))
     g = obtain_graph(row)
+    print ('#nodes', len(g.nodes))
+    print ('#edges', len(g.edges))
     # export the graph
     export_filename = str(index) + ".edgelist"
-    nx.write_edgelist(G, export_filename)
+    nx.write_edgelist(g, export_filename)
     index += 1

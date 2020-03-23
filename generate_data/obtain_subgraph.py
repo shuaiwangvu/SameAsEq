@@ -17,10 +17,15 @@ def obtain_graph(list_terms):
     g.add_nodes_from(list_terms)
     for n in list_terms:
         (triples, cardi) = hdt.search_triples(n, sameas, '')
-        print (n, ' has cardi', cardi)
+        print (n, ' has cardi', cardi, ' as subject')
         for (_,_,o) in triples:
             if o in list_terms:
                 g.add_edge(n, o)
+        (triples, cardi) = hdt.search_triples('', sameas, n)
+        print (n, ' has cardi', cardi, ' as object')
+        for (s,_,_) in triples:
+            if s in list_terms:
+                g.add_edge(s, n)
     return g
 
 

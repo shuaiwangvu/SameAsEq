@@ -10,15 +10,28 @@ PATH_LOD = "/scratch/wbeek/data/LOD-a-lot/data.hdt"
 hdt = HDTDocument(PATH_LOD)
 
 
+
+def obtain_graph(list_terms):
+    g = nx.Graph()
+    # add these nodes in it
+    g.add_nodes_from(list_terms)
+    for n in list_terms:
+        (triples, cardi) = hdt.search_triples(n, sameas, '')
+        for (_,_,o) in triples:
+            if o in list_terms:
+                g.add_edge(n, o)
+    return g
+
+
 # read the file
 eq_file = open('V12.csv', 'r')
 reader = csv.reader(eq_file, delimiter=',')
+
 index = 0
 for row in reader:
     print (index, ' has length ', len (row))
-    index +=1
-    for t in row:
-        print ('\t', t)
-
-
-hdt.search_triples(s, p, o)
+    g = obtain_graph(row)
+    # export the graph
+    export_filename = str(index) + ".edgelist"
+    nx.write_edgelist(G, export_filename)
+    index += 1

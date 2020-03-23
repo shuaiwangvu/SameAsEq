@@ -28,19 +28,41 @@ def obtain_graph(list_terms):
 
 
 # read the file
-eq_file = open('V23.csv', 'r')
-reader = csv.reader(eq_file, delimiter=',')
+for i in range(40):
+    eq_file = open('V' + str(i) + '.csv', 'r')
+    reader = csv.reader(eq_file, delimiter=',')
 
-index = 0
-for row in reader:
-    print (index, ' has length ', len (row))
-    row = [ r[1:-1] for r in row]
-    g = obtain_graph(row)
-    print ('G- No. Edges: ', len(g.edges))
-    # export the graph
-    export_filename = str(index) + ".edgelist"
-    nx.write_edgelist(g, export_filename)
-    index += 1
+    index = 0
+    for row in reader:
+        print (index, ' has length ', len (row))
+        row = [ r[1:-1] for r in row]
+        g = obtain_graph(row)
+        print ('G- No. Edges: ', len(g.edges))
+        # export the graph
+        export_filename = 'V' + str(i) + '_' + str(index) + ".edgelist"
+        nx.write_edgelist(g, export_filename)
+        index += 1
 
-    h = nx.read_edgelist(export_filename)
-    print ('H- No. Edges: ', len(h.edges))
+        h = nx.read_edgelist(export_filename)
+        print ('H- No. Edges: ', len(h.edges))
+
+
+
+# read the file
+for i in range(10):
+    eq_file = open('SA' + str(i) + '.csv', 'r')
+    reader = csv.reader(eq_file, delimiter=',')
+
+    index = 0
+    for row in reader:
+        print (index, ' has length ', len (row))
+        row = [ r[1:-1] for r in row]
+        g = obtain_graph(row)
+        print ('G- No. Edges: ', len(g.edges))
+        # export the graph
+        export_filename = 'V' + str(i) + '_' + str(index) + ".edgelist"
+        nx.write_edgelist(g, export_filename)
+        index += 1
+
+        h = nx.read_edgelist(export_filename)
+        print ('H- No. Edges: ', len(h.edges))

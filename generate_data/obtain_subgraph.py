@@ -52,15 +52,15 @@ print('now dealing with SA')
 for i in range(10):
     eq_file = open('SA' + str(i) + '.csv', 'r')
     reader = csv.reader(eq_file, delimiter=',')
-
+    print ('i = ', i)
     index = 0
     for row in reader:
-        # print (index, ' has length ', len (row))
+        print (index, ' has length ', len (row))
         row = [ r[1:-1] for r in row]
         g = obtain_graph(row)
-        # print ('G- No. Edges: ', len(g.edges))
+        print ('G- No. Nodes: ', len(g.edges))
         # export the graph
-        export_filename = 'SA' + str(i) + '_' + str(index) + ".edgelist"
+        export_filename = 'new_SA' + str(i) + '_' + str(index) + ".edgelist"
         nx.write_edgelist(g, export_filename)
         index += 1
 

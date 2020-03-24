@@ -2,3 +2,5 @@ __pycache__/
 before.png
 after.png
 closure_all
+.DS_Store
+generate_data/.DS_Store

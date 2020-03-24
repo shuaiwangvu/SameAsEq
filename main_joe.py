@@ -16,7 +16,7 @@ from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.label import Label
 from kivy.clock import Clock
 import networkx as nx
-
+import tldextract
 from functools import partial
 
 # to change the kivy default settings we use this module config

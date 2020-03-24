@@ -49,47 +49,21 @@ for k in sameAs_dic.keys():
 
 print('max = ', max)
 
-# # step 1:
-# sample_size = 100
-# # Generate the VM group
-# # sameAs_dic
-# for V in range (40): # 0 - 199, 40 groups
-#     collect_data_VM = []
-#     for k in sameAs_dic.keys():
-#         terms = sameAs_dic[k] # k = group_id
-#         VM_id = int(len(terms) / 5) # an VM id
-#         if VM_id == V:
-#             collect_data_VM.append((k,sameAs_dic[k]))
-#     # select 100 randomly from them # size
-#     Vsample = random.sample(collect_data_VM, sample_size)
-#     # export these 100 to a file
-#     file_name = 'V' + str(V) + '.csv'
-#     file =  open(file_name, 'w', newline='')
-#     writer = csv.writer(file)
-#     # writer.writerow([ "GROUP_ID", "TERMS"])
-#     for (k, terms) in Vsample:
-#         writer.writerow(terms)
-#
-#     print ('finished exporting for ', V)
-#
-
-# step 2:
-sample_size = 20
+# step 1:
+sample_size = 100
 # Generate the VM group
 # sameAs_dic
-for V in range (10): # 0 - 999, 10 groups
+for V in range (40): # 0 - 199, 40 groups
     collect_data_VM = []
     for k in sameAs_dic.keys():
         terms = sameAs_dic[k] # k = group_id
-        VM_id = int(len(terms) / 100) # an VM id
+        VM_id = int(len(terms) / 5) # an VM id
         if VM_id == V:
             collect_data_VM.append((k,sameAs_dic[k]))
     # select 100 randomly from them # size
-    print ('size = ', len (collect_data_VM))
-
     Vsample = random.sample(collect_data_VM, sample_size)
     # export these 100 to a file
-    file_name = 'SA' + str(V) + '.csv'
+    file_name = 'V' + str(V) + '.csv'
     file =  open(file_name, 'w', newline='')
     writer = csv.writer(file)
     # writer.writerow([ "GROUP_ID", "TERMS"])
@@ -97,6 +71,32 @@ for V in range (10): # 0 - 999, 10 groups
         writer.writerow(terms)
 
     print ('finished exporting for ', V)
+
+#
+# # step 2:
+# sample_size = 20
+# # Generate the VM group
+# # sameAs_dic
+# for V in range (10): # 0 - 999, 10 groups
+#     collect_data_VM = []
+#     for k in sameAs_dic.keys():
+#         terms = sameAs_dic[k] # k = group_id
+#         VM_id = int(len(terms) / 100) # an VM id
+#         if VM_id == V:
+#             collect_data_VM.append((k,sameAs_dic[k]))
+#     # select 100 randomly from them # size
+#     print ('size = ', len (collect_data_VM))
+#
+#     Vsample = random.sample(collect_data_VM, sample_size)
+#     # export these 100 to a file
+#     file_name = 'SA' + str(V) + '.csv'
+#     file =  open(file_name, 'w', newline='')
+#     writer = csv.writer(file)
+#     # writer.writerow([ "GROUP_ID", "TERMS"])
+#     for (k, terms) in Vsample:
+#         writer.writerow(terms)
+#
+#     print ('finished exporting for ', V)
 
 
 

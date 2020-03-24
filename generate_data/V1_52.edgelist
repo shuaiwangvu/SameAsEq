@@ -1,4 +1,8 @@
-http://commons.dbpedia.org/resource/Category:Schools_in_Hampshire http://dbpedia.org/resource/Category:Schools_in_Hampshire {}
-http://dbpedia.org/resource/Category:Schools_in_Hampshire http://wikidata.dbpedia.org/resource/Q8711878 {}
-http://dbpedia.org/resource/Category:Schools_in_Hampshire http://www.wikidata.org/entity/Q8711878 {}
-http://dbpedia.org/resource/Category:Schools_in_Hampshire http://wikidata.org/entity/Q8711878 {}
+http://dbpedia.org/resource/World_Joyland http://fr.dbpedia.org/resource/World_Joyland {}
+http://dbpedia.org/resource/World_Joyland http://rdf.freebase.com/ns/m.0pkny9f {}
+http://dbpedia.org/resource/World_Joyland http://wikidata.dbpedia.org/resource/Q3569978 {}
+http://dbpedia.org/resource/World_Joyland http://www.wikidata.org/entity/Q3569978 {}
+http://dbpedia.org/resource/World_Joyland http://wikidata.org/entity/Q3569978 {}
+http://fr.dbpedia.org/resource/World_Joyland http://rdf.freebase.com/ns/m.0pkny9f {}
+http://fr.dbpedia.org/resource/World_Joyland http://www.wikidata.org/entity/Q3569978 {}
+http://rdf.freebase.com/ns/m.0pkny9f http://www.wikidata.org/entity/Q3569978 {}

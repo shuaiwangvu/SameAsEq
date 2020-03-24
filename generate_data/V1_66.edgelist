@@ -1,8 +1,4 @@
-http://dbpedia.org/resource/Masjid_Baru_Gopeng http://rdf.freebase.com/ns/m.064n0wh {}
-http://dbpedia.org/resource/Masjid_Baru_Gopeng http://wikidata.dbpedia.org/resource/Q6783341 {}
-http://dbpedia.org/resource/Masjid_Baru_Gopeng http://www.wikidata.org/entity/Q6783341 {}
-http://dbpedia.org/resource/Masjid_Baru_Gopeng http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000c4a036f {}
-http://dbpedia.org/resource/Masjid_Baru_Gopeng http://wikidata.org/entity/Q6783341 {}
-http://dbpedia.org/resource/Masjid_Baru_Gopeng http://yago-knowledge.org/resource/Masjid_Baru_Gopeng {}
-http://dbpedia.org/resource/Masjid_Baru_Gopeng http://mpii.de/yago/resource/Masjid_Baru_Gopeng {}
-http://rdf.freebase.com/ns/m.064n0wh http://www.wikidata.org/entity/Q6783341 {}
+http://bg.dbpedia.org/resource/%D0%A5%D0%B5%D0%BC%D1%83%D1%81 http://bg.dbpedia.org/resource/Хемус {}
+http://bg.dbpedia.org/resource/Хемус http://fr.dbpedia.org/resource/Hémos {}
+http://fr.dbpedia.org/resource/H%C3%A9mos http://fr.dbpedia.org/resource/Hémos {}
+http://fr.dbpedia.org/resource/Hémos http://www.wikidata.org/entity/Q3144954 {}

@@ -1,1 +1,8 @@
-http://de.dbpedia.org/resource/Hildreth%E2%80%99s_Diggings http://de.dbpedia.org/resource/Hildreth’s_Diggings {}
+http://dbpedia.org/resource/George_Grant_(British_politician) http://rdf.freebase.com/ns/m.03hwt1 {}
+http://dbpedia.org/resource/George_Grant_(British_politician) http://wikidata.dbpedia.org/resource/Q5539851 {}
+http://dbpedia.org/resource/George_Grant_(British_politician) http://www.wikidata.org/entity/Q5539851 {}
+http://dbpedia.org/resource/George_Grant_(British_politician) http://wikidata.org/entity/Q5539851 {}
+http://dbpedia.org/resource/George_Grant_(UK_politician) http://rdf.freebase.com/ns/m.03hwt1 {}
+http://dbpedia.org/resource/George_Grant_(UK_politician) http://yago-knowledge.org/resource/George_Grant_(UK_politician) {}
+http://dbpedia.org/resource/George_Grant_(UK_politician) http://mpii.de/yago/resource/George_Grant_%28UK_politician%29 {}
+http://rdf.freebase.com/ns/m.03hwt1 http://www.wikidata.org/entity/Q5539851 {}

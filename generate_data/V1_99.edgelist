@@ -1,10 +1,7 @@
-http://dbpedia.org/resource/Ur-organism http://dbpedia.org/resource/Ur-organism {}
-http://dbpedia.org/resource/Ur-organism http://rdf.freebase.com/ns/m.0dxdx9 {}
-http://dbpedia.org/resource/Ur-organism http://wikidata.dbpedia.org/resource/Q7899520 {}
-http://dbpedia.org/resource/Ur-organism http://www.wikidata.org/entity/Q7899520 {}
-http://dbpedia.org/resource/Ur-organism http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000ce3389 {}
-http://dbpedia.org/resource/Ur-organism http://rdf.freebase.com/ns/m/0dxdx9 {}
-http://dbpedia.org/resource/Ur-organism http://wikidata.org/entity/Q7899520 {}
-http://dbpedia.org/resource/Ur-organism http://yago-knowledge.org/resource/Ur-organism {}
-http://dbpedia.org/resource/Ur-organism http://www4.wiwiss.fu-berlin.de/flickrwrappr/photos/Ur-organism {}
-http://rdf.freebase.com/ns/m.0dxdx9 http://www.wikidata.org/entity/Q7899520 {}
+http://dbpedia.org/resource/Category:Films_by_Armenian_directors http://fa.dbpedia.org/resource/رده:فیلم‌های_کارگردانی_شده_توسط_کارگردانان_ارمنی {}
+http://dbpedia.org/resource/Category:Films_by_Armenian_directors http://ro.dbpedia.org/resource/Categorie:Filme_după_regizori_armeni {}
+http://dbpedia.org/resource/Category:Films_by_Armenian_directors http://wikidata.dbpedia.org/resource/Q6420262 {}
+http://dbpedia.org/resource/Category:Films_by_Armenian_directors http://www.wikidata.org/entity/Q6420262 {}
+http://dbpedia.org/resource/Category:Films_by_Armenian_directors http://wikidata.org/entity/Q6420262 {}
+http://fa.dbpedia.org/resource/%D8%B1%D8%AF%D9%87:%D9%81%DB%8C%D9%84%D9%85%E2%80%8C%D9%87%D8%A7%DB%8C_%DA%A9%D8%A7%D8%B1%DA%AF%D8%B1%D8%AF%D8%A7%D9%86%DB%8C_%D8%B4%D8%AF%D9%87_%D8%AA%D9%88%D8%B3%D8%B7_%DA%A9%D8%A7%D8%B1%DA%AF%D8%B1%D8%AF%D8%A7%D9%86%D8%A7%D9%86_%D8%A7%D8%B1%D9%85%D9%86%DB%8C http://fa.dbpedia.org/resource/رده:فیلم‌های_کارگردانی_شده_توسط_کارگردانان_ارمنی {}
+http://fa.dbpedia.org/resource/رده:فیلم‌های_کارگردانی_شده_توسط_کارگردانان_ارمنی http://www.wikidata.org/entity/Q6420262 {}

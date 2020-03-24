@@ -1,7 +1,6 @@
-http://dbpedia.org/resource/Sergio_Miguez http://es.dbpedia.org/resource/Sergio_Miguez {}
-http://dbpedia.org/resource/Sergio_Miguez http://rdf.freebase.com/ns/m.0hzmzvy {}
-http://dbpedia.org/resource/Sergio_Miguez http://wikidata.dbpedia.org/resource/Q7454327 {}
-http://dbpedia.org/resource/Sergio_Miguez http://www.wikidata.org/entity/Q7454327 {}
-http://dbpedia.org/resource/Sergio_Miguez http://wikidata.org/entity/Q7454327 {}
-http://dbpedia.org/resource/Sergio_Miguez http://yago-knowledge.org/resource/Sergio_Miguez {}
-http://rdf.freebase.com/ns/m.0hzmzvy http://www.wikidata.org/entity/Q7454327 {}
+http://dbpedia.org/resource/Category:Maxwell%E2%80%93Boltzmann_statistics http://wikidata.dbpedia.org/resource/Q8612671 {}
+http://dbpedia.org/resource/Category:Maxwell%E2%80%93Boltzmann_statistics http://www.wikidata.org/entity/Q8612671 {}
+http://dbpedia.org/resource/Category:Maxwell%E2%80%93Boltzmann_statistics http://wikidata.org/entity/Q8612671 {}
+http://dbpedia.org/resource/Category:Maxwell%E2%80%93Boltzmann_statistics http://dbpedia.org/resource/Category:Maxwell–Boltzmann_statistics {}
+http://dbpedia.org/resource/Category:Maxwell–Boltzmann_statistics http://wikidata.dbpedia.org/resource/Q8612671 {}
+http://dbpedia.org/resource/Category:Maxwell–Boltzmann_statistics http://wikidata.org/entity/Q8612671 {}

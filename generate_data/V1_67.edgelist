@@ -1,5 +1,6 @@
-http://hub.culturegraph.org/about/BVB-BV006099473 http://lod.b3kat.de/title/BV006099473 {}
-http://hub.culturegraph.org/about/BVB-BV007960496 http://lod.b3kat.de/title/BV007960496 {}
-http://lod.b3kat.de/isbn/0080213162 http://lod.b3kat.de/title/BV007960496 {}
-http://lod.b3kat.de/title/BV006099469/vol/4 http://lod.b3kat.de/title/BV006099473 {}
-http://lod.b3kat.de/title/BV006099469/vol/4 http://lod.b3kat.de/title/BV007960496 {}
+http://dbpedia.org/resource/Lancelot_Robinson http://rdf.freebase.com/ns/m.0hr8zqn {}
+http://dbpedia.org/resource/Lancelot_Robinson http://wikidata.dbpedia.org/resource/Q6483636 {}
+http://dbpedia.org/resource/Lancelot_Robinson http://www.wikidata.org/entity/Q6483636 {}
+http://dbpedia.org/resource/Lancelot_Robinson http://wikidata.org/entity/Q6483636 {}
+http://dbpedia.org/resource/Lancelot_Robinson http://yago-knowledge.org/resource/Lancelot_Robinson {}
+http://rdf.freebase.com/ns/m.0hr8zqn http://www.wikidata.org/entity/Q6483636 {}

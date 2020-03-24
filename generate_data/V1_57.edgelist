@@ -1,8 +1,9 @@
-http://dbpedia.org/resource/Follow_Me_(Uncle_Kracker_song) http://rdf.freebase.com/ns/m.026j5bq {}
-http://dbpedia.org/resource/Follow_Me_(Uncle_Kracker_song) http://wikidata.dbpedia.org/resource/Q5464703 {}
-http://dbpedia.org/resource/Follow_Me_(Uncle_Kracker_song) http://www.wikidata.org/entity/Q5464703 {}
-http://dbpedia.org/resource/Follow_Me_(Uncle_Kracker_song) http://wikidata.org/entity/Q5464703 {}
-http://dbpedia.org/resource/Follow_Me_(Uncle_Kracker_song) http://yago-knowledge.org/resource/Follow_Me_(Uncle_Kracker_song) {}
-http://dbpedia.org/resource/Follow_Me_(Uncle_Kracker_song) http://mpii.de/yago/resource/Follow_Me_%28Uncle_Kracker_song%29 {}
-http://dbpedia.org/resource/Follow_Me_(Uncle_Kracker_song) http://mpii.de/yago/resource/Follow_Me_(Uncle_Kracker_song) {}
-http://rdf.freebase.com/ns/m.026j5bq http://www.wikidata.org/entity/Q5464703 {}
+http://dbpedia.org/resource/Leidangen http://dbpedia.org/resource/Leidangen {}
+http://dbpedia.org/resource/Leidangen http://rdf.freebase.com/ns/m.0gmddjx {}
+http://dbpedia.org/resource/Leidangen http://wikidata.dbpedia.org/resource/Q6519319 {}
+http://dbpedia.org/resource/Leidangen http://www.wikidata.org/entity/Q6519319 {}
+http://dbpedia.org/resource/Leidangen http://rdf.freebase.com/ns/m/0gmddjx {}
+http://dbpedia.org/resource/Leidangen http://wikidata.org/entity/Q6519319 {}
+http://dbpedia.org/resource/Leidangen http://yago-knowledge.org/resource/Leidangen {}
+http://dbpedia.org/resource/Leidangen http://www4.wiwiss.fu-berlin.de/flickrwrappr/photos/Leidangen {}
+http://rdf.freebase.com/ns/m.0gmddjx http://www.wikidata.org/entity/Q6519319 {}

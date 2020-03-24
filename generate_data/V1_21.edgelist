@@ -1,4 +1,6 @@
-http://dbpedia.org/resource/Cindy%27s_Torment http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000003fe8fc {}
-http://dbpedia.org/resource/Cindy%27s_torment http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000003fe8fc {}
-http://dbpedia.org/resource/Cindy's_Torment http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000003fe8fc {}
-http://dbpedia.org/resource/Cindys_Torment http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000003fe8fc {}
+http://dbpedia.org/resource/Category:Religious_buildings_completed_in_1666 http://sv.dbpedia.org/resource/Kategori:Religiösa_byggnader_invigda_1666 {}
+http://dbpedia.org/resource/Category:Religious_buildings_completed_in_1666 http://wikidata.dbpedia.org/resource/Q8649163 {}
+http://dbpedia.org/resource/Category:Religious_buildings_completed_in_1666 http://www.wikidata.org/entity/Q8649163 {}
+http://dbpedia.org/resource/Category:Religious_buildings_completed_in_1666 http://wikidata.org/entity/Q8649163 {}
+http://sv.dbpedia.org/resource/Kategori:Religi%C3%B6sa_byggnader_invigda_1666 http://sv.dbpedia.org/resource/Kategori:Religiösa_byggnader_invigda_1666 {}
+http://sv.dbpedia.org/resource/Kategori:Religiösa_byggnader_invigda_1666 http://www.wikidata.org/entity/Q8649163 {}

@@ -1,4 +1,6 @@
-http://hub.culturegraph.org/about/BVB-BV000672831 http://lod.b3kat.de/title/BV000672831 {}
-http://hub.culturegraph.org/about/BVB-BV001145198 http://lod.b3kat.de/title/BV001145198 {}
-http://lod.b3kat.de/isbn/3765805491 http://lod.b3kat.de/title/BV000672831 {}
-http://lod.b3kat.de/isbn/3765805491 http://lod.b3kat.de/title/BV001145198 {}
+http://id.dbpedia.org/resource/Stichopogon_ammophilus http://nl.dbpedia.org/resource/Stichopogon_ammophilus {}
+http://id.dbpedia.org/resource/Stichopogon_ammophilus http://sv.dbpedia.org/resource/Stichopogon_ammophilus {}
+http://nl.dbpedia.org/resource/Stichopogon_ammophilus http://sv.dbpedia.org/resource/Stichopogon_ammophilus {}
+http://nl.dbpedia.org/resource/Stichopogon_ammophilus http://vi.dbpedia.org/resource/Stichopogon_ammophilus {}
+http://nl.dbpedia.org/resource/Stichopogon_ammophilus http://www.wikidata.org/entity/Q10821739 {}
+http://vi.dbpedia.org/resource/Stichopogon_ammophilus http://www.wikidata.org/entity/Q10821739 {}

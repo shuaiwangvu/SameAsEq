@@ -1,7 +1,9 @@
-http://dbpedia.org/resource/Thorpe_Park_(The_Inbetweeners) http://rdf.freebase.com/ns/m.05dvk84 {}
-http://dbpedia.org/resource/Thorpe_Park_(The_Inbetweeners) http://wikidata.dbpedia.org/resource/Q7796707 {}
-http://dbpedia.org/resource/Thorpe_Park_(The_Inbetweeners) http://www.wikidata.org/entity/Q7796707 {}
-http://dbpedia.org/resource/Thorpe_Park_(The_Inbetweeners) http://rdf.freebase.com/ns/m.0crfwf5 {}
-http://dbpedia.org/resource/Thorpe_Park_(The_Inbetweeners) http://wikidata.org/entity/Q7796707 {}
-http://dbpedia.org/resource/Thorpe_Park_(The_Inbetweeners) http://yago-knowledge.org/resource/Thorpe_Park_(The_Inbetweeners) {}
-http://rdf.freebase.com/ns/m.05dvk84 http://www.wikidata.org/entity/Q7796707 {}
+http://dbpedia.org/resource/Value_Inquiry_Book_Series http://dbpedia.org/resource/Value_Inquiry_Book_Series {}
+http://dbpedia.org/resource/Value_Inquiry_Book_Series http://rdf.freebase.com/ns/m.0glqcr2 {}
+http://dbpedia.org/resource/Value_Inquiry_Book_Series http://wikidata.dbpedia.org/resource/Q7912736 {}
+http://dbpedia.org/resource/Value_Inquiry_Book_Series http://www.wikidata.org/entity/Q7912736 {}
+http://dbpedia.org/resource/Value_Inquiry_Book_Series http://rdf.freebase.com/ns/m/0glqcr2 {}
+http://dbpedia.org/resource/Value_Inquiry_Book_Series http://wikidata.org/entity/Q7912736 {}
+http://dbpedia.org/resource/Value_Inquiry_Book_Series http://yago-knowledge.org/resource/Value_Inquiry_Book_Series {}
+http://dbpedia.org/resource/Value_Inquiry_Book_Series http://www4.wiwiss.fu-berlin.de/flickrwrappr/photos/Value_Inquiry_Book_Series {}
+http://rdf.freebase.com/ns/m.0glqcr2 http://www.wikidata.org/entity/Q7912736 {}

@@ -1,5 +1,10 @@
-http://ja.dbpedia.org/resource/%E6%B2%B3%E5%86%85%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%81%E3%82%A7%E3%83%B3%E3%82%B8 http://ja.dbpedia.org/resource/河内インターチェンジ {}
-http://ja.dbpedia.org/resource/河内インターチェンジ http://www.wikidata.org/entity/Q11141246 {}
-http://ja.dbpedia.org/resource/河内インターチェンジ http://zh.dbpedia.org/resource/河內IC {}
-http://www.wikidata.org/entity/Q11141246 http://zh.dbpedia.org/resource/河內IC {}
-http://zh.dbpedia.org/resource/%E6%B2%B3%E5%85%A7IC http://zh.dbpedia.org/resource/河內IC {}
+http://ht.dbpedia.org/resource/832_(nonm) http://ms.dbpedia.org/resource/832_(nombor) {}
+http://ht.dbpedia.org/resource/832_(nonm) http://ru.dbpedia.org/resource/832_(число) {}
+http://ht.dbpedia.org/resource/832_(nonm) http://www.wikidata.org/entity/Q4554130 {}
+http://hu.dbpedia.org/resource/832_(sz%C3%A1m) http://hu.dbpedia.org/resource/832_(szám) {}
+http://hu.dbpedia.org/resource/832_(szám) http://ru.dbpedia.org/resource/832_(число) {}
+http://hu.dbpedia.org/resource/832_(szám) http://www.wikidata.org/entity/Q1492354 {}
+http://ms.dbpedia.org/resource/832_(nombor) http://ru.dbpedia.org/resource/832_(число) {}
+http://ms.dbpedia.org/resource/832_(nombor) http://www.wikidata.org/entity/Q4554130 {}
+http://ru.dbpedia.org/resource/832_(%D1%87%D0%B8%D1%81%D0%BB%D0%BE) http://ru.dbpedia.org/resource/832_(число) {}
+http://ru.dbpedia.org/resource/832_(число) http://www.wikidata.org/entity/Q4554130 {}

@@ -1,6 +1,8 @@
-http://dbpedia.org/resource/Jeremy_Penn http://rdf.freebase.com/ns/m.043rf2p {}
-http://dbpedia.org/resource/Jeremy_Penn http://wikidata.dbpedia.org/resource/Q6181772 {}
-http://dbpedia.org/resource/Jeremy_Penn http://www.wikidata.org/entity/Q6181772 {}
-http://dbpedia.org/resource/Jeremy_Penn http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000083bb455 {}
-http://dbpedia.org/resource/Jeremy_Penn http://wikidata.org/entity/Q6181772 {}
-http://rdf.freebase.com/ns/m.043rf2p http://www.wikidata.org/entity/Q6181772 {}
+http://dbpedia.org/resource/2005_1000_km_of_Silverstone http://dbpedia.org/resource/2005_1000_km_of_Silverstone {}
+http://dbpedia.org/resource/2005_1000_km_of_Silverstone http://rdf.freebase.com/ns/m.02ryvbs {}
+http://dbpedia.org/resource/2005_1000_km_of_Silverstone http://wikidata.dbpedia.org/resource/Q4603887 {}
+http://dbpedia.org/resource/2005_1000_km_of_Silverstone http://www.wikidata.org/entity/Q4603887 {}
+http://dbpedia.org/resource/2005_1000_km_of_Silverstone http://rdf.freebase.com/ns/m/02ryvbs {}
+http://dbpedia.org/resource/2005_1000_km_of_Silverstone http://wikidata.org/entity/Q4603887 {}
+http://dbpedia.org/resource/2005_1000_km_of_Silverstone http://www4.wiwiss.fu-berlin.de/flickrwrappr/photos/2005_1000_km_of_Silverstone {}
+http://rdf.freebase.com/ns/m.02ryvbs http://www.wikidata.org/entity/Q4603887 {}

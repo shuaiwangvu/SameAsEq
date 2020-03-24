@@ -1,4 +1,8 @@
-http://dbpedia.org/resource/High_Times%27_Pot_Luck http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000011d1f27 {}
-http://dbpedia.org/resource/High_Times%27_Potluck http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000011d1f27 {}
-http://dbpedia.org/resource/High_Times_%22Pot_Luck%22 http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000011d1f27 {}
-http://dbpedia.org/resource/High_times_potluck http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000011d1f27 {}
+http://cs.dbpedia.org/resource/Kostel_svat%C3%A9ho_Ladislava http://cs.dbpedia.org/resource/Kostel_svatého_Ladislava {}
+http://cs.dbpedia.org/resource/Kostel_svatého_Ladislava http://de.dbpedia.org/resource/Ladislauskirche {}
+http://cs.dbpedia.org/resource/Kostel_svatého_Ladislava http://sk.dbpedia.org/resource/Kostol_svätého_Ladislava {}
+http://cs.dbpedia.org/resource/Kostel_svatého_Ladislava http://www.wikidata.org/entity/Q12030869 {}
+http://de.dbpedia.org/resource/Ladislauskirche http://sk.dbpedia.org/resource/Kostol_svätého_Ladislava {}
+http://de.dbpedia.org/resource/Ladislauskirche http://www.wikidata.org/entity/Q1654204 {}
+http://sk.dbpedia.org/resource/Kostol_sv%C3%A4t%C3%A9ho_Ladislava http://sk.dbpedia.org/resource/Kostol_svätého_Ladislava {}
+http://sk.dbpedia.org/resource/Kostol_svätého_Ladislava http://www.wikidata.org/entity/Q12030869 {}

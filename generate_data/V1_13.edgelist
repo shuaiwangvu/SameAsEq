@@ -1,5 +1,10 @@
-http://dbpedia.org/resource/Heteropsis_angolensis http://rdf.freebase.com/ns/m.0jwx406 {}
-http://dbpedia.org/resource/Heteropsis_angolensis http://wikidata.dbpedia.org/resource/Q5747532 {}
-http://dbpedia.org/resource/Heteropsis_angolensis http://www.wikidata.org/entity/Q5747532 {}
-http://dbpedia.org/resource/Heteropsis_angolensis http://wikidata.org/entity/Q5747532 {}
-http://rdf.freebase.com/ns/m.0jwx406 http://www.wikidata.org/entity/Q5747532 {}
+http://ceb.dbpedia.org/resource/Tetrastemma_angulatus http://nl.dbpedia.org/resource/Tetrastemma_angulatus {}
+http://ceb.dbpedia.org/resource/Tetrastemma_angulatus http://sv.dbpedia.org/resource/Tetrastemma_angulatus {}
+http://ceb.dbpedia.org/resource/Tetrastemma_angulatus http://war.dbpedia.org/resource/Tetrastemma_angulatus {}
+http://ceb.dbpedia.org/resource/Tetrastemma_angulatus http://www.wikidata.org/entity/Q1980149 {}
+http://nl.dbpedia.org/resource/Tetrastemma_angulatus http://sv.dbpedia.org/resource/Tetrastemma_angulatus {}
+http://nl.dbpedia.org/resource/Tetrastemma_angulatus http://war.dbpedia.org/resource/Tetrastemma_angulatus {}
+http://nl.dbpedia.org/resource/Tetrastemma_angulatus http://www.wikidata.org/entity/Q1980149 {}
+http://sv.dbpedia.org/resource/Tetrastemma_angulatus http://war.dbpedia.org/resource/Tetrastemma_angulatus {}
+http://sv.dbpedia.org/resource/Tetrastemma_angulatus http://www.wikidata.org/entity/Q1980149 {}
+http://war.dbpedia.org/resource/Tetrastemma_angulatus http://www.wikidata.org/entity/Q1980149 {}

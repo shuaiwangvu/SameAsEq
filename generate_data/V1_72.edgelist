@@ -1,4 +1,9 @@
-http://hub.culturegraph.org/about/BVB-BV002834989 http://lod.b3kat.de/title/BV002834989 {}
-http://hub.culturegraph.org/about/BVB-BV002834995 http://lod.b3kat.de/title/BV002834995 {}
-http://lod.b3kat.de/title/BV002834986/vol/2 http://lod.b3kat.de/title/BV002834989 {}
-http://lod.b3kat.de/title/BV002834986/vol/2 http://lod.b3kat.de/title/BV002834995 {}
+http://dbpedia.org/resource/I'm_Asking_You_Sergeant,_Where's_Mine http://rdf.freebase.com/ns/m.0l106c {}
+http://dbpedia.org/resource/I'm_Asking_You_Sergeant,_Where's_Mine http://wikidata.dbpedia.org/resource/Q5966151 {}
+http://dbpedia.org/resource/I'm_Asking_You_Sergeant,_Where's_Mine http://www.wikidata.org/entity/Q5966151 {}
+http://dbpedia.org/resource/I'm_Asking_You_Sergeant,_Where's_Mine http://wikidata.org/entity/Q5966151 {}
+http://dbpedia.org/resource/I'm_Asking_You_Sergeant,_Where's_Mine http://yago-knowledge.org/resource/I'm_Asking_You_Sergeant,_Where's_Mine {}
+http://dbpedia.org/resource/I'm_Asking_You_Sergeant,_Where's_Mine http://mpii.de/yago/resource/I%27m_Asking_You_Sergeant,_Where%27s_Mine {}
+http://dbpedia.org/resource/I'm_Asking_You_Sergeant,_Where's_Mine http://mpii.de/yago/resource/I'm_Asking_You_Sergeant,_Where's_Mine {}
+http://dbpedia.org/resource/Sergeant,_Where's_Mine http://rdf.freebase.com/ns/m.0l106c {}
+http://rdf.freebase.com/ns/m.0l106c http://www.wikidata.org/entity/Q5966151 {}

@@ -1,9 +1,6 @@
-http://dbpedia.org/resource/Thomas_Westbrook_Waldron http://dbpedia.org/resource/Thomas_Westbrook_Waldron {}
-http://dbpedia.org/resource/Thomas_Westbrook_Waldron http://rdf.freebase.com/ns/m.0czbbl5 {}
-http://dbpedia.org/resource/Thomas_Westbrook_Waldron http://wikidata.dbpedia.org/resource/Q7795001 {}
-http://dbpedia.org/resource/Thomas_Westbrook_Waldron http://www.wikidata.org/entity/Q7795001 {}
-http://dbpedia.org/resource/Thomas_Westbrook_Waldron http://rdf.freebase.com/ns/m/0czbbl5 {}
-http://dbpedia.org/resource/Thomas_Westbrook_Waldron http://wikidata.org/entity/Q7795001 {}
-http://dbpedia.org/resource/Thomas_Westbrook_Waldron http://yago-knowledge.org/resource/Thomas_Westbrook_Waldron {}
-http://dbpedia.org/resource/Thomas_Westbrook_Waldron http://www4.wiwiss.fu-berlin.de/flickrwrappr/photos/Thomas_Westbrook_Waldron {}
-http://rdf.freebase.com/ns/m.0czbbl5 http://www.wikidata.org/entity/Q7795001 {}
+http://commons.dbpedia.org/resource/Category:Franciszek_Barda http://pl.dbpedia.org/resource/Franciszek_Barda {}
+http://commons.dbpedia.org/resource/Category:Franciszek_Barda http://ru.dbpedia.org/resource/Барда,_Францишек {}
+http://fi.dbpedia.org/resource/Franciszek_Barda http://pl.dbpedia.org/resource/Franciszek_Barda {}
+http://fi.dbpedia.org/resource/Franciszek_Barda http://www.wikidata.org/entity/Q9262222 {}
+http://pl.dbpedia.org/resource/Franciszek_Barda http://ru.dbpedia.org/resource/Барда,_Францишек {}
+http://pl.dbpedia.org/resource/Franciszek_Barda http://www.wikidata.org/entity/Q9262222 {}

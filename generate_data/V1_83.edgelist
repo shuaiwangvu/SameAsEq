@@ -1,7 +1,8 @@
-http://ar.dbpedia.org/resource/شرزاد http://az.dbpedia.org/resource/Şirzad_Qəznəvi {}
-http://ar.dbpedia.org/resource/شرزاد http://tr.dbpedia.org/resource/Şirzad {}
-http://az.dbpedia.org/resource/%C5%9Eirzad_Q%C9%99zn%C9%99vi http://az.dbpedia.org/resource/Şirzad_Qəznəvi {}
-http://az.dbpedia.org/resource/Şirzad_Qəznəvi http://tr.dbpedia.org/resource/Şirzad {}
-http://az.dbpedia.org/resource/Şirzad_Qəznəvi http://www.wikidata.org/entity/Q140984 {}
-http://tr.dbpedia.org/resource/%C5%9Eirzad http://tr.dbpedia.org/resource/Şirzad {}
-http://tr.dbpedia.org/resource/Şirzad http://www.wikidata.org/entity/Q140984 {}
+http://dbpedia.org/resource/Don't_let_the_fire_go_out http://rdf.freebase.com/ns/m.026f050 {}
+http://dbpedia.org/resource/Don't_let_the_fire_go_out http://wikidata.dbpedia.org/resource/Q5292110 {}
+http://dbpedia.org/resource/Don't_let_the_fire_go_out http://www.wikidata.org/entity/Q5292110 {}
+http://dbpedia.org/resource/Don't_let_the_fire_go_out http://wikidata.org/entity/Q5292110 {}
+http://dbpedia.org/resource/Don't_let_the_fire_go_out http://yago-knowledge.org/resource/Don't_let_the_fire_go_out {}
+http://dbpedia.org/resource/Don't_let_the_fire_go_out http://mpii.de/yago/resource/Don%27t_let_the_fire_go_out {}
+http://dbpedia.org/resource/Don't_let_the_fire_go_out http://mpii.de/yago/resource/Don't_let_the_fire_go_out {}
+http://rdf.freebase.com/ns/m.026f050 http://www.wikidata.org/entity/Q5292110 {}

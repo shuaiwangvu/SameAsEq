@@ -1,10 +1,4 @@
-http://dbpedia.org/resource/John_Toppin http://dbpedia.org/resource/John_Toppin {}
-http://dbpedia.org/resource/John_Toppin http://rdf.freebase.com/ns/m.026q1l9 {}
-http://dbpedia.org/resource/John_Toppin http://wikidata.dbpedia.org/resource/Q6261027 {}
-http://dbpedia.org/resource/John_Toppin http://www.wikidata.org/entity/Q6261027 {}
-http://dbpedia.org/resource/John_Toppin http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000046b0649 {}
-http://dbpedia.org/resource/John_Toppin http://rdf.freebase.com/ns/m/026q1l9 {}
-http://dbpedia.org/resource/John_Toppin http://wikidata.org/entity/Q6261027 {}
-http://dbpedia.org/resource/John_Toppin http://yago-knowledge.org/resource/John_Toppin {}
-http://dbpedia.org/resource/John_Toppin http://mpii.de/yago/resource/John_Toppin {}
-http://rdf.freebase.com/ns/m.026q1l9 http://www.wikidata.org/entity/Q6261027 {}
+http://dbpedia.org/resource/Category:Works_based_on_Starship_Troopers http://it.dbpedia.org/resource/Categoria:Opere_basate_su_Fanteria_dello_spazio {}
+http://dbpedia.org/resource/Category:Works_based_on_Starship_Troopers http://wikidata.dbpedia.org/resource/Q13307448 {}
+http://dbpedia.org/resource/Category:Works_based_on_Starship_Troopers http://www.wikidata.org/entity/Q13307448 {}
+http://dbpedia.org/resource/Category:Works_based_on_Starship_Troopers http://wikidata.org/entity/Q13307448 {}

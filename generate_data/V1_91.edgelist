@@ -1,5 +1,10 @@
-http://uk.dbpedia.org/resource/%D0%94%D0%B0%D0%B9_%D0%A1%D1%83%D0%BD http://uk.dbpedia.org/resource/Дай_Сун {}
-http://uk.dbpedia.org/resource/Дай_Сун http://www.wikidata.org/entity/Q3206108 {}
-http://uk.dbpedia.org/resource/Дай_Сун http://zh.dbpedia.org/resource/戴嵩 {}
-http://www.wikidata.org/entity/Q3206108 http://zh.dbpedia.org/resource/戴嵩 {}
-http://zh.dbpedia.org/resource/%E6%88%B4%E5%B5%A9 http://zh.dbpedia.org/resource/戴嵩 {}
+http://dbpedia.org/resource/Avenida_Guerrero http://dbpedia.org/resource/Avenida_Guerrero {}
+http://dbpedia.org/resource/Avenida_Guerrero http://rdf.freebase.com/ns/m.04y7sn0 {}
+http://dbpedia.org/resource/Avenida_Guerrero http://wikidata.dbpedia.org/resource/Q4828108 {}
+http://dbpedia.org/resource/Avenida_Guerrero http://www.wikidata.org/entity/Q4828108 {}
+http://dbpedia.org/resource/Avenida_Guerrero http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000009d3e280 {}
+http://dbpedia.org/resource/Avenida_Guerrero http://rdf.freebase.com/ns/m/04y7sn0 {}
+http://dbpedia.org/resource/Avenida_Guerrero http://wikidata.org/entity/Q4828108 {}
+http://dbpedia.org/resource/Avenida_Guerrero http://www4.wiwiss.fu-berlin.de/flickrwrappr/photos/Avenida_Guerrero {}
+http://dbpedia.org/resource/Avenida_Vicente_Guerrero http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000009d3e280 {}
+http://rdf.freebase.com/ns/m.04y7sn0 http://www.wikidata.org/entity/Q4828108 {}

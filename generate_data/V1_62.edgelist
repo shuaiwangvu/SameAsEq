@@ -1,9 +1,5 @@
-http://dbpedia.org/resource/Michi_Gaigg http://de.dbpedia.org/resource/Michi_Gaigg {}
-http://dbpedia.org/resource/Michi_Gaigg http://wikidata.dbpedia.org/resource/Q1931218 {}
-http://dbpedia.org/resource/Michi_Gaigg http://www.wikidata.org/entity/Q1931218 {}
-http://dbpedia.org/resource/Michi_Gaigg http://rdf.freebase.com/ns/m.0k99jkv {}
-http://dbpedia.org/resource/Michi_Gaigg http://wikidata.org/entity/Q1931218 {}
-http://dbpedia.org/resource/Michi_Gaigg http://musicbrainz.org/artist/4333251a-2d59-45b5-8278-e5a6d7ea9a09#_ {}
-http://de.dbpedia.org/resource/Michi_Gaigg http://www.wikidata.org/entity/Q1931218 {}
-http://de.dbpedia.org/resource/Michi_Gaigg http://rdf.freebase.com/ns/m.0k99jkv {}
-http://rdf.freebase.com/ns/m.0sh5d5t http://www.wikidata.org/entity/Q1931218 {}
+http://ru.dbpedia.org/resource/%D0%94%D0%B8%D0%BA%D0%B8%D0%B9_%D0%B2%D0%B5%D1%82%D0%B5%D1%80_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC) http://ru.dbpedia.org/resource/Дикий_ветер_(фильм) {}
+http://ru.dbpedia.org/resource/Дикий_ветер_(фильм) http://sr.dbpedia.org/resource/Дивљи_ветар {}
+http://ru.dbpedia.org/resource/Дикий_ветер_(фильм) http://www.wikidata.org/entity/Q4161505 {}
+http://sr.dbpedia.org/resource/%D0%94%D0%B8%D0%B2%D1%99%D0%B8_%D0%B2%D0%B5%D1%82%D0%B0%D1%80 http://sr.dbpedia.org/resource/Дивљи_ветар {}
+http://sr.dbpedia.org/resource/Дивљи_ветар http://www.wikidata.org/entity/Q4161505 {}

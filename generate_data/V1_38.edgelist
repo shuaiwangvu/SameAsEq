@@ -1,4 +1,9 @@
-http://hub.culturegraph.org/about/BVB-BV008781776 http://lod.b3kat.de/title/BV008781776 {}
-http://lod.b3kat.de/isbn/8430908781 http://lod.b3kat.de/title/BV008781776 {}
-http://lod.b3kat.de/isbn/843090879X http://lod.b3kat.de/title/BV008781776 {}
-http://lod.b3kat.de/title/BV008781774/vol/2 http://lod.b3kat.de/title/BV008781776 {}
+http://dbpedia.org/resource/Punjabi_stageshow http://dbpedia.org/resource/Punjabi_stageshow {}
+http://dbpedia.org/resource/Punjabi_stageshow http://rdf.freebase.com/ns/m.05p2r8j {}
+http://dbpedia.org/resource/Punjabi_stageshow http://wikidata.dbpedia.org/resource/Q7260353 {}
+http://dbpedia.org/resource/Punjabi_stageshow http://www.wikidata.org/entity/Q7260353 {}
+http://dbpedia.org/resource/Punjabi_stageshow http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000b515d10 {}
+http://dbpedia.org/resource/Punjabi_stageshow http://rdf.freebase.com/ns/m/05p2r8j {}
+http://dbpedia.org/resource/Punjabi_stageshow http://wikidata.org/entity/Q7260353 {}
+http://dbpedia.org/resource/Punjabi_stageshow http://www4.wiwiss.fu-berlin.de/flickrwrappr/photos/Punjabi_stageshow {}
+http://rdf.freebase.com/ns/m.05p2r8j http://www.wikidata.org/entity/Q7260353 {}

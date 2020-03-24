@@ -1,5 +1,10 @@
-http://ru.dbpedia.org/resource/%D0%91%D0%B0%D1%82%D1%8E%D1%88%D0%BA%D0%BE%D0%B2,_%D0%9F%D0%BE%D0%BC%D0%BF%D0%B5%D0%B9_%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B5%D0%B2%D0%B8%D1%87 http://ru.dbpedia.org/resource/Батюшков,_Помпей_Николаевич {}
-http://ru.dbpedia.org/resource/Батюшков,_Помпей_Николаевич http://uk.dbpedia.org/resource/Батюшков_Помпей_Миколайович {}
-http://ru.dbpedia.org/resource/Батюшков,_Помпей_Николаевич http://www.wikidata.org/entity/Q4079644 {}
-http://uk.dbpedia.org/resource/%D0%91%D0%B0%D1%82%D1%8E%D1%88%D0%BA%D0%BE%D0%B2_%D0%9F%D0%BE%D0%BC%D0%BF%D0%B5%D0%B9_%D0%9C%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9%D0%BE%D0%B2%D0%B8%D1%87 http://uk.dbpedia.org/resource/Батюшков_Помпей_Миколайович {}
-http://uk.dbpedia.org/resource/Батюшков_Помпей_Миколайович http://www.wikidata.org/entity/Q4079644 {}
+http://dbpedia.org/resource/Key_line http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000091f996 {}
+http://dbpedia.org/resource/Keyline http://dbpedia.org/resource/Keyline {}
+http://dbpedia.org/resource/Keyline http://rdf.freebase.com/ns/m.093zdq {}
+http://dbpedia.org/resource/Keyline http://wikidata.dbpedia.org/resource/Q6398322 {}
+http://dbpedia.org/resource/Keyline http://www.wikidata.org/entity/Q6398322 {}
+http://dbpedia.org/resource/Keyline http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000091f996 {}
+http://dbpedia.org/resource/Keyline http://rdf.freebase.com/ns/m/093zdq {}
+http://dbpedia.org/resource/Keyline http://wikidata.org/entity/Q6398322 {}
+http://dbpedia.org/resource/Keyline http://www4.wiwiss.fu-berlin.de/flickrwrappr/photos/Keyline {}
+http://rdf.freebase.com/ns/m.093zdq http://www.wikidata.org/entity/Q6398322 {}

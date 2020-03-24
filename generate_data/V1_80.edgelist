@@ -1,4 +1,6 @@
-http://dbpedia.org/resource/Yu_Kaito http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000474e934 {}
-http://dbpedia.org/resource/Yu_Kaito http://mpii.de/yago/resource/Yu_Kaito {}
-http://dbpedia.org/resource/Yu_Kaitou http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000474e934 {}
-http://dbpedia.org/resource/Yuu_Kaitou http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000474e934 {}
+http://dbpedia.org/resource/ASIMCO_Technologies http://rdf.freebase.com/ns/m.0hnbrd6 {}
+http://dbpedia.org/resource/ASIMCO_Technologies http://wikidata.dbpedia.org/resource/Q4654247 {}
+http://dbpedia.org/resource/ASIMCO_Technologies http://www.wikidata.org/entity/Q4654247 {}
+http://dbpedia.org/resource/ASIMCO_Technologies http://wikidata.org/entity/Q4654247 {}
+http://dbpedia.org/resource/ASIMCO_Technologies http://yago-knowledge.org/resource/ASIMCO_Technologies {}
+http://rdf.freebase.com/ns/m.0hnbrd6 http://www.wikidata.org/entity/Q4654247 {}

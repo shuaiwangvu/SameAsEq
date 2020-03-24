@@ -1,5 +1,5 @@
-http://dbpedia.org/resource/Jacques_Duquesne http://fr.dbpedia.org/resource/Jacques_Duquesne {}
-http://dbpedia.org/resource/Jacques_Duquesne http://wikidata.dbpedia.org/resource/Q11756272 {}
-http://dbpedia.org/resource/Jacques_Duquesne http://www.wikidata.org/entity/Q11756272 {}
-http://dbpedia.org/resource/Jacques_Duquesne http://wikidata.org/entity/Q11756272 {}
-http://fr.dbpedia.org/resource/Jacques_Duquesne http://www.wikidata.org/entity/Q3158814 {}
+http://dbpedia.org/resource/Tennessee_State_Route_49 http://rdf.freebase.com/ns/m.0n53kb3 {}
+http://dbpedia.org/resource/Tennessee_State_Route_49 http://wikidata.dbpedia.org/resource/Q2503277 {}
+http://dbpedia.org/resource/Tennessee_State_Route_49 http://www.wikidata.org/entity/Q2503277 {}
+http://dbpedia.org/resource/Tennessee_State_Route_49 http://wikidata.org/entity/Q2503277 {}
+http://rdf.freebase.com/ns/m.0n53kb3 http://www.wikidata.org/entity/Q2503277 {}

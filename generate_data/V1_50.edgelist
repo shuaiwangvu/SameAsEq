@@ -1,6 +1,5 @@
-http://dbpedia.org/resource/Mumbiram http://rdf.freebase.com/ns/m.0h93xmx {}
-http://dbpedia.org/resource/Mumbiram http://wikidata.dbpedia.org/resource/Q6935348 {}
-http://dbpedia.org/resource/Mumbiram http://www.wikidata.org/entity/Q6935348 {}
-http://dbpedia.org/resource/Mumbiram http://wikidata.org/entity/Q6935348 {}
-http://dbpedia.org/resource/Mumbiram http://yago-knowledge.org/resource/Mumbiram {}
-http://rdf.freebase.com/ns/m.0h93xmx http://www.wikidata.org/entity/Q6935348 {}
+http://es.dbpedia.org/resource/Aguar%C3%A1_Grande http://es.dbpedia.org/resource/Aguará_Grande {}
+http://es.dbpedia.org/resource/Aguará_Grande http://pt.dbpedia.org/resource/Aguará_Grande {}
+http://es.dbpedia.org/resource/Aguará_Grande http://www.wikidata.org/entity/Q8191867 {}
+http://pt.dbpedia.org/resource/Aguar%C3%A1_Grande http://pt.dbpedia.org/resource/Aguará_Grande {}
+http://pt.dbpedia.org/resource/Aguará_Grande http://www.wikidata.org/entity/Q8191867 {}

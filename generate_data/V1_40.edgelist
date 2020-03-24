@@ -1,5 +1,8 @@
-http://dbpedia.org/resource/River_Downs_Racetrack http://rdf.freebase.com/ns/m.02r1nt_ {}
-http://dbpedia.org/resource/River_Downs_Racetrack http://sws.geonames.org/4522562/ {}
-http://dbpedia.org/resource/River_Downs_Racetrack http://www.wikidata.org/entity/Q7337362 {}
-http://dbpedia.org/resource/River_Downs_Racetrack http://yago-knowledge.org/resource/River_Downs_Racetrack {}
-http://rdf.freebase.com/ns/m.02r1nt_ http://www.wikidata.org/entity/Q7337362 {}
+http://ca.dbpedia.org/resource/C%C3%B2rit_(fill_de_Zeus) http://ca.dbpedia.org/resource/Còrit_(fill_de_Zeus) {}
+http://ca.dbpedia.org/resource/Còrit_(fill_de_Zeus) http://pl.dbpedia.org/resource/Korytos {}
+http://ca.dbpedia.org/resource/Còrit_(fill_de_Zeus) http://ru.dbpedia.org/resource/Кориф_(сын_Зевса) {}
+http://ca.dbpedia.org/resource/Còrit_(fill_de_Zeus) http://www.wikidata.org/entity/Q4233098 {}
+http://pl.dbpedia.org/resource/Korytos http://ru.dbpedia.org/resource/Кориф_(сын_Зевса) {}
+http://pl.dbpedia.org/resource/Korytos http://www.wikidata.org/entity/Q4233098 {}
+http://ru.dbpedia.org/resource/%D0%9A%D0%BE%D1%80%D0%B8%D1%84_(%D1%81%D1%8B%D0%BD_%D0%97%D0%B5%D0%B2%D1%81%D0%B0) http://ru.dbpedia.org/resource/Кориф_(сын_Зевса) {}
+http://ru.dbpedia.org/resource/Кориф_(сын_Зевса) http://www.wikidata.org/entity/Q4233098 {}

@@ -1,4 +1,11 @@
-http://hub.culturegraph.org/about/BVB-BV004595117 http://lod.b3kat.de/title/BV004595117 {}
-http://hub.culturegraph.org/about/BVB-BV008997286 http://lod.b3kat.de/title/BV008997286 {}
-http://lod.b3kat.de/isbn/0809316161 http://lod.b3kat.de/title/BV004595117 {}
-http://lod.b3kat.de/isbn/0809316161 http://lod.b3kat.de/title/BV008997286 {}
+http://dbpedia.org/resource/1974%E2%80%9375_Chicago_Bulls_season http://it.dbpedia.org/resource/Chicago_Bulls_1974-1975 {}
+http://dbpedia.org/resource/1974%E2%80%9375_Chicago_Bulls_season http://rdf.freebase.com/ns/m.0j_6w3z {}
+http://dbpedia.org/resource/1974%E2%80%9375_Chicago_Bulls_season http://wikidata.dbpedia.org/resource/Q3667598 {}
+http://dbpedia.org/resource/1974%E2%80%9375_Chicago_Bulls_season http://www.wikidata.org/entity/Q3667598 {}
+http://dbpedia.org/resource/1974%E2%80%9375_Chicago_Bulls_season http://wikidata.org/entity/Q3667598 {}
+http://dbpedia.org/resource/1974%E2%80%9375_Chicago_Bulls_season http://dbpedia.org/resource/1974–75_Chicago_Bulls_season {}
+http://dbpedia.org/resource/1974–75_Chicago_Bulls_season http://it.dbpedia.org/resource/Chicago_Bulls_1974-1975 {}
+http://dbpedia.org/resource/1974–75_Chicago_Bulls_season http://wikidata.dbpedia.org/resource/Q3667598 {}
+http://dbpedia.org/resource/1974–75_Chicago_Bulls_season http://wikidata.org/entity/Q3667598 {}
+http://it.dbpedia.org/resource/Chicago_Bulls_1974-1975 http://www.wikidata.org/entity/Q3667598 {}
+http://rdf.freebase.com/ns/m.0j_6w3z http://www.wikidata.org/entity/Q3667598 {}

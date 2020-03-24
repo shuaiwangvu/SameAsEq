@@ -1,9 +1,6 @@
-http://ca.dbpedia.org/resource/Acad%C3%A8mia_de_les_Ci%C3%A8ncies_i_les_Arts_de_Televisi%C3%B3_d'Espanya http://ca.dbpedia.org/resource/Acadèmia_de_les_Ciències_i_les_Arts_de_Televisió_d'Espanya {}
-http://ca.dbpedia.org/resource/Acadèmia_de_les_Ciències_i_les_Arts_de_Televisió_d'Espanya http://es.dbpedia.org/resource/Academia_de_las_Ciencias_y_las_Artes_de_Televisión_de_España {}
-http://ca.dbpedia.org/resource/Acadèmia_de_les_Ciències_i_les_Arts_de_Televisió_d'Espanya http://gl.dbpedia.org/resource/Academia_das_Ciencias_e_as_Artes_de_Televisión_de_España {}
-http://ca.dbpedia.org/resource/Acadèmia_de_les_Ciències_i_les_Arts_de_Televisió_d'Espanya http://www.wikidata.org/entity/Q3394105 {}
-http://es.dbpedia.org/resource/Academia_de_las_Ciencias_y_las_Artes_de_Televisi%C3%B3n_de_Espa%C3%B1a http://es.dbpedia.org/resource/Academia_de_las_Ciencias_y_las_Artes_de_Televisión_de_España {}
-http://es.dbpedia.org/resource/Academia_de_las_Ciencias_y_las_Artes_de_Televisión_de_España http://gl.dbpedia.org/resource/Academia_das_Ciencias_e_as_Artes_de_Televisión_de_España {}
-http://es.dbpedia.org/resource/Academia_de_las_Ciencias_y_las_Artes_de_Televisión_de_España http://www.wikidata.org/entity/Q3394105 {}
-http://gl.dbpedia.org/resource/Academia_das_Ciencias_e_as_Artes_de_Televisi%C3%B3n_de_Espa%C3%B1a http://gl.dbpedia.org/resource/Academia_das_Ciencias_e_as_Artes_de_Televisión_de_España {}
-http://gl.dbpedia.org/resource/Academia_das_Ciencias_e_as_Artes_de_Televisión_de_España http://www.wikidata.org/entity/Q3394105 {}
+http://dbpedia.org/resource/John_Gage_(Tudor_politician) http://rdf.freebase.com/ns/m.0cchzx {}
+http://dbpedia.org/resource/John_Gage_(Tudor_politician) http://wikidata.dbpedia.org/resource/Q6234670 {}
+http://dbpedia.org/resource/John_Gage_(Tudor_politician) http://www.wikidata.org/entity/Q6234670 {}
+http://dbpedia.org/resource/John_Gage_(Tudor_politician) http://wikidata.org/entity/Q6234670 {}
+http://dbpedia.org/resource/John_Gage_(Tudor_politician) http://yago-knowledge.org/resource/John_Gage_(Tudor_politician) {}
+http://rdf.freebase.com/ns/m.0cchzx http://www.wikidata.org/entity/Q6234670 {}

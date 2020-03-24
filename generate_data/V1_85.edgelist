@@ -1,8 +1,7 @@
-http://es.dbpedia.org/resource/Grosso_modo http://it.dbpedia.org/resource/Grosso_modo {}
-http://es.dbpedia.org/resource/Grosso_modo http://pt.dbpedia.org/resource/Grosso_modo {}
-http://gl.dbpedia.org/resource/Grosso_modo http://it.dbpedia.org/resource/Grosso_modo {}
-http://gl.dbpedia.org/resource/Grosso_modo http://pt.dbpedia.org/resource/Grosso_modo {}
-http://gl.dbpedia.org/resource/Grosso_modo http://www.wikidata.org/entity/Q3776956 {}
-http://it.dbpedia.org/resource/Grosso_modo http://pt.dbpedia.org/resource/Grosso_modo {}
-http://it.dbpedia.org/resource/Grosso_modo http://www.wikidata.org/entity/Q3776956 {}
-http://pt.dbpedia.org/resource/Grosso_modo http://www.wikidata.org/entity/Q3776956 {}
+http://dbpedia.org/resource/American_Blues_'Is_Here' http://rdf.freebase.com/ns/m.02pb665 {}
+http://dbpedia.org/resource/American_Blues_'Is_Here' http://wikidata.dbpedia.org/resource/Q4743190 {}
+http://dbpedia.org/resource/American_Blues_'Is_Here' http://www.wikidata.org/entity/Q4743190 {}
+http://dbpedia.org/resource/American_Blues_'Is_Here' http://wikidata.org/entity/Q4743190 {}
+http://dbpedia.org/resource/American_Blues_'Is_Here' http://yago-knowledge.org/resource/American_Blues_'Is_Here' {}
+http://dbpedia.org/resource/American_Blues_'Is_Here' http://mpii.de/yago/resource/American_Blues_'Is_Here' {}
+http://rdf.freebase.com/ns/m.02pb665 http://www.wikidata.org/entity/Q4743190 {}

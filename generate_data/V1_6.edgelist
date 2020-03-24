@@ -1,9 +1,5 @@
-http://hub.culturegraph.org/about/BVB-BV000255038 http://lod.b3kat.de/title/BV000255038 {}
-http://hub.culturegraph.org/about/BVB-BV002300733 http://lod.b3kat.de/title/BV002300733 {}
-http://hub.culturegraph.org/about/BVB-BV006516849 http://lod.b3kat.de/title/BV006516849 {}
-http://lod.b3kat.de/isbn/0416364306 http://lod.b3kat.de/title/BV000255038 {}
-http://lod.b3kat.de/isbn/0416364306 http://lod.b3kat.de/title/BV002300733 {}
-http://lod.b3kat.de/isbn/0416364306 http://lod.b3kat.de/title/BV006516849 {}
-http://lod.b3kat.de/isbn/0416364403 http://lod.b3kat.de/title/BV002300733 {}
-http://lod.b3kat.de/isbn/0416364403 http://lod.b3kat.de/title/BV006516849 {}
-http://lod.b3kat.de/title/BV001888972/vol/883 http://lod.b3kat.de/title/BV006516849 {}
+http://dbpedia.org/resource/Category:Finnish_players_of_American_football http://fi.dbpedia.org/resource/Luokka:Suomalaiset_amerikkalaisen_jalkapallon_pelaajat {}
+http://dbpedia.org/resource/Category:Finnish_players_of_American_football http://wikidata.dbpedia.org/resource/Q6992847 {}
+http://dbpedia.org/resource/Category:Finnish_players_of_American_football http://www.wikidata.org/entity/Q6992847 {}
+http://dbpedia.org/resource/Category:Finnish_players_of_American_football http://wikidata.org/entity/Q6992847 {}
+http://fi.dbpedia.org/resource/Luokka:Suomalaiset_amerikkalaisen_jalkapallon_pelaajat http://www.wikidata.org/entity/Q6992847 {}

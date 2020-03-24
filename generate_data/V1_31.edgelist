@@ -1,9 +1,4 @@
-http://dbpedia.org/resource/Bernardo_de_G%C3%A1lvez_(statue) http://rdf.freebase.com/ns/m.0glnwh0 {}
-http://dbpedia.org/resource/Bernardo_de_G%C3%A1lvez_(statue) http://wikidata.dbpedia.org/resource/Q4893974 {}
-http://dbpedia.org/resource/Bernardo_de_G%C3%A1lvez_(statue) http://www.wikidata.org/entity/Q4893974 {}
-http://dbpedia.org/resource/Bernardo_de_G%C3%A1lvez_(statue) http://wikidata.org/entity/Q4893974 {}
-http://dbpedia.org/resource/Bernardo_de_G%C3%A1lvez_(statue) http://yago-knowledge.org/resource/Bernardo_de_Gálvez_(statue) {}
-http://dbpedia.org/resource/Bernardo_de_G%C3%A1lvez_(statue) http://dbpedia.org/resource/Bernardo_de_Gálvez_(statue) {}
-http://dbpedia.org/resource/Bernardo_de_Gálvez_(statue) http://wikidata.dbpedia.org/resource/Q4893974 {}
-http://dbpedia.org/resource/Bernardo_de_Gálvez_(statue) http://wikidata.org/entity/Q4893974 {}
-http://rdf.freebase.com/ns/m.0glnwh0 http://www.wikidata.org/entity/Q4893974 {}
+http://dbpedia.org/resource/Ryan_Hadlock http://wikidata.dbpedia.org/resource/Q16217317 {}
+http://dbpedia.org/resource/Ryan_Hadlock http://rdf.freebase.com/ns/m.0tkghxk {}
+http://dbpedia.org/resource/Ryan_Hadlock http://wikidata.org/entity/Q16217317 {}
+http://dbpedia.org/resource/Ryan_Hadlock http://musicbrainz.org/artist/3c81ea3f-092d-4f46-a5fa-adbc032708ff#_ {}

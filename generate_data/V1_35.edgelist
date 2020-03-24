@@ -1,4 +1,9 @@
-http://hub.culturegraph.org/about/BVB-BV008219227 http://lod.b3kat.de/title/BV008219227 {}
-http://hub.culturegraph.org/about/BVB-BV008219232 http://lod.b3kat.de/title/BV008219232 {}
-http://lod.b3kat.de/title/BV008159858/vol/19861110 http://lod.b3kat.de/title/BV008219227 {}
-http://lod.b3kat.de/title/BV008159858/vol/19861110 http://lod.b3kat.de/title/BV008219232 {}
+http://dbpedia.org/resource/Nazrul_Mancha http://dbpedia.org/resource/Nazrul_Mancha {}
+http://dbpedia.org/resource/Nazrul_Mancha http://rdf.freebase.com/ns/m.0gmd99l {}
+http://dbpedia.org/resource/Nazrul_Mancha http://wikidata.dbpedia.org/resource/Q6983558 {}
+http://dbpedia.org/resource/Nazrul_Mancha http://www.wikidata.org/entity/Q6983558 {}
+http://dbpedia.org/resource/Nazrul_Mancha http://rdf.freebase.com/ns/m/0gmd99l {}
+http://dbpedia.org/resource/Nazrul_Mancha http://wikidata.org/entity/Q6983558 {}
+http://dbpedia.org/resource/Nazrul_Mancha http://yago-knowledge.org/resource/Nazrul_Mancha {}
+http://dbpedia.org/resource/Nazrul_Mancha http://www4.wiwiss.fu-berlin.de/flickrwrappr/photos/Nazrul_Mancha {}
+http://rdf.freebase.com/ns/m.0gmd99l http://www.wikidata.org/entity/Q6983558 {}

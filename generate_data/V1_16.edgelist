@@ -1,7 +1,4 @@
-http://dbpedia.org/resource/Connie_Walker_(astronomer) http://rdf.freebase.com/ns/m.09gb3fb {}
-http://dbpedia.org/resource/Connie_Walker_(astronomer) http://wikidata.dbpedia.org/resource/Q5161952 {}
-http://dbpedia.org/resource/Connie_Walker_(astronomer) http://www.wikidata.org/entity/Q5161952 {}
-http://dbpedia.org/resource/Connie_Walker_(astronomer) http://wikidata.org/entity/Q5161952 {}
-http://dbpedia.org/resource/Connie_Walker_(astronomer) http://yago-knowledge.org/resource/Connie_Walker_(astronomer) {}
-http://dbpedia.org/resource/Connie_Walker_(astronomer) http://mpii.de/yago/resource/Connie_Walker_%28astronomer%29 {}
-http://rdf.freebase.com/ns/m.09gb3fb http://www.wikidata.org/entity/Q5161952 {}
+http://hub.culturegraph.org/about/BVB-BV002873229 http://lod.b3kat.de/title/BV002873229 {}
+http://hub.culturegraph.org/about/BVB-BV005651285 http://lod.b3kat.de/title/BV005651285 {}
+http://lod.b3kat.de/title/BV002873229 http://lod.b3kat.de/title/BV023547750/vol/44 {}
+http://lod.b3kat.de/title/BV005651285 http://lod.b3kat.de/title/BV023547750/vol/44 {}

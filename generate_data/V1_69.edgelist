@@ -1,4 +1,10 @@
-http://hub.culturegraph.org/about/BVB-BV002430107 http://lod.b3kat.de/title/BV002430107 {}
-http://hub.culturegraph.org/about/BVB-BV002453419 http://lod.b3kat.de/title/BV002453419 {}
-http://lod.b3kat.de/title/BV000003981/vol/14 http://lod.b3kat.de/title/BV002430107 {}
-http://lod.b3kat.de/title/BV000003981/vol/14 http://lod.b3kat.de/title/BV002453419 {}
+http://ceb.dbpedia.org/resource/Ereutho_serrisetis http://nl.dbpedia.org/resource/Ereutho_serrisetis {}
+http://ceb.dbpedia.org/resource/Ereutho_serrisetis http://sv.dbpedia.org/resource/Ereutho_serrisetis {}
+http://ceb.dbpedia.org/resource/Ereutho_serrisetis http://war.dbpedia.org/resource/Ereutho_serrisetis {}
+http://ceb.dbpedia.org/resource/Ereutho_serrisetis http://www.wikidata.org/entity/Q3608366 {}
+http://nl.dbpedia.org/resource/Ereutho_serrisetis http://sv.dbpedia.org/resource/Ereutho_serrisetis {}
+http://nl.dbpedia.org/resource/Ereutho_serrisetis http://war.dbpedia.org/resource/Ereutho_serrisetis {}
+http://nl.dbpedia.org/resource/Ereutho_serrisetis http://www.wikidata.org/entity/Q3608366 {}
+http://sv.dbpedia.org/resource/Ereutho_serrisetis http://war.dbpedia.org/resource/Ereutho_serrisetis {}
+http://sv.dbpedia.org/resource/Ereutho_serrisetis http://www.wikidata.org/entity/Q3608366 {}
+http://war.dbpedia.org/resource/Ereutho_serrisetis http://www.wikidata.org/entity/Q3608366 {}

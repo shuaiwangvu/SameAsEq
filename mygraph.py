@@ -139,6 +139,24 @@ class MyGraph():
         return pos
 
 
+    def export_graph(self, file_name):
+        # print ('pos = ', pos)
+
+        pos = nx.spring_layout(self.G)
+        nx.draw_networkx_nodes(self.G, pos,
+                               nodelist = self.G.nodes,
+                               node_color='b', # TODO: subgraphs_representative
+                               node_size=5,
+                           alpha=0.8)
+        nx.draw_networkx_edges(self.G, pos,
+                               edgelist=self.G.edges,
+                               width=2,alpha=0.5,edge_color='y')
+
+        plt.savefig(file_name)
+        plt.close()
+        print ('saved to: ', file_name)
+
+        return pos
 
 
     def find_group(self, n):

@@ -15,6 +15,7 @@ from kivy.lang import Builder
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.label import Label
 from kivy.clock import Clock
+import networkx as nx
 
 from functools import partial
 
@@ -114,7 +115,7 @@ class NestedLayoutExample(App):
         box_Path = BoxLayout(orientation='horizontal', spacing=20)
         box_Path.add_widget(Label(text='Path to file', halign='left', size_hint=(None,.4), markup=True))
         self.Path_input = TextInput(hint_text='100', size_hint=(.5,.4))
-        self.Path_input.text = 'C:/fdsafdsa'
+        self.Path_input.text = './generate_data/V12_26.edgelist'
         box_Path.add_widget(self.Path_input)
         first_ver_layout.add_widget(box_Path)
         # # M
@@ -147,7 +148,7 @@ class NestedLayoutExample(App):
         # first_ver_layout.add_widget(box_beta)
         # finally, a button to update the parameters
         box = BoxLayout(orientation='horizontal', spacing=20)
-        btn = Button(text='Load', on_press= self.load_file, size_hint=(.1,.2))
+        btn = Button(text='Load', on_press= self.load_graph, size_hint=(.1,.2))
         box.add_widget(btn)
         first_ver_layout.add_widget(box)
 
@@ -236,10 +237,21 @@ class NestedLayoutExample(App):
 
         return main_layout
 
-    def load_file(self, instance):
-        print ('loaded')
+    def load_graph(self, instance):
+        print ('clear all the graphs and load the graph at path')
         self.path = self.Path_input.text
-        print ('path is at ', self.path)
+        # print ('path is at ', self.path)
+        h = nx.read_edgelist(self.path)
+        g = MyGraph()
+        g.G =  h
+        self.graphs = []
+        self.graphs.append(g)
+        colors = ['b', 'g', 'r'] * len(h.edges)
+        self.graphs[0].export_graph('before.png')
+
+        print ('graph loaded and the No. edges are', len (self.graphs[0].G.edges))
+
+        self.refresh_UI()
 
     def go (self, instance):
         print ('update the parameter')

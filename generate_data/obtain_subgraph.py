@@ -60,7 +60,7 @@ for i in range(10):
         g = obtain_graph(row)
         # print ('G- No. Edges: ', len(g.edges))
         # export the graph
-        export_filename = 'V' + str(i) + '_' + str(index) + ".edgelist"
+        export_filename = 'SA' + str(i) + '_' + str(index) + ".edgelist"
         nx.write_edgelist(g, export_filename)
         index += 1
 

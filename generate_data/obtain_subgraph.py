@@ -9,7 +9,22 @@ sameas = "http://www.w3.org/2002/07/owl#sameAs"
 PATH_LOD = "/scratch/wbeek/data/LOD-a-lot/data.hdt"
 hdt_file = HDTDocument(PATH_LOD)
 
+def export_graph_csv (file_name, graph):
+    file =  open(file_name, 'w', newline='')
+    writer = csv.writer(file)
+    writer.writerow([ "SUBJECT", "OBJECT"])
+    for (l, r) in graph.edges:
+        writer.writerow([l, r])
 
+def read_graph_csv(file_name):
+    g = nx.Graph()
+    eq_file = open(file_name, 'r')
+    reader = csv.DictReader(eq_file)
+    for row in reader:
+        s = int(row["SUBJECT"])
+        o = int(row["OBJECT"])
+        g.add_edge(s, o)
+    return g
 
 def obtain_graph(list_terms):
     g = nx.Graph()
@@ -38,11 +53,13 @@ for i in range(40):
         row = [ r[1:-1] for r in row]
         g = obtain_graph(row)
         # export the graph
-        export_filename = 'V' + str(i) + '_' + str(index) + ".edgelist"
-        nx.write_edgelist(g, export_filename)
+        export_filename = 'V' + str(i) + '_' + str(index) + ".csv"
+        # nx.write_edgelist(g, export_filename)
+        export_graph_csv(export_filename, g)
         index += 1
 
-        h = nx.read_edgelist(export_filename)
+        # h = nx.read_edgelist(export_filename)
+        h = read_graph_csv(export_filename)
 
         print ('G- No. Edges: ', len(g.edges))
         print ('H- No. Edges: ', len(h.edges))
@@ -62,11 +79,13 @@ for i in range(10):
         row = [ r[1:-1] for r in row]
         g = obtain_graph(row)
         # export the graph
-        export_filename = 'SA' + str(i) + '_' + str(index) + ".edgelist"
-        nx.write_edgelist(g, export_filename)
+        export_filename = 'SA' + str(i) + '_' + str(index) + ".csv"
+        # nx.write_edgelist(g, export_filename)
+        export_graph_csv(export_filename, g)
         index += 1
 
-        h = nx.read_edgelist(export_filename)
+        # h = nx.read_edgelist(export_filename)
+        h = read_graph_csv(export_filename)
 
         print ('G- No. Nodes: ', len(g.nodes))
         print ('H- No. Edges: ', len(h.edges))

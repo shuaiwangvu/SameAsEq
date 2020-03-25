@@ -58,7 +58,7 @@ for i in range(10):
         print (index, ' has length ', len (row))
         row = [ r[1:-1] for r in row]
         g = obtain_graph(row)
-        print ('G- No. Nodes: ', len(g.edges))
+        print ('G- No. Nodes: ', len(g.nodes))
         # export the graph
         export_filename = 'SA' + str(i) + '_' + str(index) + ".edgelist"
         nx.write_edgelist(g, export_filename)

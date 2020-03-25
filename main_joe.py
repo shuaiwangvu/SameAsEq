@@ -40,7 +40,7 @@ Image:
         keep_ratio: True
         size_hint_y: None
         size_hint_x: None
-        width: 500
+        width: 1000
         height: self.width/self.image_ratio
         '''
 
@@ -52,7 +52,7 @@ Image:
         keep_ratio: True
         size_hint_y: None
         size_hint_x: None
-        width: 500
+        width: 300
         height: self.width/self.image_ratio
         '''
 
@@ -169,7 +169,7 @@ class NestedLayoutExample(App):
         self.A_input = TextInput(hint_text='1.4', size_hint=(.5,.4))
         self.A_input.text = '1.4'
         box_A.add_widget(self.A_input)
-        second_ver_layout.add_widget(box_A)
+        # second_ver_layout.add_widget(box_A)
 
         # display the evaluation result
         box_T = BoxLayout(orientation='horizontal', spacing=20)
@@ -178,7 +178,7 @@ class NestedLayoutExample(App):
         # second_ver_layout.add_widget(box_TP)
         self.TN_label = Label(text='TN = ' + str(self.count_TN), halign='left', size_hint=(None,.4), markup=True)
         box_T.add_widget(self.TN_label)
-        second_ver_layout.add_widget(box_T)
+        # second_ver_layout.add_widget(box_T)
 
 
         box_F = BoxLayout(orientation='horizontal', spacing=20)
@@ -187,7 +187,7 @@ class NestedLayoutExample(App):
         # second_ver_layout.add_widget(box_TP)
         self.FN_label = Label(text='FN = ' + str(self.count_FN), halign='left', size_hint=(None,.4), markup=True)
         box_F.add_widget(self.FN_label)
-        second_ver_layout.add_widget(box_F)
+        # second_ver_layout.add_widget(box_F)
 
 
         box_X = BoxLayout(orientation='horizontal', spacing=20)
@@ -198,7 +198,7 @@ class NestedLayoutExample(App):
         box_X.add_widget(self.recall_label)
         self.accuracy_label = Label(text='accuracy = ' + str(self.accuracy), halign='left', size_hint=(None,.4), markup=True)
         box_X.add_widget(self.accuracy_label)
-        second_ver_layout.add_widget(box_X)
+        # second_ver_layout.add_widget(box_X)
 
         box_Y = BoxLayout(orientation='horizontal', spacing=20)
         self.one_time_label = Label(text='time4it = ' + str(self.one_time), halign='left', size_hint=(None,.9), markup=False)
@@ -206,14 +206,14 @@ class NestedLayoutExample(App):
         # second_ver_layout.add_widget(box_TP)
         # box_X.add_widget(Label(text='recall = ' + str(self.recall), halign='left', size_hint=(None,.4), markup=True))
         # box_X.add_widget(Label(text='accuracy = ' + str(self.accuracy), halign='left', size_hint=(None,.4), markup=True))
-        second_ver_layout.add_widget(box_Y)
+        # second_ver_layout.add_widget(box_Y)
 
 
         # finally, a button to update the parameters
         box = BoxLayout(orientation='horizontal', spacing=20)
         btn = Button(text='Go', on_press= self.go, size_hint=(.1,.2))
         box.add_widget(btn)
-        second_ver_layout.add_widget(box)
+        # second_ver_layout.add_widget(box)
 
         # finally
         main_layout.add_widget(second_ver_layout)
@@ -230,7 +230,7 @@ class NestedLayoutExample(App):
         # h_layout2.add_widget(t)
         # main_layout.add_widget(t)
 
-        Window.size = (1000, 1200)
+        Window.size = (1400, 1200)
 
         # for i in range(100, 0, -1):
         #     Clock.schedule_once(partial(self.before_img.update, str(i)), 10-i)
@@ -249,6 +249,7 @@ class NestedLayoutExample(App):
         colors = ['b', 'g', 'r'] * len(h.edges)
         self.graphs[0].export_graph('before.png')
 
+        print ('graph loaded and the No. nodes are', len (self.graphs[0].G.nodes))
         print ('graph loaded and the No. edges are', len (self.graphs[0].G.edges))
 
         self.refresh_UI()

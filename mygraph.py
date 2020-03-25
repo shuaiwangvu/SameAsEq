@@ -5,6 +5,7 @@ import random
 import itertools
 from operator import itemgetter
 from z3 import *
+import tldextract
 
 class MyGraph():
     # parameters
@@ -151,6 +152,14 @@ class MyGraph():
         nx.draw_networkx_edges(self.G, pos,
                                edgelist=self.G.edges,
                                width=2,alpha=0.5,edge_color='y')
+
+        labels={}
+        ind = 0
+        for n in self.G.nodes:
+            labels[n] =  str(ind)# n.rsplit('/', 1)[-1]
+            print ('index = ', ind, ' = ', n)
+            ind += 1
+        nx.draw_networkx_labels(self.G,pos,labels,font_size=10)
 
         plt.savefig(file_name)
         plt.close()

@@ -37,15 +37,15 @@ for i in range(40):
         # print (index, ' has length ', len (row))
         row = [ r[1:-1] for r in row]
         g = obtain_graph(row)
-        # print ('G- No. Edges: ', len(g.edges))
         # export the graph
         export_filename = 'V' + str(i) + '_' + str(index) + ".edgelist"
         nx.write_edgelist(g, export_filename)
         index += 1
 
         h = nx.read_edgelist(export_filename)
-        # print ('H- No. Edges: ', len(h.edges))
 
+        print ('G- No. Edges: ', len(g.edges))
+        print ('H- No. Edges: ', len(h.edges))
         if len(h.edges) != len(g.edges):
             print ('********* error *************')
 
@@ -61,13 +61,14 @@ for i in range(10):
         print (index, ' has length ', len (row))
         row = [ r[1:-1] for r in row]
         g = obtain_graph(row)
-        # print ('G- No. Nodes: ', len(g.nodes))
         # export the graph
         export_filename = 'SA' + str(i) + '_' + str(index) + ".edgelist"
         nx.write_edgelist(g, export_filename)
         index += 1
 
         h = nx.read_edgelist(export_filename)
-        # print ('H- No. Edges: ', len(h.edges))
+
+        print ('G- No. Nodes: ', len(g.nodes))
+        print ('H- No. Edges: ', len(h.edges))
         if len(h.edges) != len(g.edges):
             print ('********* error *************')

@@ -21,8 +21,8 @@ def read_graph_csv(file_name):
     eq_file = open(file_name, 'r')
     reader = csv.DictReader(eq_file)
     for row in reader:
-        s = int(row["SUBJECT"])
-        o = int(row["OBJECT"])
+        s = row["SUBJECT"]
+        o = row["OBJECT"]
         g.add_edge(s, o)
     return g
 

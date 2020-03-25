@@ -1,0 +1,10 @@
+SUBJECT,OBJECT
+http://bibsonomy.org/uri/bibtexkey/journals/aaecc/ShpilrainZ06/dblp,http://dblp.l3s.de/d2r/resource/publications/journals/aaecc/ShpilrainZ06
+http://bibsonomy.org/uri/bibtexkey/journals/corr/math-GR-0410068/dblp,http://dblp.l3s.de/d2r/resource/publications/journals/corr/math-GR-0410068
+http://bibsonomy.org/uri/bibtexkey/journals/iacr/ShpilrainZ04/dblp,http://dblp.l3s.de/d2r/resource/publications/journals/iacr/ShpilrainZ04
+http://dblp.l3s.de/d2r/resource/publications/journals/aaecc/ShpilrainZ06,http://dblp.rkbexplorer.com/id/journals/aaecc/ShpilrainZ06
+http://dblp.l3s.de/d2r/resource/publications/journals/aaecc/ShpilrainZ06,http://dblp.rkbexplorer.com/id/journals/iacr/ShpilrainZ04
+http://dblp.l3s.de/d2r/resource/publications/journals/corr/math-GR-0410068,http://dblp.rkbexplorer.com/id/journals/corr/math-GR-0410068
+http://dblp.l3s.de/d2r/resource/publications/journals/corr/math-GR-0410068,http://dblp.rkbexplorer.com/id/journals/aaecc/ShpilrainZ06
+http://dblp.l3s.de/d2r/resource/publications/journals/corr/math-GR-0410068,http://dblp.rkbexplorer.com/id/journals/iacr/ShpilrainZ04
+http://dblp.l3s.de/d2r/resource/publications/journals/iacr/ShpilrainZ04,http://dblp.rkbexplorer.com/id/journals/iacr/ShpilrainZ04

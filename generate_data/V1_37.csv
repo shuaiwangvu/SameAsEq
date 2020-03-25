@@ -1,0 +1,6 @@
+SUBJECT,OBJECT
+http://bio2rdf.org/uniparc:UPI00006A04B0,http://bio2rdf.org/uniref:UniRef100_UPI00006A04B0-_133C0D8
+http://bio2rdf.org/uniparc:UPI00006A04B0,http://bio2rdf.org/uniref:UniRef50_Q86XP1-_270749
+http://bio2rdf.org/uniparc:UPI00006A04B0,http://bio2rdf.org/uniref:UniRef90_UPI00006A04B0-_6CAD6E
+http://bio2rdf.org/uniref:UniRef50_Q86XP1-_270749,http://uniref.bio2rdf.org/uniref:UniRef50_Q86XP1-_270749
+http://bio2rdf.org/uniref:UniRef90_UPI00006A04B0-_6CAD6E,http://uniref.bio2rdf.org/uniref:UniRef90_UPI00006A04B0-_6CAD6E

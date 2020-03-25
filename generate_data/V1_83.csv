@@ -1,0 +1,12 @@
+SUBJECT,OBJECT
+http://dbpedia.org/resource/1983_Italian_Open_(tennis),http://es.dbpedia.org/resource/Masters_de_Roma_1983
+http://dbpedia.org/resource/1983_Italian_Open_(tennis),http://it.dbpedia.org/resource/Internazionali_d'Italia_1983
+http://dbpedia.org/resource/1983_Italian_Open_(tennis),http://rdf.freebase.com/ns/m.076w1fq
+http://dbpedia.org/resource/1983_Italian_Open_(tennis),http://wikidata.dbpedia.org/resource/Q3800252
+http://dbpedia.org/resource/1983_Italian_Open_(tennis),http://www.wikidata.org/entity/Q3800252
+http://dbpedia.org/resource/1983_Italian_Open_(tennis),http://wikidata.org/entity/Q3800252
+http://dbpedia.org/resource/1983_Italian_Open_(tennis),http://mpii.de/yago/resource/1983_Italian_Open_%28tennis%29
+http://es.dbpedia.org/resource/Masters_de_Roma_1983,http://it.dbpedia.org/resource/Internazionali_d'Italia_1983
+http://it.dbpedia.org/resource/Internazionali_d'Italia_1983,http://rdf.freebase.com/ns/m.076w1fq
+http://it.dbpedia.org/resource/Internazionali_d'Italia_1983,http://www.wikidata.org/entity/Q3800252
+http://rdf.freebase.com/ns/m.076w1fq,http://www.wikidata.org/entity/Q3800252

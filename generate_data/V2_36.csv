@@ -1,0 +1,13 @@
+SUBJECT,OBJECT
+"http://dbpedia.org/resource/Cambridge_Historic_District_(Cambridge,_New_York)",http://de.dbpedia.org/resource/Cambridge_Historic_District
+"http://dbpedia.org/resource/Cambridge_Historic_District_(Cambridge,_New_York)",http://rdf.freebase.com/ns/m.080c8yn
+"http://dbpedia.org/resource/Cambridge_Historic_District_(Cambridge,_New_York)",http://sws.geonames.org/7227134/
+"http://dbpedia.org/resource/Cambridge_Historic_District_(Cambridge,_New_York)",http://wikidata.dbpedia.org/resource/Q1028300
+"http://dbpedia.org/resource/Cambridge_Historic_District_(Cambridge,_New_York)",http://www.wikidata.org/entity/Q1028300
+"http://dbpedia.org/resource/Cambridge_Historic_District_(Cambridge,_New_York)",http://wikidata.org/entity/Q1028300
+"http://dbpedia.org/resource/Cambridge_Historic_District_(Cambridge,_New_York)","http://yago-knowledge.org/resource/Cambridge_Historic_District_(Cambridge,_New_York)"
+"http://dbpedia.org/resource/Cambridge_Historic_District_(Cambridge,_New_York)","http://mpii.de/yago/resource/Cambridge_Historic_District_%28Cambridge,_New_York%29"
+http://dbpedia.org/resource/Cambridge_Historic_District_(New_York),http://rdf.freebase.com/ns/m.080c8yn
+http://de.dbpedia.org/resource/Cambridge_Historic_District,http://rdf.freebase.com/ns/m.080c8yn
+http://de.dbpedia.org/resource/Cambridge_Historic_District,http://www.wikidata.org/entity/Q1028300
+http://rdf.freebase.com/ns/m.080c8yn,http://www.wikidata.org/entity/Q1028300

@@ -1,7 +1,5 @@
-http://dbpedia.org/resource/Category:Populated_coastal_places_in_Amap%C3%A1 http://wikidata.dbpedia.org/resource/Q8775159 {}
-http://dbpedia.org/resource/Category:Populated_coastal_places_in_Amap%C3%A1 http://www.wikidata.org/entity/Q8775159 {}
-http://dbpedia.org/resource/Category:Populated_coastal_places_in_Amap%C3%A1 http://fa.dbpedia.org/resource/رده:مکان‌های_پرجمعیت_ساحلی_در_آماپا {}
-http://dbpedia.org/resource/Category:Populated_coastal_places_in_Amap%C3%A1 http://wikidata.org/entity/Q8775159 {}
-http://dbpedia.org/resource/Category:Populated_coastal_places_in_Amap%C3%A1 http://dbpedia.org/resource/Category:Populated_coastal_places_in_Amapá {}
-http://dbpedia.org/resource/Category:Populated_coastal_places_in_Amapá http://wikidata.dbpedia.org/resource/Q8775159 {}
-http://dbpedia.org/resource/Category:Populated_coastal_places_in_Amapá http://wikidata.org/entity/Q8775159 {}
+http://bio2rdf.org/uniparc:UPI00006A04B0 http://bio2rdf.org/uniref:UniRef100_UPI00006A04B0-_133C0D8 {}
+http://bio2rdf.org/uniparc:UPI00006A04B0 http://bio2rdf.org/uniref:UniRef50_Q86XP1-_270749 {}
+http://bio2rdf.org/uniparc:UPI00006A04B0 http://bio2rdf.org/uniref:UniRef90_UPI00006A04B0-_6CAD6E {}
+http://bio2rdf.org/uniref:UniRef50_Q86XP1-_270749 http://uniref.bio2rdf.org/uniref:UniRef50_Q86XP1-_270749 {}
+http://bio2rdf.org/uniref:UniRef90_UPI00006A04B0-_6CAD6E http://uniref.bio2rdf.org/uniref:UniRef90_UPI00006A04B0-_6CAD6E {}

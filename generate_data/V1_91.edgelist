@@ -1,10 +1,6 @@
-http://dbpedia.org/resource/Avenida_Guerrero http://dbpedia.org/resource/Avenida_Guerrero {}
-http://dbpedia.org/resource/Avenida_Guerrero http://rdf.freebase.com/ns/m.04y7sn0 {}
-http://dbpedia.org/resource/Avenida_Guerrero http://wikidata.dbpedia.org/resource/Q4828108 {}
-http://dbpedia.org/resource/Avenida_Guerrero http://www.wikidata.org/entity/Q4828108 {}
-http://dbpedia.org/resource/Avenida_Guerrero http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000009d3e280 {}
-http://dbpedia.org/resource/Avenida_Guerrero http://rdf.freebase.com/ns/m/04y7sn0 {}
-http://dbpedia.org/resource/Avenida_Guerrero http://wikidata.org/entity/Q4828108 {}
-http://dbpedia.org/resource/Avenida_Guerrero http://www4.wiwiss.fu-berlin.de/flickrwrappr/photos/Avenida_Guerrero {}
-http://dbpedia.org/resource/Avenida_Vicente_Guerrero http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000009d3e280 {}
-http://rdf.freebase.com/ns/m.04y7sn0 http://www.wikidata.org/entity/Q4828108 {}
+http://dbpedia.org/resource/Category:Wikipedia_articles_needing_clarification_from_December_2012 http://sv.dbpedia.org/resource/Kategori:Förvirrande_2012-12 {}
+http://dbpedia.org/resource/Category:Wikipedia_articles_needing_clarification_from_December_2012 http://wikidata.dbpedia.org/resource/Q8921501 {}
+http://dbpedia.org/resource/Category:Wikipedia_articles_needing_clarification_from_December_2012 http://www.wikidata.org/entity/Q8921501 {}
+http://dbpedia.org/resource/Category:Wikipedia_articles_needing_clarification_from_December_2012 http://wikidata.org/entity/Q8921501 {}
+http://sv.dbpedia.org/resource/Kategori:F%C3%B6rvirrande_2012-12 http://sv.dbpedia.org/resource/Kategori:Förvirrande_2012-12 {}
+http://sv.dbpedia.org/resource/Kategori:Förvirrande_2012-12 http://www.wikidata.org/entity/Q8921501 {}

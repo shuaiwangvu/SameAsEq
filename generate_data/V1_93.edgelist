@@ -1,4 +1,10 @@
-http://hub.culturegraph.org/about/BVB-BV000166021 http://lod.b3kat.de/title/BV000166021 {}
-http://hub.culturegraph.org/about/BVB-BV000689580 http://lod.b3kat.de/title/BV000689580 {}
-http://lod.b3kat.de/isbn/398003433X http://lod.b3kat.de/title/BV000166021 {}
-http://lod.b3kat.de/isbn/398003433X http://lod.b3kat.de/title/BV000689580 {}
+http://dbpedia.org/resource/White_clipper http://dbpedia.org/resource/White_clipper {}
+http://dbpedia.org/resource/White_clipper http://rdf.freebase.com/ns/m.0b6fqtm {}
+http://dbpedia.org/resource/White_clipper http://wikidata.dbpedia.org/resource/Q7995589 {}
+http://dbpedia.org/resource/White_clipper http://www.wikidata.org/entity/Q7995589 {}
+http://dbpedia.org/resource/White_clipper http://rdf.freebase.com/ns/guid.9202a8c04000641f800000001466db33 {}
+http://dbpedia.org/resource/White_clipper http://rdf.freebase.com/ns/m/0b6fqtm {}
+http://dbpedia.org/resource/White_clipper http://wikidata.org/entity/Q7995589 {}
+http://dbpedia.org/resource/White_clipper http://www4.wiwiss.fu-berlin.de/flickrwrappr/photos/White_clipper {}
+http://dbpedia.org/resource/White_clipper http://mpii.de/yago/resource/White_clipper {}
+http://rdf.freebase.com/ns/m.0b6fqtm http://www.wikidata.org/entity/Q7995589 {}

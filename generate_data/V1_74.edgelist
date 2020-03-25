@@ -1,4 +1,7 @@
-http://hub.culturegraph.org/about/BVB-BV005738773 http://lod.b3kat.de/title/BV005738773 {}
-http://hub.culturegraph.org/about/BVB-BV006279978 http://lod.b3kat.de/title/BV006279978 {}
-http://lod.b3kat.de/isbn/071020597X http://lod.b3kat.de/title/BV005738773 {}
-http://lod.b3kat.de/isbn/071020597X http://lod.b3kat.de/title/BV006279978 {}
+http://dbpedia.org/resource/US_Open_Racquetball_Championships http://rdf.freebase.com/ns/m.06zrzmm {}
+http://dbpedia.org/resource/US_Open_Racquetball_Championships http://wikidata.dbpedia.org/resource/Q7875912 {}
+http://dbpedia.org/resource/US_Open_Racquetball_Championships http://www.wikidata.org/entity/Q7875912 {}
+http://dbpedia.org/resource/US_Open_Racquetball_Championships http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000debfa73 {}
+http://dbpedia.org/resource/US_Open_Racquetball_Championships http://wikidata.org/entity/Q7875912 {}
+http://dbpedia.org/resource/US_Open_Racquetball_Championships http://yago-knowledge.org/resource/US_Open_Racquetball_Championships {}
+http://rdf.freebase.com/ns/m.06zrzmm http://www.wikidata.org/entity/Q7875912 {}

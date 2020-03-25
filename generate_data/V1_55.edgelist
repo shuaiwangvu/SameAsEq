@@ -1,8 +1,4 @@
-http://dbpedia.org/resource/NRB http://it.dbpedia.org/resource/NRB {}
-http://dbpedia.org/resource/NRB http://pl.dbpedia.org/resource/NRB {}
-http://dbpedia.org/resource/NRB http://wikidata.dbpedia.org/resource/Q561998 {}
-http://dbpedia.org/resource/NRB http://www.wikidata.org/entity/Q561998 {}
-http://dbpedia.org/resource/NRB http://wikidata.org/entity/Q561998 {}
-http://it.dbpedia.org/resource/NRB http://pl.dbpedia.org/resource/NRB {}
-http://it.dbpedia.org/resource/NRB http://www.wikidata.org/entity/Q561998 {}
-http://pl.dbpedia.org/resource/NRB http://www.wikidata.org/entity/Q561998 {}
+http://dbpedia.org/resource/Purmorphamine http://sr.dbpedia.org/resource/Purmorfamin {}
+http://dbpedia.org/resource/Purmorphamine http://wikidata.dbpedia.org/resource/Q15409344 {}
+http://dbpedia.org/resource/Purmorphamine http://sh.dbpedia.org/resource/Purmorfamin {}
+http://dbpedia.org/resource/Purmorphamine http://wikidata.org/entity/Q15409344 {}

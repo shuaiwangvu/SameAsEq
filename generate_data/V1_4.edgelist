@@ -1,5 +1,6 @@
-http://de.dbpedia.org/resource/Kategorie:Kl%C4%8Dov http://de.dbpedia.org/resource/Kategorie:Klčov {}
-http://de.dbpedia.org/resource/Kategorie:Klčov http://sk.dbpedia.org/resource/Kategória:Klčov {}
-http://de.dbpedia.org/resource/Kategorie:Klčov http://www.wikidata.org/entity/Q8985323 {}
-http://sk.dbpedia.org/resource/Kateg%C3%B3ria:Kl%C4%8Dov http://sk.dbpedia.org/resource/Kategória:Klčov {}
-http://sk.dbpedia.org/resource/Kategória:Klčov http://www.wikidata.org/entity/Q8985323 {}
+http://dbpedia.org/resource/%C3%96mer_L%C3%BCtfi http://wikidata.dbpedia.org/resource/Q8078956 {}
+http://dbpedia.org/resource/%C3%96mer_L%C3%BCtfi http://www.wikidata.org/entity/Q8078956 {}
+http://dbpedia.org/resource/%C3%96mer_L%C3%BCtfi http://wikidata.org/entity/Q8078956 {}
+http://dbpedia.org/resource/%C3%96mer_L%C3%BCtfi http://dbpedia.org/resource/Ömer_Lütfi {}
+http://dbpedia.org/resource/Ömer_Lütfi http://wikidata.dbpedia.org/resource/Q8078956 {}
+http://dbpedia.org/resource/Ömer_Lütfi http://wikidata.org/entity/Q8078956 {}

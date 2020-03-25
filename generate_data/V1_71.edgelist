@@ -1,5 +1,11 @@
-http://nl.dbpedia.org/resource/%C3%96stra_Asmundtorp http://nl.dbpedia.org/resource/Östra_Asmundtorp {}
-http://nl.dbpedia.org/resource/Östra_Asmundtorp http://sv.dbpedia.org/resource/Östra_Asmundtorp {}
-http://nl.dbpedia.org/resource/Östra_Asmundtorp http://www.wikidata.org/entity/Q2089838 {}
-http://sv.dbpedia.org/resource/%C3%96stra_Asmundtorp http://sv.dbpedia.org/resource/Östra_Asmundtorp {}
-http://sv.dbpedia.org/resource/Östra_Asmundtorp http://www.wikidata.org/entity/Q2089838 {}
+http://dbpedia.org/resource/Cristian_Rodr%C3%ADguez_(boxer) http://rdf.freebase.com/ns/m.09gc8m3 {}
+http://dbpedia.org/resource/Cristian_Rodr%C3%ADguez_(boxer) http://wikidata.dbpedia.org/resource/Q5186255 {}
+http://dbpedia.org/resource/Cristian_Rodr%C3%ADguez_(boxer) http://www.wikidata.org/entity/Q5186255 {}
+http://dbpedia.org/resource/Cristian_Rodr%C3%ADguez_(boxer) http://wikidata.org/entity/Q5186255 {}
+http://dbpedia.org/resource/Cristian_Rodr%C3%ADguez_(boxer) http://yago-knowledge.org/resource/Cristian_Rodríguez_(boxer) {}
+http://dbpedia.org/resource/Cristian_Rodr%C3%ADguez_(boxer) http://dbpedia.org/resource/Cristian_Rodríguez_(boxer) {}
+http://dbpedia.org/resource/Cristian_Rodriguez_(boxer) http://rdf.freebase.com/ns/m.09gc8m3 {}
+http://dbpedia.org/resource/Cristian_Rodríguez_(boxer) http://wikidata.dbpedia.org/resource/Q5186255 {}
+http://dbpedia.org/resource/Cristian_Rodríguez_(boxer) http://wikidata.org/entity/Q5186255 {}
+http://dbpedia.org/resource/Cristian_Rodríguez_(boxer) http://rdf.freebase.com/ns/m.09gc8m3 {}
+http://rdf.freebase.com/ns/m.09gc8m3 http://www.wikidata.org/entity/Q5186255 {}

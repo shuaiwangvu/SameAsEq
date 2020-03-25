@@ -1,11 +1,6 @@
-http://dbpedia.org/resource/Herman_Miller_(writer) http://it.dbpedia.org/resource/Herman_Miller_(sceneggiatore) {}
-http://dbpedia.org/resource/Herman_Miller_(writer) http://rdf.freebase.com/ns/m.07cznd {}
-http://dbpedia.org/resource/Herman_Miller_(writer) http://wikidata.dbpedia.org/resource/Q3785221 {}
-http://dbpedia.org/resource/Herman_Miller_(writer) http://www.wikidata.org/entity/Q3785221 {}
-http://dbpedia.org/resource/Herman_Miller_(writer) http://wikidata.org/entity/Q3785221 {}
-http://dbpedia.org/resource/Herman_Miller_(writer) http://yago-knowledge.org/resource/Herman_Miller_(writer) {}
-http://dbpedia.org/resource/Herman_Miller_(writer) http://mpii.de/yago/resource/Herman_Miller_%28writer%29 {}
-http://dbpedia.org/resource/Herman_Miller_(writer) http://mpii.de/yago/resource/Herman_Miller_(writer) {}
-http://it.dbpedia.org/resource/Herman_Miller_(sceneggiatore) http://rdf.freebase.com/ns/m.07cznd {}
-http://it.dbpedia.org/resource/Herman_Miller_(sceneggiatore) http://www.wikidata.org/entity/Q3785221 {}
-http://rdf.freebase.com/ns/m.07cznd http://www.wikidata.org/entity/Q3785221 {}
+http://dbpedia.org/resource/Rudolf_Trenn http://rdf.freebase.com/ns/m.0h1dc_r {}
+http://dbpedia.org/resource/Rudolf_Trenn http://wikidata.dbpedia.org/resource/Q7377348 {}
+http://dbpedia.org/resource/Rudolf_Trenn http://www.wikidata.org/entity/Q7377348 {}
+http://dbpedia.org/resource/Rudolf_Trenn http://wikidata.org/entity/Q7377348 {}
+http://dbpedia.org/resource/Rudolf_Trenn http://yago-knowledge.org/resource/Rudolf_Trenn {}
+http://rdf.freebase.com/ns/m.0h1dc_r http://www.wikidata.org/entity/Q7377348 {}

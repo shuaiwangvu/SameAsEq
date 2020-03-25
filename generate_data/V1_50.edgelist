@@ -1,5 +1,12 @@
-http://es.dbpedia.org/resource/Aguar%C3%A1_Grande http://es.dbpedia.org/resource/Aguará_Grande {}
-http://es.dbpedia.org/resource/Aguará_Grande http://pt.dbpedia.org/resource/Aguará_Grande {}
-http://es.dbpedia.org/resource/Aguará_Grande http://www.wikidata.org/entity/Q8191867 {}
-http://pt.dbpedia.org/resource/Aguar%C3%A1_Grande http://pt.dbpedia.org/resource/Aguará_Grande {}
-http://pt.dbpedia.org/resource/Aguará_Grande http://www.wikidata.org/entity/Q8191867 {}
+http://dbpedia.org/resource/Juntas_de_Abastecimientos_y_Precios http://dbpedia.org/resource/Juntas_de_Abastecimientos_y_Precios {}
+http://dbpedia.org/resource/Juntas_de_Abastecimientos_y_Precios http://es.dbpedia.org/resource/Juntas_de_Abastecimiento_y_Control_de_Precios {}
+http://dbpedia.org/resource/Juntas_de_Abastecimientos_y_Precios http://rdf.freebase.com/ns/m.0dbs0y {}
+http://dbpedia.org/resource/Juntas_de_Abastecimientos_y_Precios http://wikidata.dbpedia.org/resource/Q11686931 {}
+http://dbpedia.org/resource/Juntas_de_Abastecimientos_y_Precios http://www.wikidata.org/entity/Q11686931 {}
+http://dbpedia.org/resource/Juntas_de_Abastecimientos_y_Precios http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000c5601d {}
+http://dbpedia.org/resource/Juntas_de_Abastecimientos_y_Precios http://rdf.freebase.com/ns/m/0dbs0y {}
+http://dbpedia.org/resource/Juntas_de_Abastecimientos_y_Precios http://wikidata.org/entity/Q11686931 {}
+http://dbpedia.org/resource/Juntas_de_Abastecimientos_y_Precios http://www4.wiwiss.fu-berlin.de/flickrwrappr/photos/Juntas_de_Abastecimientos_y_Precios {}
+http://es.dbpedia.org/resource/Juntas_de_Abastecimiento_y_Control_de_Precios http://rdf.freebase.com/ns/m.0dbs0y {}
+http://es.dbpedia.org/resource/Juntas_de_Abastecimiento_y_Control_de_Precios http://www.wikidata.org/entity/Q11686931 {}
+http://rdf.freebase.com/ns/m.0dbs0y http://www.wikidata.org/entity/Q11686931 {}

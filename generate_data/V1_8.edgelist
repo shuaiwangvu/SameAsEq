@@ -1,9 +1,7 @@
-http://dbpedia.org/resource/Value_Inquiry_Book_Series http://dbpedia.org/resource/Value_Inquiry_Book_Series {}
-http://dbpedia.org/resource/Value_Inquiry_Book_Series http://rdf.freebase.com/ns/m.0glqcr2 {}
-http://dbpedia.org/resource/Value_Inquiry_Book_Series http://wikidata.dbpedia.org/resource/Q7912736 {}
-http://dbpedia.org/resource/Value_Inquiry_Book_Series http://www.wikidata.org/entity/Q7912736 {}
-http://dbpedia.org/resource/Value_Inquiry_Book_Series http://rdf.freebase.com/ns/m/0glqcr2 {}
-http://dbpedia.org/resource/Value_Inquiry_Book_Series http://wikidata.org/entity/Q7912736 {}
-http://dbpedia.org/resource/Value_Inquiry_Book_Series http://yago-knowledge.org/resource/Value_Inquiry_Book_Series {}
-http://dbpedia.org/resource/Value_Inquiry_Book_Series http://www4.wiwiss.fu-berlin.de/flickrwrappr/photos/Value_Inquiry_Book_Series {}
-http://rdf.freebase.com/ns/m.0glqcr2 http://www.wikidata.org/entity/Q7912736 {}
+http://d-nb.info/gnd/120271109 http://viaf.org/viaf/13750 {}
+http://d-nb.info/gnd/130299634 http://viaf.org/viaf/54334304 {}
+http://d-nb.info/gnd/130299634 http://datos.bne.es/resource/XX1491013 {}
+http://d-nb.info/gnd/130299634 http://data.bibsys.no/data/notrbib/authorityentry/x04095399 {}
+http://data.bibsys.no/data/notrbib/authorityentry/x04095399 http://viaf.org/viaf/13750 {}
+http://data.bibsys.no/data/notrbib/authorityentry/x04095399 http://viaf.org/viaf/54334304 {}
+http://datos.bne.es/resource/XX1491013 http://viaf.org/viaf/54334304 {}

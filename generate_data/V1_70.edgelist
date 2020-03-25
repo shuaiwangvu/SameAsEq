@@ -1,5 +1,5 @@
-http://dbpedia.org/resource/Sorrell_Guppy http://rdf.freebase.com/ns/m.0h7mx7h {}
-http://dbpedia.org/resource/Sorrell_Guppy http://wikidata.dbpedia.org/resource/Q7563678 {}
-http://dbpedia.org/resource/Sorrell_Guppy http://www.wikidata.org/entity/Q7563678 {}
-http://dbpedia.org/resource/Sorrell_Guppy http://wikidata.org/entity/Q7563678 {}
-http://rdf.freebase.com/ns/m.0h7mx7h http://www.wikidata.org/entity/Q7563678 {}
+http://ja.dbpedia.org/resource/%E7%84%A6%E4%BA%AE http://ja.dbpedia.org/resource/焦亮 {}
+http://ja.dbpedia.org/resource/焦亮 http://www.wikidata.org/entity/Q10381509 {}
+http://ja.dbpedia.org/resource/焦亮 http://zh.dbpedia.org/resource/洪大全 {}
+http://www.wikidata.org/entity/Q10381509 http://zh.dbpedia.org/resource/洪大全 {}
+http://zh.dbpedia.org/resource/%E6%B4%AA%E5%A4%A7%E5%85%A8 http://zh.dbpedia.org/resource/洪大全 {}

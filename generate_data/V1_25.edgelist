@@ -1,5 +1,6 @@
-http://dbpedia.org/resource/Category:Odawa_people http://hr.dbpedia.org/resource/Kategorija:Ottawa_Indijanci {}
-http://dbpedia.org/resource/Category:Odawa_people http://wikidata.dbpedia.org/resource/Q9952310 {}
-http://dbpedia.org/resource/Category:Odawa_people http://www.wikidata.org/entity/Q9952310 {}
-http://dbpedia.org/resource/Category:Odawa_people http://wikidata.org/entity/Q9952310 {}
-http://hr.dbpedia.org/resource/Kategorija:Ottawa_Indijanci http://www.wikidata.org/entity/Q9952310 {}
+http://hub.culturegraph.org/about/BVB-BV001910665 http://lod.b3kat.de/title/BV001910665 {}
+http://hub.culturegraph.org/about/BVB-BV002856147 http://lod.b3kat.de/title/BV002856147 {}
+http://hub.culturegraph.org/about/BVB-BV005641975 http://lod.b3kat.de/title/BV005641975 {}
+http://lod.b3kat.de/title/BV001910665 http://lod.b3kat.de/title/BV002779561/vol/10 {}
+http://lod.b3kat.de/title/BV002779561/vol/10 http://lod.b3kat.de/title/BV002856147 {}
+http://lod.b3kat.de/title/BV002779561/vol/10 http://lod.b3kat.de/title/BV005641975 {}

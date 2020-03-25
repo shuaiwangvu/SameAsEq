@@ -1,5 +1,8 @@
-http://commons.dbpedia.org/resource/Category:2014_Wang-Zhang_Meeting http://dbpedia.org/resource/2014_Wang-Zhang_Meeting {}
-http://commons.dbpedia.org/resource/Category:2014_Wang-Zhang_Meeting http://zh.dbpedia.org/resource/王张会 {}
-http://dbpedia.org/resource/2014_Wang-Zhang_Meeting http://wikidata.dbpedia.org/resource/Q15730149 {}
-http://dbpedia.org/resource/2014_Wang-Zhang_Meeting http://zh.dbpedia.org/resource/王张会 {}
-http://dbpedia.org/resource/2014_Wang-Zhang_Meeting http://wikidata.org/entity/Q15730149 {}
+http://it.dbpedia.org/resource/Altarello_(Giarre) http://nl.dbpedia.org/resource/Altarello {}
+http://it.dbpedia.org/resource/Altarello_(Giarre) http://scn.dbpedia.org/resource/Atareddu {}
+http://it.dbpedia.org/resource/Altarello_(Giarre) http://sr.dbpedia.org/resource/Altarello,_Catania {}
+http://it.dbpedia.org/resource/Altarello_(Giarre) http://www.wikidata.org/entity/Q3613142 {}
+http://nl.dbpedia.org/resource/Altarello http://scn.dbpedia.org/resource/Atareddu {}
+http://nl.dbpedia.org/resource/Altarello http://sr.dbpedia.org/resource/Altarello,_Catania {}
+http://nl.dbpedia.org/resource/Altarello http://www.wikidata.org/entity/Q3613142 {}
+http://scn.dbpedia.org/resource/Atareddu http://www.wikidata.org/entity/Q3613142 {}

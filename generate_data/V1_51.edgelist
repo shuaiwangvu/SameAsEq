@@ -1,5 +1,9 @@
-http://bg.dbpedia.org/resource/%D0%94%D1%80%D1%83%D1%88%D0%BA%D0%B0 http://bg.dbpedia.org/resource/Друшка {}
-http://bg.dbpedia.org/resource/Друшка http://mk.dbpedia.org/resource/Друшка {}
-http://bg.dbpedia.org/resource/Друшка http://www.wikidata.org/entity/Q12279177 {}
-http://mk.dbpedia.org/resource/%D0%94%D1%80%D1%83%D1%88%D0%BA%D0%B0 http://mk.dbpedia.org/resource/Друшка {}
-http://mk.dbpedia.org/resource/Друшка http://www.wikidata.org/entity/Q12279177 {}
+http://dbpedia.org/resource/Mildred_Fox http://rdf.freebase.com/ns/m.0cygkw {}
+http://dbpedia.org/resource/Mildred_Fox http://wikidata.dbpedia.org/resource/Q6850969 {}
+http://dbpedia.org/resource/Mildred_Fox http://www.wikidata.org/entity/Q6850969 {}
+http://dbpedia.org/resource/Mildred_Fox http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000beba3b {}
+http://dbpedia.org/resource/Mildred_Fox http://umbel.org/umbel/ne/wikipedia/Mildred_Fox {}
+http://dbpedia.org/resource/Mildred_Fox http://wikidata.org/entity/Q6850969 {}
+http://dbpedia.org/resource/Mildred_Fox http://yago-knowledge.org/resource/Mildred_Fox {}
+http://dbpedia.org/resource/Mildred_Fox http://mpii.de/yago/resource/Mildred_Fox {}
+http://rdf.freebase.com/ns/m.0cygkw http://www.wikidata.org/entity/Q6850969 {}

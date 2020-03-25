@@ -1,7 +1,4 @@
-http://dbpedia.org/resource/American_Blues_'Is_Here' http://rdf.freebase.com/ns/m.02pb665 {}
-http://dbpedia.org/resource/American_Blues_'Is_Here' http://wikidata.dbpedia.org/resource/Q4743190 {}
-http://dbpedia.org/resource/American_Blues_'Is_Here' http://www.wikidata.org/entity/Q4743190 {}
-http://dbpedia.org/resource/American_Blues_'Is_Here' http://wikidata.org/entity/Q4743190 {}
-http://dbpedia.org/resource/American_Blues_'Is_Here' http://yago-knowledge.org/resource/American_Blues_'Is_Here' {}
-http://dbpedia.org/resource/American_Blues_'Is_Here' http://mpii.de/yago/resource/American_Blues_'Is_Here' {}
-http://rdf.freebase.com/ns/m.02pb665 http://www.wikidata.org/entity/Q4743190 {}
+http://hub.culturegraph.org/about/BVB-BV003199742 http://lod.b3kat.de/title/BV003199742 {}
+http://hub.culturegraph.org/about/BVB-BV003216219 http://lod.b3kat.de/title/BV003216219 {}
+http://lod.b3kat.de/title/BV000895572/vol/1016 http://lod.b3kat.de/title/BV003199742 {}
+http://lod.b3kat.de/title/BV000895572/vol/1016 http://lod.b3kat.de/title/BV003216219 {}

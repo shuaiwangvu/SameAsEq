@@ -1,5 +1,6 @@
-http://dbpedia.org/resource/Tennessee_State_Route_49 http://rdf.freebase.com/ns/m.0n53kb3 {}
-http://dbpedia.org/resource/Tennessee_State_Route_49 http://wikidata.dbpedia.org/resource/Q2503277 {}
-http://dbpedia.org/resource/Tennessee_State_Route_49 http://www.wikidata.org/entity/Q2503277 {}
-http://dbpedia.org/resource/Tennessee_State_Route_49 http://wikidata.org/entity/Q2503277 {}
-http://rdf.freebase.com/ns/m.0n53kb3 http://www.wikidata.org/entity/Q2503277 {}
+http://de.dbpedia.org/resource/Bolschaja http://pl.dbpedia.org/resource/Bolszaja {}
+http://de.dbpedia.org/resource/Bolschaja http://ru.dbpedia.org/resource/Большая {}
+http://de.dbpedia.org/resource/Bolschaja http://www.wikidata.org/entity/Q3737265 {}
+http://pl.dbpedia.org/resource/Bolszaja http://ru.dbpedia.org/resource/Большая {}
+http://ru.dbpedia.org/resource/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F http://ru.dbpedia.org/resource/Большая {}
+http://ru.dbpedia.org/resource/Большая http://www.wikidata.org/entity/Q3737265 {}

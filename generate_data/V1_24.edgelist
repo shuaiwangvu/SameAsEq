@@ -1,9 +1,6 @@
-http://dbpedia.org/resource/2002_Roy_Keane_Incident http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000bed50cc {}
-http://dbpedia.org/resource/2002_Roy_Keane_Saipan_Incident http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000bed50cc {}
-http://dbpedia.org/resource/2002_Roy_Keane_Saipan_incident http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000bed50cc {}
-http://dbpedia.org/resource/2002_Roy_Keane_incident http://dbpedia.org/resource/2002_Roy_Keane_incident {}
-http://dbpedia.org/resource/2002_Roy_Keane_incident http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000bed50cc {}
-http://dbpedia.org/resource/2002_Roy_Keane_incident http://rdf.freebase.com/ns/m/05zvn6d {}
-http://dbpedia.org/resource/2002_Roy_Keane_incident http://www4.wiwiss.fu-berlin.de/flickrwrappr/photos/2002_Roy_Keane_incident {}
-http://dbpedia.org/resource/Ireland_National_Football_Team/Roy_Keane_Saipan_incident http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000bed50cc {}
-http://dbpedia.org/resource/Republic_of_Ireland_National_Football_Team/Roy_Keane_Saipan_incident http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000bed50cc {}
+http://dbpedia.org/resource/Visaal http://rdf.freebase.com/ns/m.0j3cvpc {}
+http://dbpedia.org/resource/Visaal http://wikidata.dbpedia.org/resource/Q7935557 {}
+http://dbpedia.org/resource/Visaal http://www.wikidata.org/entity/Q7935557 {}
+http://dbpedia.org/resource/Visaal http://wikidata.org/entity/Q7935557 {}
+http://dbpedia.org/resource/Visaal http://yago-knowledge.org/resource/Visaal {}
+http://rdf.freebase.com/ns/m.0j3cvpc http://www.wikidata.org/entity/Q7935557 {}

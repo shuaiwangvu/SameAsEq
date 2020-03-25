@@ -1,8 +1,5 @@
-http://hub.culturegraph.org/about/BVB-BV002344538 http://lod.b3kat.de/title/BV002344538 {}
-http://hub.culturegraph.org/about/BVB-BV005316250 http://lod.b3kat.de/title/BV005316250 {}
-http://hub.culturegraph.org/about/BVB-BV008588430 http://lod.b3kat.de/title/BV008588430 {}
-http://lod.b3kat.de/isbn/0471706906 http://lod.b3kat.de/title/BV005316250 {}
-http://lod.b3kat.de/isbn/0471706906 http://lod.b3kat.de/title/BV008588430 {}
-http://lod.b3kat.de/title/BV002323767/vol/3 http://lod.b3kat.de/title/BV002344538 {}
-http://lod.b3kat.de/title/BV002323767/vol/3 http://lod.b3kat.de/title/BV008588430 {}
-http://lod.b3kat.de/title/BV005316250 http://lod.b3kat.de/title/BV006660511/vol/3 {}
+http://dbpedia.org/resource/Maid_of_Gold http://wikidata.dbpedia.org/resource/Q6735302 {}
+http://dbpedia.org/resource/Maid_of_Gold http://www.wikidata.org/entity/Q6735302 {}
+http://dbpedia.org/resource/Maid_of_Gold http://rdf.freebase.com/ns/m.0knvrj_ {}
+http://dbpedia.org/resource/Maid_of_Gold http://wikidata.org/entity/Q6735302 {}
+http://rdf.freebase.com/ns/m.01pl_l2 http://www.wikidata.org/entity/Q6735302 {}

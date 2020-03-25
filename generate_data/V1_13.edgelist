@@ -1,10 +1,4 @@
-http://ceb.dbpedia.org/resource/Tetrastemma_angulatus http://nl.dbpedia.org/resource/Tetrastemma_angulatus {}
-http://ceb.dbpedia.org/resource/Tetrastemma_angulatus http://sv.dbpedia.org/resource/Tetrastemma_angulatus {}
-http://ceb.dbpedia.org/resource/Tetrastemma_angulatus http://war.dbpedia.org/resource/Tetrastemma_angulatus {}
-http://ceb.dbpedia.org/resource/Tetrastemma_angulatus http://www.wikidata.org/entity/Q1980149 {}
-http://nl.dbpedia.org/resource/Tetrastemma_angulatus http://sv.dbpedia.org/resource/Tetrastemma_angulatus {}
-http://nl.dbpedia.org/resource/Tetrastemma_angulatus http://war.dbpedia.org/resource/Tetrastemma_angulatus {}
-http://nl.dbpedia.org/resource/Tetrastemma_angulatus http://www.wikidata.org/entity/Q1980149 {}
-http://sv.dbpedia.org/resource/Tetrastemma_angulatus http://war.dbpedia.org/resource/Tetrastemma_angulatus {}
-http://sv.dbpedia.org/resource/Tetrastemma_angulatus http://www.wikidata.org/entity/Q1980149 {}
-http://war.dbpedia.org/resource/Tetrastemma_angulatus http://www.wikidata.org/entity/Q1980149 {}
+http://hub.culturegraph.org/about/BVB-BV000565269 http://lod.b3kat.de/title/BV000565269 {}
+http://hub.culturegraph.org/about/BVB-BV005918387 http://lod.b3kat.de/title/BV005918387 {}
+http://lod.b3kat.de/isbn/3883221813 http://lod.b3kat.de/title/BV000565269 {}
+http://lod.b3kat.de/isbn/3883221813 http://lod.b3kat.de/title/BV005918387 {}

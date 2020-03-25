@@ -1,6 +1,5 @@
-http://dbpedia.org/resource/Lancelot_Robinson http://rdf.freebase.com/ns/m.0hr8zqn {}
-http://dbpedia.org/resource/Lancelot_Robinson http://wikidata.dbpedia.org/resource/Q6483636 {}
-http://dbpedia.org/resource/Lancelot_Robinson http://www.wikidata.org/entity/Q6483636 {}
-http://dbpedia.org/resource/Lancelot_Robinson http://wikidata.org/entity/Q6483636 {}
-http://dbpedia.org/resource/Lancelot_Robinson http://yago-knowledge.org/resource/Lancelot_Robinson {}
-http://rdf.freebase.com/ns/m.0hr8zqn http://www.wikidata.org/entity/Q6483636 {}
+http://dbpedia.org/resource/Norwalk_Transit_(California) http://rdf.freebase.com/ns/m.027_1rj {}
+http://dbpedia.org/resource/Norwalk_Transit_(California) http://wikidata.dbpedia.org/resource/Q7060799 {}
+http://dbpedia.org/resource/Norwalk_Transit_(California) http://www.wikidata.org/entity/Q7060799 {}
+http://dbpedia.org/resource/Norwalk_Transit_(California) http://wikidata.org/entity/Q7060799 {}
+http://rdf.freebase.com/ns/m.027_1rj http://www.wikidata.org/entity/Q7060799 {}

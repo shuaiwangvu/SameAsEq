@@ -1,4 +1,6 @@
-http://hub.culturegraph.org/about/BVB-BV005016176 http://lod.b3kat.de/title/BV005016176 {}
-http://lod.b3kat.de/isbn/3768199789 http://lod.b3kat.de/title/BV005016176 {}
-http://lod.b3kat.de/title/BV002478692/vol/1 http://lod.b3kat.de/title/BV005016176 {}
-http://lod.b3kat.de/title/BV002729736/vol/2324 http://lod.b3kat.de/title/BV005016176 {}
+http://dbpedia.org/resource/Philipp%2C_Duke_of_Saxe-Merseburg-Lauchst%C3%A4dt http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000006b5d600 {}
+http://dbpedia.org/resource/Philipp%2C_Duke_of_Saxe-Merseburg-Lauchst%C3%A4tt http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000006b5d600 {}
+http://dbpedia.org/resource/Philipp%2C_Duke_of_Saxe-Merseburg-Lauchstadt http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000006b5d600 {}
+http://dbpedia.org/resource/Philipp%2C_Duke_of_Saxe-Merseburg-Lauchstaedt http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000006b5d600 {}
+http://dbpedia.org/resource/Philipp%2C_Duke_of_Saxe-Merseburg-Lauchstaett http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000006b5d600 {}
+http://dbpedia.org/resource/Philipp%2C_Duke_of_Saxe-Merseburg-Lauchstatt http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000006b5d600 {}

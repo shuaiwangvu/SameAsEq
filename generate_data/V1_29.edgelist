@@ -1,5 +1,12 @@
-http://hub.culturegraph.org/about/BVB-BV000263639 http://lod.b3kat.de/title/BV000263639 {}
-http://hub.culturegraph.org/about/BVB-BV008593778 http://lod.b3kat.de/title/BV008593778 {}
-http://lod.b3kat.de/isbn/3460198532 http://lod.b3kat.de/title/BV008593778 {}
-http://lod.b3kat.de/title/BV000014859/vol/1985 http://lod.b3kat.de/title/BV000263639 {}
-http://lod.b3kat.de/title/BV000014859/vol/1985 http://lod.b3kat.de/title/BV008593778 {}
+http://ceb.dbpedia.org/resource/Hymedesmia_jamaicensis http://nl.dbpedia.org/resource/Hymedesmia_(Hymedesmia)_jamaicensis {}
+http://ceb.dbpedia.org/resource/Hymedesmia_jamaicensis http://sv.dbpedia.org/resource/Hymedesmia_jamaicensis {}
+http://ceb.dbpedia.org/resource/Hymedesmia_jamaicensis http://war.dbpedia.org/resource/Hymedesmia_jamaicensis {}
+http://ceb.dbpedia.org/resource/Hymedesmia_jamaicensis http://www.wikidata.org/entity/Q2083569 {}
+http://id.dbpedia.org/resource/Hymedesmia_(Hymedesmia)_jamaicensis http://nl.dbpedia.org/resource/Hymedesmia_(Hymedesmia)_jamaicensis {}
+http://id.dbpedia.org/resource/Hymedesmia_(Hymedesmia)_jamaicensis http://sv.dbpedia.org/resource/Hymedesmia_jamaicensis {}
+http://nl.dbpedia.org/resource/Hymedesmia_(Hymedesmia)_jamaicensis http://sv.dbpedia.org/resource/Hymedesmia_jamaicensis {}
+http://nl.dbpedia.org/resource/Hymedesmia_(Hymedesmia)_jamaicensis http://war.dbpedia.org/resource/Hymedesmia_jamaicensis {}
+http://nl.dbpedia.org/resource/Hymedesmia_(Hymedesmia)_jamaicensis http://www.wikidata.org/entity/Q2083569 {}
+http://sv.dbpedia.org/resource/Hymedesmia_jamaicensis http://war.dbpedia.org/resource/Hymedesmia_jamaicensis {}
+http://sv.dbpedia.org/resource/Hymedesmia_jamaicensis http://www.wikidata.org/entity/Q2083569 {}
+http://war.dbpedia.org/resource/Hymedesmia_jamaicensis http://www.wikidata.org/entity/Q2083569 {}

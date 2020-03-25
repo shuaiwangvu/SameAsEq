@@ -1,12 +1,5 @@
-http://ja.dbpedia.org/resource/%E6%A1%93%E5%85%AC_(%E5%AE%8B) http://ja.dbpedia.org/resource/桓公_(宋) {}
-http://ja.dbpedia.org/resource/桓公_(宋) http://vi.dbpedia.org/resource/Tống_Hoàn_công_(Xuân_Thu) {}
-http://ja.dbpedia.org/resource/桓公_(宋) http://www.wikidata.org/entity/Q890086 {}
-http://ja.dbpedia.org/resource/桓公_(宋) http://zh.dbpedia.org/resource/宋桓公_(春秋) {}
-http://ja.dbpedia.org/resource/桓公_(春秋宋) http://ko.dbpedia.org/resource/송_환공_(어열) {}
-http://ja.dbpedia.org/resource/桓公_(春秋宋) http://zh.dbpedia.org/resource/宋桓公_(春秋) {}
-http://ko.dbpedia.org/resource/송_환공_(어열) http://zh.dbpedia.org/resource/宋桓公_(春秋) {}
-http://vi.dbpedia.org/resource/T%E1%BB%91ng_Ho%C3%A0n_c%C3%B4ng_(Xu%C3%A2n_Thu) http://vi.dbpedia.org/resource/Tống_Hoàn_công_(Xuân_Thu) {}
-http://vi.dbpedia.org/resource/Tống_Hoàn_công_(Xuân_Thu) http://www.wikidata.org/entity/Q890086 {}
-http://vi.dbpedia.org/resource/Tống_Hoàn_công_(Xuân_Thu) http://zh.dbpedia.org/resource/宋桓公_(春秋) {}
-http://www.wikidata.org/entity/Q890086 http://zh.dbpedia.org/resource/宋桓公_(春秋) {}
-http://zh.dbpedia.org/resource/%E5%AE%8B%E6%A1%93%E5%85%AC_(%E6%98%A5%E7%A7%8B) http://zh.dbpedia.org/resource/宋桓公_(春秋) {}
+http://fa.dbpedia.org/resource/%D8%B3%D8%B1%D8%A7%D8%AC_%D9%82%D9%85%D8%B1%DB%8C http://fa.dbpedia.org/resource/سراج_قمری {}
+http://fa.dbpedia.org/resource/سراج_قمری http://mzn.dbpedia.org/resource/سراج_قمری {}
+http://fa.dbpedia.org/resource/سراج_قمری http://www.wikidata.org/entity/Q6410005 {}
+http://mzn.dbpedia.org/resource/%D8%B3%D8%B1%D8%A7%D8%AC_%D9%82%D9%85%D8%B1%DB%8C http://mzn.dbpedia.org/resource/سراج_قمری {}
+http://mzn.dbpedia.org/resource/سراج_قمری http://www.wikidata.org/entity/Q6410005 {}

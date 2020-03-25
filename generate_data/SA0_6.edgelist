@@ -1,8 +1,3 @@
-http://dbpedia.org/resource/George_Grant_(British_politician) http://rdf.freebase.com/ns/m.03hwt1 {}
-http://dbpedia.org/resource/George_Grant_(British_politician) http://wikidata.dbpedia.org/resource/Q5539851 {}
-http://dbpedia.org/resource/George_Grant_(British_politician) http://www.wikidata.org/entity/Q5539851 {}
-http://dbpedia.org/resource/George_Grant_(British_politician) http://wikidata.org/entity/Q5539851 {}
-http://dbpedia.org/resource/George_Grant_(UK_politician) http://rdf.freebase.com/ns/m.03hwt1 {}
-http://dbpedia.org/resource/George_Grant_(UK_politician) http://yago-knowledge.org/resource/George_Grant_(UK_politician) {}
-http://dbpedia.org/resource/George_Grant_(UK_politician) http://mpii.de/yago/resource/George_Grant_%28UK_politician%29 {}
-http://rdf.freebase.com/ns/m.03hwt1 http://www.wikidata.org/entity/Q5539851 {}
+http://dbpedia.org/resource/National_Register_of_Historic_Places_listings_in_Cuyahoga_County,_Ohio http://wikidata.dbpedia.org/resource/Q6975858 {}
+http://dbpedia.org/resource/National_Register_of_Historic_Places_listings_in_Cuyahoga_County,_Ohio http://www.wikidata.org/entity/Q6975858 {}
+http://dbpedia.org/resource/National_Register_of_Historic_Places_listings_in_Cuyahoga_County,_Ohio http://wikidata.org/entity/Q6975858 {}

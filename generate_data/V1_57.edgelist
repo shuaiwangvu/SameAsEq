@@ -1,9 +1,4 @@
-http://dbpedia.org/resource/Leidangen http://dbpedia.org/resource/Leidangen {}
-http://dbpedia.org/resource/Leidangen http://rdf.freebase.com/ns/m.0gmddjx {}
-http://dbpedia.org/resource/Leidangen http://wikidata.dbpedia.org/resource/Q6519319 {}
-http://dbpedia.org/resource/Leidangen http://www.wikidata.org/entity/Q6519319 {}
-http://dbpedia.org/resource/Leidangen http://rdf.freebase.com/ns/m/0gmddjx {}
-http://dbpedia.org/resource/Leidangen http://wikidata.org/entity/Q6519319 {}
-http://dbpedia.org/resource/Leidangen http://yago-knowledge.org/resource/Leidangen {}
-http://dbpedia.org/resource/Leidangen http://www4.wiwiss.fu-berlin.de/flickrwrappr/photos/Leidangen {}
-http://rdf.freebase.com/ns/m.0gmddjx http://www.wikidata.org/entity/Q6519319 {}
+http://hub.culturegraph.org/about/BVB-BV007945247 http://lod.b3kat.de/title/BV007945247 {}
+http://lod.b3kat.de/isbn/3793009858 http://lod.b3kat.de/title/BV007945247 {}
+http://lod.b3kat.de/title/BV000003435/vol/65 http://lod.b3kat.de/title/BV007945247 {}
+http://lod.b3kat.de/title/BV007945244/vol/2 http://lod.b3kat.de/title/BV007945247 {}

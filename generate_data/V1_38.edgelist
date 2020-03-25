@@ -1,9 +1,7 @@
-http://dbpedia.org/resource/Punjabi_stageshow http://dbpedia.org/resource/Punjabi_stageshow {}
-http://dbpedia.org/resource/Punjabi_stageshow http://rdf.freebase.com/ns/m.05p2r8j {}
-http://dbpedia.org/resource/Punjabi_stageshow http://wikidata.dbpedia.org/resource/Q7260353 {}
-http://dbpedia.org/resource/Punjabi_stageshow http://www.wikidata.org/entity/Q7260353 {}
-http://dbpedia.org/resource/Punjabi_stageshow http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000b515d10 {}
-http://dbpedia.org/resource/Punjabi_stageshow http://rdf.freebase.com/ns/m/05p2r8j {}
-http://dbpedia.org/resource/Punjabi_stageshow http://wikidata.org/entity/Q7260353 {}
-http://dbpedia.org/resource/Punjabi_stageshow http://www4.wiwiss.fu-berlin.de/flickrwrappr/photos/Punjabi_stageshow {}
-http://rdf.freebase.com/ns/m.05p2r8j http://www.wikidata.org/entity/Q7260353 {}
+http://dbpedia.org/resource/Claude_Morin_(ADQ) http://rdf.freebase.com/ns/m.02qc7jt {}
+http://dbpedia.org/resource/Claude_Morin_(ADQ) http://mpii.de/yago/resource/Claude_Morin_(ADQ) {}
+http://dbpedia.org/resource/Claude_Morin_(ADQ_MNA) http://rdf.freebase.com/ns/m.02qc7jt {}
+http://dbpedia.org/resource/Claude_Morin_(ADQ_politician) http://rdf.freebase.com/ns/m.02qc7jt {}
+http://dbpedia.org/resource/Claude_Morin_(ADQ_politician) http://www.wikidata.org/entity/Q5128966 {}
+http://dbpedia.org/resource/Claude_Morin_(ADQ_politician) http://yago-knowledge.org/resource/Claude_Morin_(ADQ_politician) {}
+http://rdf.freebase.com/ns/m.02qc7jt http://www.wikidata.org/entity/Q5128966 {}

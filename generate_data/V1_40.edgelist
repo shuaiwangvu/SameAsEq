@@ -1,8 +1,8 @@
-http://ca.dbpedia.org/resource/C%C3%B2rit_(fill_de_Zeus) http://ca.dbpedia.org/resource/Còrit_(fill_de_Zeus) {}
-http://ca.dbpedia.org/resource/Còrit_(fill_de_Zeus) http://pl.dbpedia.org/resource/Korytos {}
-http://ca.dbpedia.org/resource/Còrit_(fill_de_Zeus) http://ru.dbpedia.org/resource/Кориф_(сын_Зевса) {}
-http://ca.dbpedia.org/resource/Còrit_(fill_de_Zeus) http://www.wikidata.org/entity/Q4233098 {}
-http://pl.dbpedia.org/resource/Korytos http://ru.dbpedia.org/resource/Кориф_(сын_Зевса) {}
-http://pl.dbpedia.org/resource/Korytos http://www.wikidata.org/entity/Q4233098 {}
-http://ru.dbpedia.org/resource/%D0%9A%D0%BE%D1%80%D0%B8%D1%84_(%D1%81%D1%8B%D0%BD_%D0%97%D0%B5%D0%B2%D1%81%D0%B0) http://ru.dbpedia.org/resource/Кориф_(сын_Зевса) {}
-http://ru.dbpedia.org/resource/Кориф_(сын_Зевса) http://www.wikidata.org/entity/Q4233098 {}
+http://dbpedia.org/resource/Metasequoia_foxii http://fi.dbpedia.org/resource/Metasequoia_foxii {}
+http://dbpedia.org/resource/Metasequoia_foxii http://rdf.freebase.com/ns/m.0hhrgdz {}
+http://dbpedia.org/resource/Metasequoia_foxii http://wikidata.dbpedia.org/resource/Q1823084 {}
+http://dbpedia.org/resource/Metasequoia_foxii http://www.wikidata.org/entity/Q1823084 {}
+http://dbpedia.org/resource/Metasequoia_foxii http://wikidata.org/entity/Q1823084 {}
+http://dbpedia.org/resource/Metasequoia_foxii http://yago-knowledge.org/resource/Metasequoia_foxii {}
+http://fi.dbpedia.org/resource/Metasequoia_foxii http://www.wikidata.org/entity/Q1823084 {}
+http://rdf.freebase.com/ns/m.0hhrgdz http://www.wikidata.org/entity/Q1823084 {}

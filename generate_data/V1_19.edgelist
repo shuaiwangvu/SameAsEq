@@ -1,5 +1,7 @@
-http://id.dbpedia.org/resource/Dadapayam,_Suruh,_Semarang http://jv.dbpedia.org/resource/Dadapayam,_Suruh,_Kabupaten_Semarang {}
-http://id.dbpedia.org/resource/Dadapayam,_Suruh,_Semarang http://jv.dbpedia.org/resource/Dadapayam,_Suruh,_Semarang {}
-http://id.dbpedia.org/resource/Dadapayam,_Suruh,_Semarang http://nl.dbpedia.org/resource/Dadapayam {}
-http://id.dbpedia.org/resource/Dadapayam,_Suruh,_Semarang http://www.wikidata.org/entity/Q11196973 {}
-http://jv.dbpedia.org/resource/Dadapayam,_Suruh,_Semarang http://www.wikidata.org/entity/Q11196973 {}
+http://ceb.dbpedia.org/resource/Ptygura_brevis http://sv.dbpedia.org/resource/Ptygura_brevis {}
+http://ceb.dbpedia.org/resource/Ptygura_brevis http://war.dbpedia.org/resource/Ptygura_brevis {}
+http://ceb.dbpedia.org/resource/Ptygura_brevis http://www.wikidata.org/entity/Q4179818 {}
+http://nl.dbpedia.org/resource/Ptygura_brevis http://sv.dbpedia.org/resource/Ptygura_brevis {}
+http://sv.dbpedia.org/resource/Ptygura_brevis http://war.dbpedia.org/resource/Ptygura_brevis {}
+http://sv.dbpedia.org/resource/Ptygura_brevis http://www.wikidata.org/entity/Q4179818 {}
+http://war.dbpedia.org/resource/Ptygura_brevis http://www.wikidata.org/entity/Q4179818 {}

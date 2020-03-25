@@ -1,9 +1,5 @@
-http://dbpedia.org/resource/I'm_Asking_You_Sergeant,_Where's_Mine http://rdf.freebase.com/ns/m.0l106c {}
-http://dbpedia.org/resource/I'm_Asking_You_Sergeant,_Where's_Mine http://wikidata.dbpedia.org/resource/Q5966151 {}
-http://dbpedia.org/resource/I'm_Asking_You_Sergeant,_Where's_Mine http://www.wikidata.org/entity/Q5966151 {}
-http://dbpedia.org/resource/I'm_Asking_You_Sergeant,_Where's_Mine http://wikidata.org/entity/Q5966151 {}
-http://dbpedia.org/resource/I'm_Asking_You_Sergeant,_Where's_Mine http://yago-knowledge.org/resource/I'm_Asking_You_Sergeant,_Where's_Mine {}
-http://dbpedia.org/resource/I'm_Asking_You_Sergeant,_Where's_Mine http://mpii.de/yago/resource/I%27m_Asking_You_Sergeant,_Where%27s_Mine {}
-http://dbpedia.org/resource/I'm_Asking_You_Sergeant,_Where's_Mine http://mpii.de/yago/resource/I'm_Asking_You_Sergeant,_Where's_Mine {}
-http://dbpedia.org/resource/Sergeant,_Where's_Mine http://rdf.freebase.com/ns/m.0l106c {}
-http://rdf.freebase.com/ns/m.0l106c http://www.wikidata.org/entity/Q5966151 {}
+http://dbpedia.org/resource/Philippine_Senate_election,_1969 http://rdf.freebase.com/ns/m.0fqpv86 {}
+http://dbpedia.org/resource/Philippine_Senate_election,_1969 http://wikidata.dbpedia.org/resource/Q7185237 {}
+http://dbpedia.org/resource/Philippine_Senate_election,_1969 http://www.wikidata.org/entity/Q7185237 {}
+http://dbpedia.org/resource/Philippine_Senate_election,_1969 http://wikidata.org/entity/Q7185237 {}
+http://rdf.freebase.com/ns/m.0fqpv86 http://www.wikidata.org/entity/Q7185237 {}

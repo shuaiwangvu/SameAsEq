@@ -1,9 +1,6 @@
-http://dbpedia.org/resource/Nazrul_Mancha http://dbpedia.org/resource/Nazrul_Mancha {}
-http://dbpedia.org/resource/Nazrul_Mancha http://rdf.freebase.com/ns/m.0gmd99l {}
-http://dbpedia.org/resource/Nazrul_Mancha http://wikidata.dbpedia.org/resource/Q6983558 {}
-http://dbpedia.org/resource/Nazrul_Mancha http://www.wikidata.org/entity/Q6983558 {}
-http://dbpedia.org/resource/Nazrul_Mancha http://rdf.freebase.com/ns/m/0gmd99l {}
-http://dbpedia.org/resource/Nazrul_Mancha http://wikidata.org/entity/Q6983558 {}
-http://dbpedia.org/resource/Nazrul_Mancha http://yago-knowledge.org/resource/Nazrul_Mancha {}
-http://dbpedia.org/resource/Nazrul_Mancha http://www4.wiwiss.fu-berlin.de/flickrwrappr/photos/Nazrul_Mancha {}
-http://rdf.freebase.com/ns/m.0gmd99l http://www.wikidata.org/entity/Q6983558 {}
+http://dbpedia.org/resource/Category:Buildings_and_structures_in_Kent_County,_Delaware http://fa.dbpedia.org/resource/رده:ساختمان‌ها_و_سازه‌ها_در_کنت {}
+http://dbpedia.org/resource/Category:Buildings_and_structures_in_Kent_County,_Delaware http://wikidata.dbpedia.org/resource/Q8321882 {}
+http://dbpedia.org/resource/Category:Buildings_and_structures_in_Kent_County,_Delaware http://www.wikidata.org/entity/Q8321882 {}
+http://dbpedia.org/resource/Category:Buildings_and_structures_in_Kent_County,_Delaware http://wikidata.org/entity/Q8321882 {}
+http://fa.dbpedia.org/resource/%D8%B1%D8%AF%D9%87:%D8%B3%D8%A7%D8%AE%D8%AA%D9%85%D8%A7%D9%86%E2%80%8C%D9%87%D8%A7_%D9%88_%D8%B3%D8%A7%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7_%D8%AF%D8%B1_%DA%A9%D9%86%D8%AA http://fa.dbpedia.org/resource/رده:ساختمان‌ها_و_سازه‌ها_در_کنت {}
+http://fa.dbpedia.org/resource/رده:ساختمان‌ها_و_سازه‌ها_در_کنت http://www.wikidata.org/entity/Q8321882 {}

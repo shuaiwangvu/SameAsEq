@@ -1,10 +1,5 @@
-http://ceb.dbpedia.org/resource/Rhizothrix_pubescens http://nl.dbpedia.org/resource/Rhizothrix_pubescens {}
-http://ceb.dbpedia.org/resource/Rhizothrix_pubescens http://sv.dbpedia.org/resource/Rhizothrix_pubescens {}
-http://ceb.dbpedia.org/resource/Rhizothrix_pubescens http://war.dbpedia.org/resource/Rhizothrix_pubescens {}
-http://ceb.dbpedia.org/resource/Rhizothrix_pubescens http://www.wikidata.org/entity/Q6565447 {}
-http://nl.dbpedia.org/resource/Rhizothrix_pubescens http://sv.dbpedia.org/resource/Rhizothrix_pubescens {}
-http://nl.dbpedia.org/resource/Rhizothrix_pubescens http://war.dbpedia.org/resource/Rhizothrix_pubescens {}
-http://nl.dbpedia.org/resource/Rhizothrix_pubescens http://www.wikidata.org/entity/Q6565447 {}
-http://sv.dbpedia.org/resource/Rhizothrix_pubescens http://war.dbpedia.org/resource/Rhizothrix_pubescens {}
-http://sv.dbpedia.org/resource/Rhizothrix_pubescens http://www.wikidata.org/entity/Q6565447 {}
-http://war.dbpedia.org/resource/Rhizothrix_pubescens http://www.wikidata.org/entity/Q6565447 {}
+http://bibsonomy.org/uri/bibtexkey/conf/trustbus/GansV11/dblp http://dblp.l3s.de/d2r/resource/publications/conf/trustbus/GansV11 {}
+http://bibsonomy.org/uri/bibtexkey/journals/corr/abs-1101-0698/dblp http://dblp.l3s.de/d2r/resource/publications/journals/corr/abs-1101-0698 {}
+http://dblp.l3s.de/d2r/resource/publications/conf/trustbus/GansV11 http://dblp.rkbexplorer.com/id/conf/trustbus/GansV11 {}
+http://dblp.l3s.de/d2r/resource/publications/journals/corr/abs-1101-0698 http://dblp.rkbexplorer.com/id/journals/corr/abs-1101-0698 {}
+http://dblp.l3s.de/d2r/resource/publications/journals/corr/abs-1101-0698 http://dblp.rkbexplorer.com/id/conf/trustbus/GansV11 {}

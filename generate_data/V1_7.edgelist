@@ -1,6 +1,9 @@
-http://id.dbpedia.org/resource/Stichopogon_ammophilus http://nl.dbpedia.org/resource/Stichopogon_ammophilus {}
-http://id.dbpedia.org/resource/Stichopogon_ammophilus http://sv.dbpedia.org/resource/Stichopogon_ammophilus {}
-http://nl.dbpedia.org/resource/Stichopogon_ammophilus http://sv.dbpedia.org/resource/Stichopogon_ammophilus {}
-http://nl.dbpedia.org/resource/Stichopogon_ammophilus http://vi.dbpedia.org/resource/Stichopogon_ammophilus {}
-http://nl.dbpedia.org/resource/Stichopogon_ammophilus http://www.wikidata.org/entity/Q10821739 {}
-http://vi.dbpedia.org/resource/Stichopogon_ammophilus http://www.wikidata.org/entity/Q10821739 {}
+http://de.dbpedia.org/resource/Engui%C3%A7o http://de.dbpedia.org/resource/Enguiço {}
+http://de.dbpedia.org/resource/Enguiço http://fr.dbpedia.org/resource/Enguiço {}
+http://de.dbpedia.org/resource/Enguiço http://pt.dbpedia.org/resource/Enguiço {}
+http://de.dbpedia.org/resource/Enguiço http://www.wikidata.org/entity/Q643607 {}
+http://fr.dbpedia.org/resource/Engui%C3%A7o http://fr.dbpedia.org/resource/Enguiço {}
+http://fr.dbpedia.org/resource/Enguiço http://pt.dbpedia.org/resource/Enguiço {}
+http://fr.dbpedia.org/resource/Enguiço http://www.wikidata.org/entity/Q643607 {}
+http://pt.dbpedia.org/resource/Engui%C3%A7o http://pt.dbpedia.org/resource/Enguiço {}
+http://pt.dbpedia.org/resource/Enguiço http://www.wikidata.org/entity/Q643607 {}

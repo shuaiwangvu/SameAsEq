@@ -1,6 +1,4 @@
-http://dbpedia.org/resource/ASIMCO_Technologies http://rdf.freebase.com/ns/m.0hnbrd6 {}
-http://dbpedia.org/resource/ASIMCO_Technologies http://wikidata.dbpedia.org/resource/Q4654247 {}
-http://dbpedia.org/resource/ASIMCO_Technologies http://www.wikidata.org/entity/Q4654247 {}
-http://dbpedia.org/resource/ASIMCO_Technologies http://wikidata.org/entity/Q4654247 {}
-http://dbpedia.org/resource/ASIMCO_Technologies http://yago-knowledge.org/resource/ASIMCO_Technologies {}
-http://rdf.freebase.com/ns/m.0hnbrd6 http://www.wikidata.org/entity/Q4654247 {}
+http://hub.culturegraph.org/about/BVB-BV006624760 http://lod.b3kat.de/title/BV006624760 {}
+http://lod.b3kat.de/isbn/3890736335 http://lod.b3kat.de/title/BV006624760 {}
+http://lod.b3kat.de/title/BV000018081/vol/229 http://lod.b3kat.de/title/BV006624760 {}
+http://lod.b3kat.de/title/BV001900315/vol/87 http://lod.b3kat.de/title/BV006624760 {}

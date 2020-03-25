@@ -1,4 +1,7 @@
-http://hub.culturegraph.org/about/BVB-BV001306204 http://lod.b3kat.de/title/BV001306204 {}
-http://hub.culturegraph.org/about/BVB-BV005153286 http://lod.b3kat.de/title/BV005153286 {}
-http://lod.b3kat.de/isbn/3466342260 http://lod.b3kat.de/title/BV001306204 {}
-http://lod.b3kat.de/isbn/3466342260 http://lod.b3kat.de/title/BV005153286 {}
+http://dbpedia.org/resource/Burl_Ives_Sings_Little_White_Duck_and_Other_Children's_Favorites http://rdf.freebase.com/ns/m.04ycwr4 {}
+http://dbpedia.org/resource/Burl_Ives_Sings_Little_White_Duck_and_Other_Children's_Favorites http://wikidata.dbpedia.org/resource/Q4999087 {}
+http://dbpedia.org/resource/Burl_Ives_Sings_Little_White_Duck_and_Other_Children's_Favorites http://www.wikidata.org/entity/Q4999087 {}
+http://dbpedia.org/resource/Burl_Ives_Sings_Little_White_Duck_and_Other_Children's_Favorites http://wikidata.org/entity/Q4999087 {}
+http://dbpedia.org/resource/Burl_Ives_Sings_Little_White_Duck_and_Other_Children's_Favorites_(album_by_Burl_Ives) http://rdf.freebase.com/ns/m.04ycwr4 {}
+http://dbpedia.org/resource/Little_White_Duck_and_Other_Children's_Favorites http://rdf.freebase.com/ns/m.04ycwr4 {}
+http://rdf.freebase.com/ns/m.04ycwr4 http://www.wikidata.org/entity/Q4999087 {}

@@ -1,4 +1,10 @@
-http://dbpedia.org/resource/Jwalamalini http://rdf.freebase.com/ns/m.0crcwp1 {}
-http://dbpedia.org/resource/Jwalamalini http://wikidata.dbpedia.org/resource/Q17059075 {}
-http://dbpedia.org/resource/Jwalamalini http://wikidata.org/entity/Q17059075 {}
-http://dbpedia.org/resource/Jwalamalini http://yago-knowledge.org/resource/Jwalamalini {}
+http://dbpedia.org/resource/Category:K%C3%BC%C3%A7%C3%BCkk%C3%B6yspor http://tr.dbpedia.org/resource/Kategori:Küçükköyspor {}
+http://dbpedia.org/resource/Category:K%C3%BC%C3%A7%C3%BCkk%C3%B6yspor http://wikidata.dbpedia.org/resource/Q8577622 {}
+http://dbpedia.org/resource/Category:K%C3%BC%C3%A7%C3%BCkk%C3%B6yspor http://www.wikidata.org/entity/Q8577622 {}
+http://dbpedia.org/resource/Category:K%C3%BC%C3%A7%C3%BCkk%C3%B6yspor http://wikidata.org/entity/Q8577622 {}
+http://dbpedia.org/resource/Category:K%C3%BC%C3%A7%C3%BCkk%C3%B6yspor http://dbpedia.org/resource/Category:Küçükköyspor {}
+http://dbpedia.org/resource/Category:Küçükköyspor http://tr.dbpedia.org/resource/Kategori:Küçükköyspor {}
+http://dbpedia.org/resource/Category:Küçükköyspor http://wikidata.dbpedia.org/resource/Q8577622 {}
+http://dbpedia.org/resource/Category:Küçükköyspor http://wikidata.org/entity/Q8577622 {}
+http://tr.dbpedia.org/resource/Kategori:K%C3%BC%C3%A7%C3%BCkk%C3%B6yspor http://tr.dbpedia.org/resource/Kategori:Küçükköyspor {}
+http://tr.dbpedia.org/resource/Kategori:Küçükköyspor http://www.wikidata.org/entity/Q8577622 {}

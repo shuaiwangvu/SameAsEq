@@ -1,11 +1,6 @@
-http://dbpedia.org/resource/1974%E2%80%9375_Chicago_Bulls_season http://it.dbpedia.org/resource/Chicago_Bulls_1974-1975 {}
-http://dbpedia.org/resource/1974%E2%80%9375_Chicago_Bulls_season http://rdf.freebase.com/ns/m.0j_6w3z {}
-http://dbpedia.org/resource/1974%E2%80%9375_Chicago_Bulls_season http://wikidata.dbpedia.org/resource/Q3667598 {}
-http://dbpedia.org/resource/1974%E2%80%9375_Chicago_Bulls_season http://www.wikidata.org/entity/Q3667598 {}
-http://dbpedia.org/resource/1974%E2%80%9375_Chicago_Bulls_season http://wikidata.org/entity/Q3667598 {}
-http://dbpedia.org/resource/1974%E2%80%9375_Chicago_Bulls_season http://dbpedia.org/resource/1974–75_Chicago_Bulls_season {}
-http://dbpedia.org/resource/1974–75_Chicago_Bulls_season http://it.dbpedia.org/resource/Chicago_Bulls_1974-1975 {}
-http://dbpedia.org/resource/1974–75_Chicago_Bulls_season http://wikidata.dbpedia.org/resource/Q3667598 {}
-http://dbpedia.org/resource/1974–75_Chicago_Bulls_season http://wikidata.org/entity/Q3667598 {}
-http://it.dbpedia.org/resource/Chicago_Bulls_1974-1975 http://www.wikidata.org/entity/Q3667598 {}
-http://rdf.freebase.com/ns/m.0j_6w3z http://www.wikidata.org/entity/Q3667598 {}
+http://dbpedia.org/resource/Jimmy_Smith_(footballer_born_1901) http://rdf.freebase.com/ns/m.06_w2l7 {}
+http://dbpedia.org/resource/Jimmy_Smith_(footballer_born_1901) http://wikidata.dbpedia.org/resource/Q6201311 {}
+http://dbpedia.org/resource/Jimmy_Smith_(footballer_born_1901) http://www.wikidata.org/entity/Q6201311 {}
+http://dbpedia.org/resource/Jimmy_Smith_(footballer_born_1901) http://wikidata.org/entity/Q6201311 {}
+http://dbpedia.org/resource/Jimmy_Smith_(footballer_born_1901) http://mpii.de/yago/resource/Jimmy_Smith_%28footballer_born_1901%29 {}
+http://rdf.freebase.com/ns/m.06_w2l7 http://www.wikidata.org/entity/Q6201311 {}

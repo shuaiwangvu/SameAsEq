@@ -1,6 +1,9 @@
-http://commons.dbpedia.org/resource/Category:Franciszek_Barda http://pl.dbpedia.org/resource/Franciszek_Barda {}
-http://commons.dbpedia.org/resource/Category:Franciszek_Barda http://ru.dbpedia.org/resource/Барда,_Францишек {}
-http://fi.dbpedia.org/resource/Franciszek_Barda http://pl.dbpedia.org/resource/Franciszek_Barda {}
-http://fi.dbpedia.org/resource/Franciszek_Barda http://www.wikidata.org/entity/Q9262222 {}
-http://pl.dbpedia.org/resource/Franciszek_Barda http://ru.dbpedia.org/resource/Барда,_Францишек {}
-http://pl.dbpedia.org/resource/Franciszek_Barda http://www.wikidata.org/entity/Q9262222 {}
+http://dbpedia.org/resource/Muskegon_Community_College http://rdf.freebase.com/ns/m.06n12m {}
+http://dbpedia.org/resource/Muskegon_Community_College http://sws.geonames.org/5003135/ {}
+http://dbpedia.org/resource/Muskegon_Community_College http://wikidata.dbpedia.org/resource/Q6942755 {}
+http://dbpedia.org/resource/Muskegon_Community_College http://www.wikidata.org/entity/Q6942755 {}
+http://dbpedia.org/resource/Muskegon_Community_College http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000006a0453 {}
+http://dbpedia.org/resource/Muskegon_Community_College http://wikidata.org/entity/Q6942755 {}
+http://dbpedia.org/resource/Muskegon_Community_College http://yago-knowledge.org/resource/Muskegon_Community_College {}
+http://dbpedia.org/resource/Muskegon_Community_College http://mpii.de/yago/resource/Muskegon_Community_College {}
+http://rdf.freebase.com/ns/m.06n12m http://www.wikidata.org/entity/Q6942755 {}

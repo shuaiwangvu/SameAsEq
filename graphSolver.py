@@ -49,19 +49,8 @@ class GraphSolver():
         if (t1, t2) in self.G.subgraphs[0].edges:
             weight = 10
         else:
-            # weight = random.choice([-2, -4, -6, 2, 1])
-            # if the
+            weight = -6
 
-            t1_domain = tldextract.extract(t1).domain
-            t1_subdomain = tldextract.extract(t1).subdomain
-
-            t2_domain = tldextract.extract(t2).domain
-            t2_subdomain = tldextract.extract(t2).subdomain
-
-            if t1_domain == t2_domain and t1_subdomain == t2_subdomain and t1_subdomain != '' and t2_subdomain != '':
-                weight = -6
-            else:
-                weight = 0
 
         return weight
 
@@ -81,11 +70,14 @@ class GraphSolver():
             for t in self.domain[d]:
                 t_subdomain = tldextract.extract(t).subdomain
                 if t_subdomain != ''  and t_subdomain!= 'www':
-                    x = d + '.'+t_subdomain
+                    x = t_subdomain + '.' + d
                     if (x) not in self.domain_subdomain.keys():
                         self.domain_subdomain[x] = []
                     self.domain_subdomain[x].append(t)
-        print ('subdomain = ', self.domain_subdomain)
+        # print ('subdomain = ', self.domain_subdomain)
+        for k in self.domain_subdomain.keys():
+            print ('domain.subdomain = ', k)
+            print (self.domain_subdomain[k])
 
 
 
@@ -117,7 +109,7 @@ class GraphSolver():
         while i < int(self.additional_edges):
             (t1, t2) = self.choose_nodes()
             w = self.compute_weight(t1, t2)
-            print (w, ' : ', t1, t2)
+            # print (w, ' : ', t1, t2)
             self.o.add_soft(self.id2encode[self.term2id[t1]] == self.id2encode[self.term2id[t2]], w)
             i += 1
 

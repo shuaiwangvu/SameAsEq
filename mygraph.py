@@ -7,6 +7,13 @@ import itertools
 from operator import itemgetter
 import csv
 
+from random import randint
+colors = []
+n = 300
+for i in range(n):
+    colors.append('#%06X' % randint(0, 0xFFFFFF))
+
+
 class MyGraph ():
     def __init__(self):
         self.subgraphs = {}
@@ -24,7 +31,7 @@ class MyGraph ():
         self.subgraphs[0] = g
         self.groups +=1
 
-    def save_graph(self, file_name, colors, pos = None, labels = None):
+    def save_graph(self, file_name, pos = None, labels = None):
         if pos == None and self.groups == 1: # export as the input graph OR there is only one graph in the end
             pos = nx.spring_layout(self.subgraphs[0])
 
@@ -41,7 +48,7 @@ class MyGraph ():
                                alpha=0.8)
             nx.draw_networkx_edges(g, pos,
                                    edgelist=g.edges,
-                                   width=2,alpha=0.5,edge_color='y')
+                                   width=2,alpha=0.5,edge_color=colors[k])
 
             if labels == None:
                 labels={}
@@ -70,4 +77,4 @@ class MyGraph ():
 if __name__ == "__main__":
     n = MyGraph()
     n.load_graph('./generate_data/V10_24.csv')
-    n.save_graph(file_name = 'test.png', colors = ['b', 'r'])
+    n.save_graph(file_name = 'test.png')

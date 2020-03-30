@@ -61,8 +61,8 @@ for i in range(40):
         # h = nx.read_edgelist(export_filename)
         h = read_graph_csv(export_filename)
 
-        print ('G- No. Edges: ', len(g.edges))
-        print ('H- No. Edges: ', len(h.edges))
+        # print ('G- No. Edges: ', len(g.edges))
+        # print ('H- No. Edges: ', len(h.edges))
         if len(h.edges) != len(g.edges):
             print ('********* error *************')
 
@@ -87,7 +87,9 @@ for i in range(10):
         # h = nx.read_edgelist(export_filename)
         h = read_graph_csv(export_filename)
 
-        print ('G- No. Nodes: ', len(g.nodes))
-        print ('H- No. Edges: ', len(h.edges))
+        # print ('G- No. Nodes: ', len(g.nodes))
+        # print ('G- No. Edges: ', len(g.edges))
+        # print ('H- No. Nodes: ', len(h.nodes))
+        # print ('H- No. Edges: ', len(h.edges))
         if len(h.edges) != len(g.edges):
             print ('********* error *************')

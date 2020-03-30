@@ -8,6 +8,7 @@ from operator import itemgetter
 from z3 import *
 import tldextract
 from mygraph import MyGraph
+import urllib.parse
 
 class GraphSolver():
 
@@ -49,8 +50,23 @@ class GraphSolver():
         if (t1, t2) in self.G.subgraphs[0].edges:
             weight = 10
         else:
-            weight = -6
+            t1_name = t1.rsplit('/', 1)[-1]
+            t2_name = t2.rsplit('/', 1)[-1]
 
+
+            if t1_name != '' and t2_name != '':
+                if urllib.parse.quote(t2_name) == t1_name or t2_name == urllib.parse.quote(t1_name):
+                    print ('\n\nt1 = ', t1_name)
+                    print ('t1 also = ', urllib.parse.quote(t1_name))
+                    print ('t2 = ', t2_name)
+                    print ('t2 also = ', urllib.parse.quote(t2_name))
+                    print ('SAME : ',t1, t2)
+                    print ('SAME : ',t1_name, t2_name)
+                    weight = 0
+                else:
+                    weight = -6
+            else:
+                weight = 0
 
         return weight
 

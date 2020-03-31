@@ -9,10 +9,13 @@ from z3 import *
 import tldextract
 from mygraph import MyGraph
 import urllib.parse
+import datetime
+import pickle
+import time
 
 class GraphSolver():
 
-    def __init__(self, additional_edges = 2000):
+    def __init__(self, additional_edges = 200):
         self.G = MyGraph()
         self.H = MyGraph()
 
@@ -43,7 +46,8 @@ class GraphSolver():
             k = random.choice(list(self.domain_subdomain.keys()))
             if len(self.domain_subdomain[k]) >= 2:
                 (t1, t2) = random.sample(self.domain_subdomain[k], 2)
-                return (t1, t2)
+                if (len (nx.shortest_path(self.G.subgraphs[0], source = t1, target = t2)) > 4):
+                    return (t1, t2)
 
     def compute_weight(self, t1, t2): # the most important function for now
         weight = 0
@@ -62,7 +66,7 @@ class GraphSolver():
                     print ('t2 also = ', urllib.parse.quote(t2_name))
                     print ('SAME : ',t1, t2)
                     print ('SAME : ',t1_name, t2_name)
-                    weight = 0
+                    weight = 20
                 else:
                     weight = -6
             else:
@@ -91,9 +95,9 @@ class GraphSolver():
                         self.domain_subdomain[x] = []
                     self.domain_subdomain[x].append(t)
         # print ('subdomain = ', self.domain_subdomain)
-        for k in self.domain_subdomain.keys():
-            print ('domain.subdomain = ', k)
-            print (self.domain_subdomain[k])
+        # for k in self.domain_subdomain.keys():
+        #     print ('domain.subdomain = ', k)
+        #     print (self.domain_subdomain[k])
 
 
 
@@ -109,6 +113,7 @@ class GraphSolver():
             # print ('node n = ', n, ' id = ', id)
             self.id2encode[id] = Int(str(self.term2id[n]))
             self.o.add(self.id2encode[id] >= 0) # we fix all values to non-negative values
+            self.o.add(self.id2encode[id] < 50) # we fix all values to non-negative values
             id += 1
 
         for (t1, t2) in g.edges:
@@ -172,8 +177,10 @@ class GraphSolver():
 
 if __name__ == "__main__":
 
+    start = time.time()
+
     solver = GraphSolver ()
-    solver.load_graph('./generate_data/SA3_7.csv')
+    solver.load_graph('./generate_data/SA2_4.csv')
 
     pos, labels = solver.G.save_graph(file_name = 'before.png')
     solver.encode()
@@ -182,3 +189,9 @@ if __name__ == "__main__":
     print ('now decode')
     solver.decode()
     solver.H.save_graph(file_name = 'after.png',  pos=pos, labels = labels)
+
+    # ===============
+    end = time.time()
+    hours, rem = divmod(end-start, 3600)
+    minutes, seconds = divmod(rem, 60)
+    print("Time taken: {:0>2}:{:0>2}:{:05.2f}".format(int(hours),int(minutes),seconds))

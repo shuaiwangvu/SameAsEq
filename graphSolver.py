@@ -21,13 +21,14 @@ DIFFERENT = 1
 WEIGHT_EXISTING_ATTACKING_EDGES = -5
 WEIGHT_EXISTING_EQUIVALENT_EDGES = 20
 WEIGHT_ADDITIONAL_ATTACKING_EDGES = -5
-WIGHT_NORMAL_EDGES = 10
+WEIGHT_NORMAL_EDGES = 10
 
 class GraphSolver():
 
     def __init__(self):
         self.G = MyGraph()
         self.H = MyGraph()
+
 
         self.count_TN = 0.0
         self.count_FN = 0.0
@@ -39,6 +40,10 @@ class GraphSolver():
         self.accuracy = 0.0
 
         self.o = Optimize()
+        timeout = 1000 * 60 * 5 # 5 mins
+        self.o.set("timeout", timeout)
+        print('timeout = ',timeout/1000/60, 'mins')
+
         self.model = None
         self.term2id = {}
         self.id2term = {}
@@ -46,6 +51,11 @@ class GraphSolver():
         self.existing_equivalent_edges = []
         self.existing_attacking_edges = [] # already in the graph
         self.additional_attacking_edges = [] # all additional edges in the graph
+        self.num_subgraphs = 0
+        self.num_removed_edges = 0
+        self.removed_edges = []
+
+        self.pos = None
 
     def compare_names (self, t1, t2):
         n1 = t1.rsplit('/', 1)[-1]
@@ -185,7 +195,7 @@ class GraphSolver():
             # print('existing attacking edge: ', t1, t2)
         print('\tThere are in total: ', len (self.existing_attacking_edges), ' existing attacking edges!')
         for (t1, t2) in self.existing_equivalent_edges:
-            self.o.add_soft(self.id2encode[self.term2id[t1]] == self.id2encode[self.term2id[t2]], WEIGHT_EXISTING_EQUIVALENT_EDGES)
+            self.o.add(self.id2encode[self.term2id[t1]] == self.id2encode[self.term2id[t2]]) # WEIGHT_EXISTING_EQUIVALENT_EDGES)
             # print('existing equivalent edge: ', t1, t2)
         print('\tThere are in total: ', len (self.existing_equivalent_edges), ' existing equivalence edges!')
 
@@ -194,11 +204,12 @@ class GraphSolver():
         print ('Now there are normal', len(edges), ' edges left')
         # other normal edges
         for (t1, t2) in edges:
-            self.o.add_soft(self.id2encode[self.term2id[t1]] == self.id2encode[self.term2id[t2]], WIGHT_NORMAL_EDGES) # each edge within graphs
+            self.o.add_soft(self.id2encode[self.term2id[t1]] == self.id2encode[self.term2id[t2]], WEIGHT_NORMAL_EDGES) # each edge within graphs
 
         # find additional attacking edges:
         self.find_additional_attacking_edges()
         for (t1, t2) in self.additional_attacking_edges:
+            # self.o.add(Not(self.id2encode[self.term2id[t1]] == self.id2encode[self.term2id[t2]])) # each edge within graphs
             self.o.add_soft(self.id2encode[self.term2id[t1]] == self.id2encode[self.term2id[t2]], WEIGHT_ADDITIONAL_ATTACKING_EDGES) # each edge within graphs
         print('There are in total: ', len (self.additional_attacking_edges), ' additional attacking edges!')
 
@@ -227,7 +238,7 @@ class GraphSolver():
             self.H.subgraphs[group_id].add_node(t)
             # print (group_id, ' add node ', t)
 
-        print ('max = ', group_size)
+        # print ('max = ', group_size)
         for m in range(group_size):
             g_tmp = g.subgraph(self.H.subgraphs[m].nodes)
             # print ('size = ', len(g_tmp.nodes))
@@ -240,15 +251,30 @@ class GraphSolver():
                 if int(self.model.evaluate(self.id2encode[id1]).as_long()) == int(self.model.evaluate(self.id2encode[id2]).as_long()):
                     self.H.subgraphs[m].add_edge(t1, t2)
         # TODO: tidy up the group index/id so there is no empty graph in it
+        tmp = self.G.subgraphs[0].copy()
+
         ind = 0
         dict = {}
+        acc_num_edges = 0
         for k in self.H.subgraphs.keys():
             g = self.H.subgraphs[k]
-            if len (g.edges) != 0:
+            tmp.remove_edges_from(g.edges)
+            if len (g.nodes) != 0:
+                acc_num_edges += len(self.H.subgraphs[k].edges)
                 dict[ind] = g
                 ind += 1
         self.H.subgraphs = dict
-        print('there are in total ', ind + 1, ' subgraphs in the solution')
+        print('there are in total ', ind, ' subgraphs in the solution')
+        print ('and they have ', acc_num_edges, ' edges')
+
+        # for e in self.G.subgraphs[0].edges:
+        #     if e not in Big.edges:
+        #         self.removed_edges.append(e)
+        self.removed_edges = tmp.edges
+
+        self.num_removed_edges = len(self.G.subgraphs[0].edges) - acc_num_edges
+        print ('SHOULD BE EQUAL: ', self.num_removed_edges, ' = ',len(self.removed_edges))
+        self.num_subgraphs = ind
 
 
 
@@ -259,17 +285,19 @@ if __name__ == "__main__":
     start = time.time()
 
     solver = GraphSolver ()
-    solver.load_graph('./generate_data/SA2_8.csv')
+    solver.load_graph('./generate_data/SA3_7.csv')
 
-    pos, labels = solver.G.save_graph(file_name = 'before.png')
+    pos, labels = solver.G.save_graph(file_name = 'before')
     solver.encode()
+
+
     print ('now solve')
+
 
     solver.solve()
     print ('now decode')
     solver.decode()
-    solver.H.save_graph(file_name = 'after.png',  pos=pos, labels = labels)
-
+    solver.H.save_graph(file_name = 'after',  pos=pos, labels = labels)
     # ===============
     end = time.time()
     hours, rem = divmod(end-start, 3600)

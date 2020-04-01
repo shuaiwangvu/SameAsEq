@@ -42,7 +42,7 @@ Image:
         keep_ratio: True
         size_hint_y: None
         size_hint_x: None
-        width: 700
+        width: 500
         height: self.width/self.image_ratio
         '''
 
@@ -53,7 +53,7 @@ Image:
         keep_ratio: True
         size_hint_y: None
         size_hint_x: None
-        width: 700
+        width: 500
         height: self.width/self.image_ratio
         '''
 
@@ -65,7 +65,7 @@ Image:
         keep_ratio: True
         size_hint_y: None
         size_hint_x: None
-        width: 700
+        width: 500
         height: self.width/self.image_ratio
         '''
 
@@ -139,7 +139,7 @@ class NestedLayoutExample(App):
         box_Path = BoxLayout(orientation='horizontal', spacing=10)
         box_Path.add_widget(Label(text='Path to file', halign='left', size_hint=(.1,.1), markup=True))
         self.Path_input = TextInput(hint_text='100', size_hint=(.1,.2))
-        self.Path_input.text = './generate_data/SA3_7.csv'
+        self.Path_input.text = './obama-links-error-degree.csv'
         box_Path.add_widget(self.Path_input)
         first_ver_layout.add_widget(box_Path)
         # # M
@@ -251,7 +251,7 @@ class NestedLayoutExample(App):
         second_ver_layout.add_widget(box_NUM_SUM)
 
         box_Y = BoxLayout(orientation='horizontal', spacing=20)
-        self.one_time_label = Label(text='Time = ' + str(self.one_time), halign='left', size_hint=(.1,.9), markup=False)
+        self.one_time_label = Label(text='Time = ' + str(self.one_time), halign='left', size_hint=(.1,.2), markup=False)
         box_Y.add_widget(self.one_time_label)
         second_ver_layout.add_widget(box_Y)
 
@@ -268,7 +268,7 @@ class NestedLayoutExample(App):
         # second_ver_layout.add_widget(box)
 
         box2 = BoxLayout(orientation='horizontal', spacing=20)
-        btn2 = Button(text='Go', on_press= self.go, size_hint=(.5,.4))
+        btn2 = Button(text='Go', on_press= self.go, size_hint=(.5,.8))
         box2.add_widget(btn2)
         second_ver_layout.add_widget(box2)
 
@@ -306,7 +306,7 @@ class NestedLayoutExample(App):
         # colors = ['b', 'g', 'r'] * len(h.edges)
         # self.graphs[0].save_graph('before.png')
         self.solver = GraphSolver()
-        self.solver.load_graph(self.Path_input.text)
+        self.solver.G.load_graph_with_error_degree(self.Path_input.text)
 
         # print ('graph loaded and the No. nodes are', len (self.graphs[0].G.nodes))
         # print ('graph loaded and the No. edges are', len (self.graphs[0].G.edges))
@@ -369,11 +369,22 @@ class NestedLayoutExample(App):
         self.solver.solve()
         print ('now decode')
         self.solver.decode()
-        self.num_removed = self.solver.removed_edges
+        self.num_removed = len(self.solver.removed_edges)
         self.num_subgraphs = self.solver.num_subgraphs
 
         self.solver.H.save_graph(file_name = 'after',  pos= self.pos, labels = self.labels)
 
+        for (l, r) in self.solver.removed_edges:
+            if (l, r) in self.solver.G.error_degree.keys():
+                print ('the error degree is :', self.solver.G.error_degree[(l,r)])
+                print ('\t\t (', l, ', ', r, ' )')
+            elif (r, l) in self.solver.G.error_degree.keys():
+                print ('the error degree is :', self.solver.G.error_degree[(r,l)])
+                print ('\t\t (', l, ', ', r, ' )')
+            else:
+                print ('*not in the keys: ', l, r)
+
+        print ('# TOTAL REMOVED EDGES: ', len (self.solver.removed_edges))
 
         # ==
         round_end = time.time()

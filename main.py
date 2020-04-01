@@ -1,4 +1,5 @@
-from mygraph import GraphSolver, MyGraph
+from mygraph import MyGraph
+from graphSolver import GraphSolver
 import kivy
 import random
 

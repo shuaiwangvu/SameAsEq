@@ -1,4 +1,4 @@
-entity	annotation
+Entity	Annotation
 http://dbpedia.org/resource/Andes%2C_New_York	Andes_town
 http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000008f5123	Error
 http://dbpedia.org/resource/Andes,_New_York	Andes_town

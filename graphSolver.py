@@ -41,7 +41,7 @@ class GraphSolver():
         self.accuracy = 0.0
 
         self.o = Optimize()
-        timeout = 1000 * 60 * 2 # 5 mins
+        timeout = 1000 * 60 * 5 # 5 mins
         self.o.set("timeout", timeout)
         print('timeout = ',timeout/1000/60, 'mins')
 

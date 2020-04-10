@@ -98,7 +98,5 @@ for n in name_list:
     g = obtain_graph( terms )
     print (str(n), ' has number of nodes is: ', len(g.nodes))
     print (str(n), ' has number of edges is: ', len(g.edges))
-    export_filename = 'AL_subgraph_edegs_' + str(index) + ".csv"
+    export_filename = 'AL_subgraph_edegs_' + str(n) + ".csv"
     export_graph_csv(export_filename, g)
-
-    

@@ -76,6 +76,8 @@ with open(path) as csv_file:
                     # print (index, row[i])
                     terms.append(row[i])
                     # export to csv file
+            print ('terms = ', terms)
             g = obtain_graph( terms )
+            print (index, ' has number of edges is: ', len(g.edges))
             export_filename = 'AL' + str(index) + ".csv"
             export_graph_csv(export_filename, g)

@@ -2,6 +2,12 @@
 # groups by Al.
 
 # data sent by Joe
+import csv
+import matplotlib.pyplot as plt
+import numpy as np
+import random
+
+
 
 name_list = []
 
@@ -32,4 +38,3 @@ with open(path) as csv_file:
                     terms.append(row[i])
                     # export to csv file
                     print (terms)
-                    

@@ -63,21 +63,42 @@ print (name_list)
 # go through the csv file and check if the group is in this name_list
 
 path = './closure_all/id2terms_all.csv'
+#
+# with open(path) as csv_file:
+#     csv_reader = csv.reader(csv_file, delimiter=' ')
+#     # count = 0
+#     for row in csv_reader:
+#         index = int(row[0])
+#         if index in name_list:
+#             terms = []
+#             for i in range (len (row)):
+#                 if i > 0:
+#                     # print (index, row[i])
+#                     terms.append(row[i][1:-1])
+#                     # export to csv file
+#             print ('terms = ', terms)
+#             g = obtain_graph( terms )
+#             print (index, ' has number of edges is: ', len(g.edges))
+#             export_filename = 'AL' + str(index) + ".csv"
+#             export_graph_csv(export_filename, g)
 
-with open(path) as csv_file:
-    csv_reader = csv.reader(csv_file, delimiter=' ')
-    # count = 0
-    for row in csv_reader:
-        index = int(row[0])
-        if index in name_list:
-            terms = []
-            for i in range (len (row)):
-                if i > 0:
-                    # print (index, row[i])
-                    terms.append(row[i][1:-1])
-                    # export to csv file
-            print ('terms = ', terms)
-            g = obtain_graph( terms )
-            print (index, ' has number of edges is: ', len(g.edges))
-            export_filename = 'AL' + str(index) + ".csv"
-            export_graph_csv(export_filename, g)
+
+for n in name_list:
+    print ('AL name = ', n)
+    terms = []
+    file_name = str(n) + '_annotation.txt'
+    print ('File Name = ', file_name)
+    file = open(file_name, 'r')
+    reader = csv.DictReader(file, delimiter = '\t')
+    for row in reader:
+        s = row["Entity"]
+        # o = row["OBJECT"]
+        terms.append(s)
+    print ('Total amount of terms/nodes: ',len(terms))
+    g = obtain_graph( terms )
+    print (str(n), ' has number of nodes is: ', len(g.nodes))
+    print (str(n), ' has number of edges is: ', len(g.edges))
+    export_filename = 'AL_subgraph_edegs_' + str(index) + ".csv"
+    export_graph_csv(export_filename, g)
+
+    

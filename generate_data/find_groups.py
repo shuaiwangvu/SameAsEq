@@ -74,7 +74,7 @@ with open(path) as csv_file:
             for i in range (len (row)):
                 if i > 0:
                     # print (index, row[i])
-                    terms.append(row[i])
+                    terms.append(row[i][1:-1])
                     # export to csv file
             print ('terms = ', terms)
             g = obtain_graph( terms )

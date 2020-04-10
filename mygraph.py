@@ -20,6 +20,7 @@ class MyGraph ():
         self.groups = 0
         # self.edges_between = []
         self.error_degree = {}
+        self.term_to_class = {}
 
     def load_graph(self, file_name):
         g = nx.Graph()
@@ -32,9 +33,9 @@ class MyGraph ():
         self.subgraphs[0] = g
         self.groups +=1
 
-    def load_graph_with_error_degree(self, file_name):
+    def load_graph_with_error_degree(self, file_error_degree, file_term_to_class):
         g = nx.Graph()
-        eq_file = open(file_name, 'r')
+        eq_file = open(file_error_degree, 'r')
         reader = csv.DictReader(eq_file, delimiter=";")
         for row in reader:
             s = row["term1"]
@@ -45,8 +46,15 @@ class MyGraph ():
         self.subgraphs[0] = g
         self.groups +=1
 
+        t2c_file = open(file_term_to_class, 'r')
+        reader = csv.DictReader(t2c_file, delimiter=";")
+        for row in reader:
+            t = row["Term"]
+            c = row["Class"]
+            self.term_to_class [t] = c
 
 
+# https://stackoverflow.com/questions/3567018/how-can-i-specify-an-exact-output-size-for-my-networkx-graph
     def save_graph(self, file_name, pos = None, labels = None, attacking_edges = []):
         if pos == None and self.groups == 1: # export as the input graph OR there is only one graph in the end
             pos = nx.spring_layout(self.subgraphs[0])

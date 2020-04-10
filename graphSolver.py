@@ -12,6 +12,7 @@ import urllib.parse
 import datetime
 import pickle
 import time
+import csv
 
 
 IDENTICAL = 0
@@ -40,7 +41,7 @@ class GraphSolver():
         self.accuracy = 0.0
 
         self.o = Optimize()
-        timeout = 1000 * 60 * 5 # 5 mins
+        timeout = 1000 * 60 * 2 # 5 mins
         self.o.set("timeout", timeout)
         print('timeout = ',timeout/1000/60, 'mins')
 
@@ -60,6 +61,10 @@ class GraphSolver():
     def compare_names (self, t1, t2):
         n1 = t1.rsplit('/', 1)[-1]
         n2 = t2.rsplit('/', 1)[-1]
+        # print ('n1 = ', n1)
+        # print ('n2 = ', n2)
+        # print ('urllib n1 = ', urllib.parse.quote(n1))
+        # print ('urllib n2 = ', urllib.parse.quote(n2))
         if (urllib.parse.quote(n2) == n1 or n2 == urllib.parse.quote(n1)):
             return IDENTICAL
         else: # process it bit by bit and obtain the
@@ -76,6 +81,8 @@ class GraphSolver():
                     coll_n2 += t
                 else:
                     coll_n2 += urllib.parse.quote(t)
+            # print ('conv n1 = ', coll_n1)
+            # print ('conv n2 = ', coll_n2)
 
             if (n1 == coll_n2 or coll_n1 == n2):
                 return CONV_IDENTICAL # identical after conversion
@@ -94,6 +101,29 @@ class GraphSolver():
                     coll_n2 += t
                 else:
                     coll_n2 += urllib.parse.quote(t)
+
+            # print ('*conv n1 = ', coll_n1)
+            # print ('*conv n2 = ', coll_n2)
+            if (n1 == coll_n2 or coll_n1 == n2):
+                return CONV_IDENTICAL # identical after conversion
+
+            # ====== NOW AGAIN ======
+            coll_n1 = ''
+            for t in n1:
+                if t == '(' or t == ')' or t == '\'' or t == ',':
+                    coll_n1 += t
+                else:
+                    coll_n1 += urllib.parse.quote(t)
+
+            coll_n2 = ''
+            for t in n2:
+                if t == '(' or t == ')'or t == '\'' or t == ',':
+                    coll_n2 += t
+                else:
+                    coll_n2 += urllib.parse.quote(t)
+
+            # print ('*conv n1 = ', coll_n1)
+            # print ('*conv n2 = ', coll_n2)
             if (n1 == coll_n2 or coll_n1 == n2):
                 return CONV_IDENTICAL # identical after conversion
 
@@ -195,7 +225,7 @@ class GraphSolver():
             # print('existing attacking edge: ', t1, t2)
         print('\tThere are in total: ', len (self.existing_attacking_edges), ' existing attacking edges!')
         for (t1, t2) in self.existing_equivalent_edges:
-            self.o.add(self.id2encode[self.term2id[t1]] == self.id2encode[self.term2id[t2]]) # WEIGHT_EXISTING_EQUIVALENT_EDGES)
+            self.o.add_soft(self.id2encode[self.term2id[t1]] == self.id2encode[self.term2id[t2]],  WEIGHT_EXISTING_EQUIVALENT_EDGES)
             # print('existing equivalent edge: ', t1, t2)
         print('\tThere are in total: ', len (self.existing_equivalent_edges), ' existing equivalence edges!')
 
@@ -276,29 +306,143 @@ class GraphSolver():
         print ('SHOULD BE EQUAL: ', self.num_removed_edges, ' = ',len(self.removed_edges))
         self.num_subgraphs = ind
 
+    def obtain_statistics(self, file_name):
+        dict_al = {}
 
+        print ('obtain statistics now!')
+        print ('compare against the manual decision from AL in the file ', file_name)
+        # now load the data in
+        # file_name = str(n) + '_annotation.txt'
+        print ('File Name = ', file_name)
+        file = open(file_name, 'r')
+        reader = csv.DictReader(file, delimiter = '\t')
+        for row in reader:
+            e = row["Entity"]
+            o = row["Annotation"]
+            dict_al [e] = o
 
+        # al_count_remain = 0
+        al_remain = []
+        # al_count_remove = 0
+        al_removed = []
 
+        my_remain = list(filter(lambda v: v not in self.removed_edges, self.G.subgraphs[0].edges))
+        my_removed = self.removed_edges
+
+        count_edges_involving_unknow = 0
+
+        for (l, r) in self.G.subgraphs[0].edges:
+            if dict_al[l] != 'Uncertain' and dict_al[r] != 'Uncertain': # Error
+                if dict_al[l] == dict_al[r] :
+                    al_remain.append((l,r))
+                else:
+                    # al_count_remove += 1
+                    al_removed.append((l,r))
+
+        print ('# al removed: ', len(al_removed))
+        print ('# al remain: ', len(al_remain))
+
+        print('# my removed:', len(my_removed))
+        print('# my remain:', len(my_remain))
+
+        for e in self.G.subgraphs[0].edges:
+            (l, r) = e
+            if dict_al[l] != 'Uncertain' and dict_al[r] != 'Uncertain':
+                if e in my_remain and e in al_remain:
+                    self.count_TN += 1
+                elif e in my_removed and e in al_removed:
+                    self.count_TP += 1
+                elif e in my_remain and e in al_removed:
+                    self.count_FN += 1
+                elif e in my_removed and e in al_remain:
+                    self.count_FP += 1
+                else:
+                    print ('error', l, ' and ', r)
+            else :
+                count_edges_involving_unknow += 1
+
+        print ('Total edges ', len(self.G.subgraphs[0].edges))
+        print ('There are in total ', count_edges_involving_unknow, ' edges involving unknown')
+
+        print ('==============================')
+
+        print ('TP = both remove: ', self.count_TP)
+        print ('TN = both keep:   ', self.count_TN)
+        print ('FP = predicted to remove but SHOULD KEEP: ', self.count_FP)
+        print ('FN = predicted to keep but SHOULD REMOVE: ', self.count_FN)
+
+        print ('==============================')
+
+        if self.count_TP + self.count_FP  != 0:
+            self.precision = self.count_TP / (self.count_TP + self.count_FP)
+            print('precision = TP/(TP+FP) = ', self.precision)  #TP/TP + FP
+        if self.count_TP + self.count_FN != 0:
+            self.recall = self.count_TP / (self.count_TP + self.count_FN )
+            print('recall  = TP / (FN+TP) = ', self.recall) # TP / ( FN +  TP)
+
+        self.accuracy = (self.count_TN + self.count_TP) / (len(self.G.subgraphs[0].edges) - count_edges_involving_unknow)
+        print('accuracy = ', self.accuracy) #
 
 if __name__ == "__main__":
 
     start = time.time()
 
-    solver = GraphSolver ()
-    solver.load_graph('./generate_data/SA3_7.csv')
+    name_list = []
 
-    pos, labels = solver.G.save_graph(file_name = 'before')
-    solver.encode()
+    f = open("process.txt", "r")
+    for l in f:
+        print ('Now working on group index', l[:-1])
+        name_list.append(int (l[:-1]))
+
+    avg_TP = 0.0
+    avg_FP = 0.0
+    avg_TN = 0.0
+    avg_FN = 0.0
+    avg_precision = 0.0
+    avg_recall = 0.0
+    avg_accuracy = 0.0
+
+    for n in name_list:
+
+        solver = GraphSolver ()
+        solver.load_graph('./generate_data/AL_subgraph_edges_' + str(n) + '.csv')
+
+        pos, labels = solver.G.save_graph(file_name = str(n)+'before')
+        solver.encode()
+
+        # result = solver.compare_names("http://ru.dbpedia.org/resource/Обама,_Барак", "http://ru.dbpedia.org/resource/%D0%9E%D0%B1%D0%B0%D0%BC%D0%B0,_%D0%91%D0%B0%D1%80%D0%B0%D0%BA")
+        # print ('TEST: ', result)
 
 
-    print ('now solve')
+        print ('now solve')
+        solver.solve()
+        print ('now decode')
+        solver.decode()
+        solver.H.save_graph(file_name = str(n) + 'after',  pos=pos, labels = labels)
+        # also obtain obtain statistics
+        solver.obtain_statistics('./generate_data/' + str(n) + '_annotation.txt')
 
-
-    solver.solve()
-    print ('now decode')
-    solver.decode()
-    solver.H.save_graph(file_name = 'after',  pos=pos, labels = labels)
+        avg_TP += solver.count_TP
+        avg_TN += solver.count_TN
+        avg_FN += solver.count_FN
+        avg_FP += solver.count_FP
+        avg_precision += solver.precision
+        avg_recall += solver.recall
+        avg_accuracy += solver.accuracy
     # ===============
+    avg_TP /= len(name_list)
+    avg_TN /= len(name_list)
+    avg_FN /= len(name_list)
+    avg_FP /= len(name_list)
+    avg_precision /= len(name_list)
+    avg_recall /= len(name_list)
+    avg_accuracy /= len(name_list)
+
+    print('=========FINALLY==========')
+    print('average precision: ', avg_precision)
+    print('average recall: ', avg_recall)
+    print('average accuracy: ', avg_accuracy)
+
     end = time.time()
     hours, rem = divmod(end-start, 3600)
     minutes, seconds = divmod(rem, 60)

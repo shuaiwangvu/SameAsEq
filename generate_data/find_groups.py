@@ -6,6 +6,45 @@ import csv
 import matplotlib.pyplot as plt
 import numpy as np
 import random
+from hdt import HDTDocument, IdentifierPosition
+import networkx as nx
+
+sameas = "http://www.w3.org/2002/07/owl#sameAs"
+PATH_LOD = "/scratch/wbeek/data/LOD-a-lot/data.hdt"
+hdt_file = HDTDocument(PATH_LOD)
+
+def export_graph_csv (file_name, graph):
+    file =  open(file_name, 'w', newline='')
+    writer = csv.writer(file)
+    writer.writerow([ "SUBJECT", "OBJECT"])
+    for (l, r) in graph.edges:
+        writer.writerow([l, r])
+
+def read_graph_csv(file_name):
+    g = nx.Graph()
+    eq_file = open(file_name, 'r')
+    reader = csv.DictReader(eq_file)
+    for row in reader:
+        s = row["SUBJECT"]
+        o = row["OBJECT"]
+        g.add_edge(s, o)
+    return g
+
+def obtain_graph(list_terms):
+    g = nx.Graph()
+    # add these nodes in it
+    g.add_nodes_from(list_terms)
+    for n in list_terms:
+        (triples, cardi) = hdt_file.search_triples(n, sameas, "")
+        for (_,_,o) in triples:
+            if o in list_terms:
+                g.add_edge(n, o)
+        (triples, cardi) = hdt_file.search_triples("", sameas, n)
+        for (s,_,_) in triples:
+            if s in list_terms:
+                g.add_edge(s, n)
+    return g
+
 
 
 
@@ -37,4 +76,6 @@ with open(path) as csv_file:
                     # print (index, row[i])
                     terms.append(row[i])
                     # export to csv file
-                    print (terms)
+            g = obtain_graph( terms )
+            export_filename = 'AL' + str(index) + ".csv"
+            export_graph_csv(export_filename, g)

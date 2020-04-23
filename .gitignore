@@ -4,3 +4,6 @@ after.png
 closure_all
 .DS_Store
 generate_data/.DS_Store
+*.png
+*.svg
+*.txt

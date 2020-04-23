@@ -43,20 +43,20 @@ for nm in names:
             # use HDT and print essential information
             (triples, cardinality) = hdt_file.search_triples(e, rdfs_subClassOf, "")
             for (_, _, sup) in triples:
-                f.write ('\tSUBCLASSOF: ', sup)
+                f.write ('\tSUBCLASSOF: '+ sup)
 
             (triples, cardinality) = hdt_file.search_triples(e, rdfs_lable, "")
             for (_, _, sup) in triples:
-                f.write ('\tLABEL: ', sup)
+                f.write ('\tLABEL: ' + sup)
 
             (triples, cardinality) = hdt_file.search_triples(e, rdfs_comment, "")
             for (_, _, sup) in triples:
-                f.write ('\tCOMMENT: ', sup)
+                f.write ('\tCOMMENT: ' + sup)
 
             (triples, cardinality) = hdt_file.search_triples(e, owl_sameas, "")
             for (_, _, sup) in triples:
-                f.write ('\tSAMEAS->: ', sup)
+                f.write ('\tSAMEAS->: ' + sup)
 
             (triples, cardinality) = hdt_file.search_triples('', owl_sameas, e)
             for (sub, _, _) in triples:
-                f.write ('\tSAMEAS<-: ', sub)
+                f.write ('\tSAMEAS<-: ' + sub)

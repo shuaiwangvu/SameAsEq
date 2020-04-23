@@ -36,7 +36,7 @@ for nm in names:
     for row in reader:
         e = row["Entity"]
         entity_list.append(e)
-
+    print ('size of nodes: ', len(entity_list))
     for e in entity_list:
         # print ('\n\nNow dealing with: ', e)
         export_filename = nm + '_node_information.txt'

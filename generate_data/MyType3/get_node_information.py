@@ -13,6 +13,8 @@ import datetime
 import pickle
 import time
 import csv
+from hdt import HDTDocument, IdentifierPosition
+
 
 names = ['SA2_4', 'SA4_0', 'SA5_19','SA5_18', 'SA6_2', 'SA6_19', 'SA7_3', 'SA8_6', 'SA8_11', 'SA8_15', 'SA8_17','SA9_11','SA9_18', 'SA9_19']
 
@@ -35,7 +37,7 @@ for nm in names:
     for e in entity_list:
         print ('\n\nNow dealing with: ', e)
         export_filename = nm + '_node_information.txt'
-        with open(export_filename) as f:
+        with open(export_filename, 'w+') as f:
             # use HDT and print essential information
             (triples, cardinality) = hdt_file.search_triples(e, rdfs_subClassOf, "")
             for (_, _, sup) in triples:

@@ -26,6 +26,7 @@ rdfs_lable = "http://www.w3.org/2000/01/rdf-schema#label"
 rdfs_comment = "http://www.w3.org/2000/01/rdf-schema#comment"
 owl_sameas = "http://www.w3.org/2002/07/owl#sameAs"
 for nm in names:
+    print(nm)
     # open the file and generate a graph
     g = nx.Graph()
     file_name = nm + '_nodes.csv'
@@ -37,7 +38,7 @@ for nm in names:
         entity_list.append(e)
 
     for e in entity_list:
-        print ('\n\nNow dealing with: ', e)
+        # print ('\n\nNow dealing with: ', e)
         export_filename = nm + '_node_information.txt'
         with open(export_filename, 'w+') as f:
             # use HDT and print essential information

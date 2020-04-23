@@ -38,7 +38,7 @@ for nm in names:
         entity_list.append(e)
     print ('size of nodes: ', len(entity_list))
     for e in entity_list:
-        # print ('\n\nNow dealing with: ', e)
+        f.write ('\n\nNow dealing with: ' + e)
         export_filename = nm + '_node_information.txt'
         with open(export_filename, 'w') as f:
             # use HDT and print essential information
@@ -47,7 +47,7 @@ for nm in names:
                 for (_, _, sup) in triples:
                     f.write ('\tSUBCLASSOF: '+ sup)
             except:
-                pass
+                print('error in subclass')
 
 
             try:
@@ -55,7 +55,7 @@ for nm in names:
                 for (_, _, sup) in triples:
                     f.write ('\tLABEL: ' + sup)
             except:
-                pass
+                print('error in label')
 
 
             try:
@@ -63,18 +63,18 @@ for nm in names:
                 for (_, _, sup) in triples:
                     f.write ('\tCOMMENT: ' + sup)
             except:
-                pass
+                print('error in comment')
 
             try:
                 (triples, cardinality) = hdt_file.search_triples(e, owl_sameas, "")
                 for (_, _, sup) in triples:
                     f.write ('\tSAMEAS->: ' + sup)
             except :
-                pass
+                print('error in sameas >')
 
             try:
                 (triples, cardinality) = hdt_file.search_triples('', owl_sameas, e)
                 for (sub, _, _) in triples:
                     f.write ('\tSAMEAS<-: ' + sub)
             except :
-                pass
+                print('error in sameas <')

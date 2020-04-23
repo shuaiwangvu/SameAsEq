@@ -38,9 +38,9 @@ for nm in names:
         entity_list.append(e)
     print ('size of nodes: ', len(entity_list))
     for e in entity_list:
-        f.write ('\n\nNow dealing with: ' + e)
         export_filename = nm + '_node_information.txt'
         with open(export_filename, 'w') as f:
+            f.write ('\n\nNow dealing with: ' + e)
             # use HDT and print essential information
             try:
                 (triples, cardinality) = hdt_file.search_triples(e, rdfs_subClassOf, "")

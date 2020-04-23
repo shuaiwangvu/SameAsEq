@@ -40,24 +40,41 @@ for nm in names:
     for e in entity_list:
         # print ('\n\nNow dealing with: ', e)
         export_filename = nm + '_node_information.txt'
-        with open(export_filename, 'w+') as f:
+        with open(export_filename, 'w') as f:
             # use HDT and print essential information
-            (triples, cardinality) = hdt_file.search_triples(e, rdfs_subClassOf, "")
-            for (_, _, sup) in triples:
-                f.write ('\tSUBCLASSOF: '+ sup)
+            try:
+                (triples, cardinality) = hdt_file.search_triples(e, rdfs_subClassOf, "")
+                for (_, _, sup) in triples:
+                    f.write ('\tSUBCLASSOF: '+ sup)
+            except:
+                pass
 
-            (triples, cardinality) = hdt_file.search_triples(e, rdfs_lable, "")
-            for (_, _, sup) in triples:
-                f.write ('\tLABEL: ' + sup)
 
-            (triples, cardinality) = hdt_file.search_triples(e, rdfs_comment, "")
-            for (_, _, sup) in triples:
-                f.write ('\tCOMMENT: ' + sup)
+            try:
+                (triples, cardinality) = hdt_file.search_triples(e, rdfs_lable, "")
+                for (_, _, sup) in triples:
+                    f.write ('\tLABEL: ' + sup)
+            except:
+                pass
 
-            (triples, cardinality) = hdt_file.search_triples(e, owl_sameas, "")
-            for (_, _, sup) in triples:
-                f.write ('\tSAMEAS->: ' + sup)
 
-            (triples, cardinality) = hdt_file.search_triples('', owl_sameas, e)
-            for (sub, _, _) in triples:
-                f.write ('\tSAMEAS<-: ' + sub)
+            try:
+                (triples, cardinality) = hdt_file.search_triples(e, rdfs_comment, "")
+                for (_, _, sup) in triples:
+                    f.write ('\tCOMMENT: ' + sup)
+            except:
+                pass
+
+            try:
+                (triples, cardinality) = hdt_file.search_triples(e, owl_sameas, "")
+                for (_, _, sup) in triples:
+                    f.write ('\tSAMEAS->: ' + sup)
+            except :
+                pass
+
+            try:
+                (triples, cardinality) = hdt_file.search_triples('', owl_sameas, e)
+                for (sub, _, _) in triples:
+                    f.write ('\tSAMEAS<-: ' + sub)
+            except :
+                pass

@@ -37,44 +37,43 @@ for nm in names:
         e = row["Entity"]
         entity_list.append(e)
     print ('size of nodes: ', len(entity_list))
-    for e in entity_list:
-        export_filename = nm + '_node_information.txt'
-        with open(export_filename, 'w') as f:
-            f.write ('\n\nNow dealing with: ' + e)
+    export_filename = nm + '_node_information.txt'
+    with open(export_filename, 'w+') as f:
+        for e in entity_list:
+            f.write ('\n\nNow dealing with: ' + e + '\n')
             # use HDT and print essential information
             try:
                 (triples, cardinality) = hdt_file.search_triples(e, rdfs_subClassOf, "")
                 for (_, _, sup) in triples:
-                    f.write ('\tSUBCLASSOF: '+ sup)
+                    f.write ('\tSUBCLASSOF: '+ sup + '\n')
             except:
-                print('error in subclass')
+                f.write ('\tError in finding sub-class: ' + e+ '\n')
 
 
             try:
                 (triples, cardinality) = hdt_file.search_triples(e, rdfs_lable, "")
                 for (_, _, sup) in triples:
-                    f.write ('\tLABEL: ' + sup)
+                    f.write ('\tLABEL: ' + sup+ '\n')
             except:
-                print('error in label')
-
+                f.write ('\tError in finding label: ' + e+ '\n')
 
             try:
                 (triples, cardinality) = hdt_file.search_triples(e, rdfs_comment, "")
                 for (_, _, sup) in triples:
-                    f.write ('\tCOMMENT: ' + sup)
+                    f.write ('\tCOMMENT: ' + sup+ '\n')
             except:
-                print('error in comment')
+                f.write ('\tError in finding comment: ' + e+ '\n')
 
             try:
                 (triples, cardinality) = hdt_file.search_triples(e, owl_sameas, "")
                 for (_, _, sup) in triples:
-                    f.write ('\tSAMEAS->: ' + sup)
+                    f.write ('\tSAMEAS->: ' + sup+ '\n')
             except :
-                print('error in sameas >')
+                f.write ('\tError in finding sameas ->: ' + e+ '\n')
 
             try:
                 (triples, cardinality) = hdt_file.search_triples('', owl_sameas, e)
                 for (sub, _, _) in triples:
-                    f.write ('\tSAMEAS<-: ' + sub)
+                    f.write ('\tSAMEAS<-: ' + sub+ '\n')
             except :
-                print('error in sameas <')
+                f.write ('\tError in finding sameas <-: ' + e+ '\n')

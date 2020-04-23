@@ -21,7 +21,7 @@ DIFFERENT = 1
 
 WEIGHT_EXISTING_ATTACKING_EDGES = -5
 WEIGHT_EXISTING_EQUIVALENT_EDGES = 20
-WEIGHT_ADDITIONAL_ATTACKING_EDGES = -5
+WEIGHT_ADDITIONAL_ATTACKING_EDGES = -10
 WEIGHT_NORMAL_EDGES = 10
 
 class GraphSolver():
@@ -39,9 +39,10 @@ class GraphSolver():
         self.precision = 0.0
         self.recall = 0.0
         self.accuracy = 0.0
+        self.SMTvalue = 0.0
 
         self.o = Optimize()
-        timeout = 1000 * 60 * 5 # 5 mins
+        timeout = 1000 * 10 # 30 seconds
         self.o.set("timeout", timeout)
         print('timeout = ',timeout/1000/60, 'mins')
 
@@ -211,7 +212,7 @@ class GraphSolver():
             # print ('node n = ', n, ' id = ', id)
             self.id2encode[id] = Int(str(self.term2id[n]))
             self.o.add(self.id2encode[id] >= 0) # we fix all values to non-negative values
-            self.o.add(self.id2encode[id] < 50) # we fix all values to non-negative values
+            self.o.add(self.id2encode[id] < 5) # we fix all values to non-negative values
             id += 1
         # First, do a preprocessing before choosing nodes
         self.preprocessing_before_encode()
@@ -248,14 +249,53 @@ class GraphSolver():
         result = self.o.check()
         print ('solving result = ', result)
         self.model = self.o.model()
+        # update the SMT value
+        self.calculate_SMTvalue()
+
+    def calculate_SMTvalue (self):
+
+        SMT_value = 0.0
+        g = self.G.subgraphs[0]
+        # find existing attacking edges: #TODO change the weight function
+        # print ('There are in total ', len (self.G.subgraphs[0].edges))
+        # edges = list(g.edges).copy()
+        # self.find_existing_attacking_edges()
+        for (t1, t2) in self.existing_attacking_edges:
+            if self.model.evaluate(self.id2encode[self.term2id[t1]] == self.id2encode[self.term2id[t2]]):
+                SMT_value += WEIGHT_EXISTING_ATTACKING_EDGES
+            # print('existing attacking edge: ', t1, t2)
+        # print('\tThere are in total: ', len (self.existing_attacking_edges), ' existing attacking edges!')
+        for (t1, t2) in self.existing_equivalent_edges:
+            if self.model.evaluate(self.id2encode[self.term2id[t1]] == self.id2encode[self.term2id[t2]]):
+                SMT_value += WEIGHT_EXISTING_EQUIVALENT_EDGES
+            # print('existing equivalent edge: ', t1, t2)
+        # print('\tThere are in total: ', len (self.existing_equivalent_edges), ' existing equivalence edges!')
+        edges = list(g.edges).copy()
+        edges = list(filter(lambda x: x not in self.existing_attacking_edges, edges))
+        edges = list(filter(lambda x: x not in self.existing_equivalent_edges, edges))
+        # print ('Now there are normal', len(edges), ' edges left')
+        # other normal edges
+        for (t1, t2) in edges:
+            if self.model.evaluate(self.id2encode[self.term2id[t1]] == self.id2encode[self.term2id[t2]]):
+                SMT_value += WEIGHT_NORMAL_EDGES # each edge within graphs
+
+        # find additional attacking edges:
+        # self.find_additional_attacking_edges()
+        for (t1, t2) in self.additional_attacking_edges:
+            # self.o.add(Not(self.id2encode[self.term2id[t1]] == self.id2encode[self.term2id[t2]])) # each edge within graphs
+            if self.model.evaluate(self.id2encode[self.term2id[t1]] == self.id2encode[self.term2id[t2]]):
+                SMT_value += WEIGHT_ADDITIONAL_ATTACKING_EDGES # each edge within graphs
+        # print('There are in total: ', len (self.additional_attacking_edges), ' additional attacking edges!')
+        print ('SMT value is', SMT_value)
+        self.SMTvalue = SMT_value
 
     def decode (self):
         g = self.G.subgraphs[0]
         group_size = 0
         for id in self.id2encode.keys():
-            # print ('eva = ', self.model.evaluate(self.id2encode[id]).as_long())
-            if group_size < int(self.model.evaluate(self.id2encode[id]).as_long()):
-                group_size = int(self.model.evaluate(self.id2encode[id]).as_long())
+            # print ('eva = ', self.model.evaluate(self.id2encode[id]).as_string())
+            if group_size < int(self.model.evaluate(self.id2encode[id]).as_string()):
+                group_size = int(self.model.evaluate(self.id2encode[id]).as_string())
         group_size += 1
         # print ('there are in total ', group_size, ' graphs')
         for m in range (group_size):
@@ -389,7 +429,7 @@ if __name__ == "__main__":
 
     name_list = []
 
-    f = open("process.txt", "r")
+    f = open("process3.txt", "r")
     for l in f:
         print ('Now working on group index', l[:-1])
         name_list.append(int (l[:-1]))
@@ -401,11 +441,12 @@ if __name__ == "__main__":
     avg_precision = 0.0
     avg_recall = 0.0
     avg_accuracy = 0.0
-
+    avg_SMTvalue = 0.0
+    SMTvalues = []
     for n in name_list:
 
         solver = GraphSolver ()
-        solver.load_graph('./generate_data/AL_subgraph_edges_' + str(n) + '.csv')
+        solver.load_graph('./generate_data/Type3/AL_subgraph_edges_' + str(n) + '.csv')
 
         pos, labels = solver.G.save_graph(file_name = str(n)+'before')
         solver.encode()
@@ -420,7 +461,7 @@ if __name__ == "__main__":
         solver.decode()
         solver.H.save_graph(file_name = str(n) + 'after',  pos=pos, labels = labels)
         # also obtain obtain statistics
-        solver.obtain_statistics('./generate_data/' + str(n) + '_annotation.txt')
+        solver.obtain_statistics('./generate_data/Type3/' + str(n) + '_annotation.txt')
 
         avg_TP += solver.count_TP
         avg_TN += solver.count_TN
@@ -429,6 +470,8 @@ if __name__ == "__main__":
         avg_precision += solver.precision
         avg_recall += solver.recall
         avg_accuracy += solver.accuracy
+        avg_SMTvalue += solver.SMTvalue
+        SMTvalues.append(solver.SMTvalue)
     # ===============
     avg_TP /= len(name_list)
     avg_TN /= len(name_list)
@@ -437,12 +480,13 @@ if __name__ == "__main__":
     avg_precision /= len(name_list)
     avg_recall /= len(name_list)
     avg_accuracy /= len(name_list)
-
+    avg_SMTvalue /= len(name_list)
     print('=========FINALLY==========')
     print('average precision: ', avg_precision)
     print('average recall: ', avg_recall)
     print('average accuracy: ', avg_accuracy)
-
+    print('\n The average SMT values', SMTvalues)
+    print('\n Average SMTvalue:', avg_SMTvalue)
     end = time.time()
     hours, rem = divmod(end-start, 3600)
     minutes, seconds = divmod(rem, 60)

@@ -62,7 +62,7 @@ class MyGraph ():
 
         Big = nx.Graph()
         for k in self.subgraphs.keys():
-            print ('======= GROUP ', k, ' =========')
+            # print ('======= GROUP ', k, ' =========')
             g = self.subgraphs[k]
             Big = nx.compose(Big, g)
             nx.draw_networkx_nodes(g, pos,
@@ -82,10 +82,12 @@ class MyGraph ():
                     print ('index ', ind, ' = ', n)
                     ind += 1
             else:
-                for n in g.nodes:
-                    print ('index ', labels[n], ' = ', n)
+                pass
+                # for n in g.nodes:
+                    # print ('index ', labels[n], ' = ', n)
+                    # print ('')
             nx.draw_networkx_labels(g,pos,labels,font_size=5)
-            print ('\n')
+            # print ('\n')
 
         nx.draw_networkx_edges(Big, pos,
                    edgelist=attacking_edges,
@@ -102,4 +104,4 @@ class MyGraph ():
 if __name__ == "__main__":
     n = MyGraph()
     n.load_graph('./generate_data/V10_24.csv')
-    n.save_graph(file_name = 'test.png')
+    n.save_graph(file_name = 'test')

@@ -42,7 +42,7 @@ Image:
         keep_ratio: True
         size_hint_y: None
         size_hint_x: None
-        width: 500
+        width: 700
         height: self.width/self.image_ratio
         '''
 
@@ -306,7 +306,7 @@ class NestedLayoutExample(App):
         # colors = ['b', 'g', 'r'] * len(h.edges)
         # self.graphs[0].save_graph('before.png')
         self.solver = GraphSolver()
-        self.solver.G.load_graph_with_error_degree(self.Path_input.text)
+        self.solver.G.load_graph_with_error_degree(file_error_degree = self.Path_input.text, file_term_to_class = './OBAMA_TERMS.csv')
 
         # print ('graph loaded and the No. nodes are', len (self.graphs[0].G.nodes))
         # print ('graph loaded and the No. edges are', len (self.graphs[0].G.edges))
@@ -375,6 +375,10 @@ class NestedLayoutExample(App):
         self.solver.H.save_graph(file_name = 'after',  pos= self.pos, labels = self.labels)
 
         for (l, r) in self.solver.removed_edges:
+
+            print('\n' ,l, ' is in class ', self.solver.G.term_to_class[l])
+            print(r, ' is in class ', self.solver.G.term_to_class[r])
+
             if (l, r) in self.solver.G.error_degree.keys():
                 print ('the error degree is :', self.solver.G.error_degree[(l,r)])
                 print ('\t\t (', l, ', ', r, ' )')

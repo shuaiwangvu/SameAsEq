@@ -165,7 +165,7 @@ with open(path) as csv_file:
                 terms.append(row[i])
 
         terms = [ r[1:-1] for r in terms]
-        
+
         size = len(terms)
         if size > 1000:
             print ('exporting ', index)
@@ -179,11 +179,11 @@ with open(path) as csv_file:
             g = obtain_graph(terms)
             # export the graph
             # nx.write_edgelist(g, export_filename)
-            export_graph_csv(export_filename, g)
+            # export_graph_csv(export_filename, g)
             # index += 1
 
             # h = nx.read_edgelist(export_filename)
-            h = read_graph_csv(export_filename)
+            # h = read_graph_csv(export_filename)
 
             # print ('G- No. Nodes: ', len(g.nodes))
             # print ('G- No. Edges: ', len(g.edges))
@@ -191,7 +191,7 @@ with open(path) as csv_file:
             # print ('H- No. Edges: ', len(h.edges))
             print ('edges: ', len (g.edges))
             print ('nodes: ', len (g.nodes))
-            if len(h.edges) != len(g.edges):
-                print ('********* error *************')
+            # if len(h.edges) != len(g.edges):
+            #     print ('********* error *************')
 
     print ('count  = ', count)

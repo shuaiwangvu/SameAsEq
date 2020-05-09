@@ -195,4 +195,4 @@ with open(path) as csv_file:
             # if len(h.edges) != len(g.edges):
             #     print ('********* error *************')
 
-    print ('count  = ', count)
+            print ('count  = ', count)

@@ -4,6 +4,12 @@ import csv
 import matplotlib.pyplot as plt
 import numpy as np
 import random
+import networkx as nx
+from hdt import HDTDocument, IdentifierPosition
+
+sameas = "http://www.w3.org/2002/07/owl#sameAs"
+PATH_LOD = "/scratch/wbeek/data/LOD-a-lot/data.hdt"
+hdt_file = HDTDocument(PATH_LOD)
 
 sameAs_dic = {}
 # def read_line (line):
@@ -64,30 +70,30 @@ def read_graph_csv(file_name):
     return g
 
 
-
-with open(path) as csv_file:
-    csv_reader = csv.reader(csv_file, delimiter=' ')
-    count = 0
-    for row in csv_reader:
-        index = int(row[0])
-        terms = []
-        for i in range (len (row)):
-            if i > 0:
-                # print (index, row[i])
-                terms.append(row[i])
-        sameAs_dic[index] = terms
-        # print ('\n')
-        count += 1
-        if count % 100000 == 0:
-            print (count)
-
-max = 0
-for k in sameAs_dic.keys():
-    l = len (sameAs_dic[k])
-    if l > max:
-        max = l
-
-print('max = ', max)
+#
+# with open(path) as csv_file:
+#     csv_reader = csv.reader(csv_file, delimiter=' ')
+#     count = 0
+#     for row in csv_reader:
+#         index = int(row[0])
+#         terms = []
+#         for i in range (len (row)):
+#             if i > 0:
+#                 # print (index, row[i])
+#                 terms.append(row[i])
+#         sameAs_dic[index] = terms
+#         # print ('\n')
+#         count += 1
+#         if count % 100000 == 0:
+#             print (count)
+#
+# max = 0
+# for k in sameAs_dic.keys():
+#     l = len (sameAs_dic[k])
+#     if l > max:
+#         max = l
+#
+# print('max = ', max)
 
 # # step 1:
 # sample_size = 100
@@ -139,8 +145,6 @@ print('max = ', max)
 #     print ('finished exporting for ', V)
 #
 #
-
-
 # step 2:
 sample_size = 10
 # Generate the VM group
@@ -148,31 +152,41 @@ sample_size = 10
 # for V in range (10): # 0 - 99999, 10 groups
 collect_data_VM = []
 count = 0
-for k in sameAs_dic.keys():
-    terms = sameAs_dic[k] # k = group_id
-    size = len(terms)
-    if size > 1000:
-        export_filename = 'SB' + str(k) + '_' + str(size) +'.csv'
-        # file =  open(file_name, 'w', newline='')
-        # writer = csv.writer(file)
-        # writer.writerow([ "GROUP_ID", "TERMS"])
-        # for (k, terms) in Vsample:
-        # writer.writerow(terms)
-        g = obtain_graph(terms)
-        # export the graph
-        # nx.write_edgelist(g, export_filename)
-        export_graph_csv(export_filename, g)
-        # index += 1
 
-        # h = nx.read_edgelist(export_filename)
-        h = read_graph_csv(export_filename)
+with open(path) as csv_file:
+    csv_reader = csv.reader(csv_file, delimiter=' ')
+    count = 0
+    for row in csv_reader:
+        index = int(row[0])
+        terms = []
+        for i in range (len (row)):
+            if i > 0:
+                # print (index, row[i])
+                terms.append(row[i])
 
-        # print ('G- No. Nodes: ', len(g.nodes))
-        # print ('G- No. Edges: ', len(g.edges))
-        # print ('H- No. Nodes: ', len(h.nodes))
-        # print ('H- No. Edges: ', len(h.edges))
-        if len(h.edges) != len(g.edges):
-            print ('********* error *************')
+        size = len(terms)
+        if size > 1000:
+            export_filename = 'SB' + str(k) + '_' + str(size) +'.csv'
+            # file =  open(file_name, 'w', newline='')
+            # writer = csv.writer(file)
+            # writer.writerow([ "GROUP_ID", "TERMS"])
+            # for (k, terms) in Vsample:
+            # writer.writerow(terms)
+            g = obtain_graph(terms)
+            # export the graph
+            # nx.write_edgelist(g, export_filename)
+            export_graph_csv(export_filename, g)
+            # index += 1
+
+            # h = nx.read_edgelist(export_filename)
+            h = read_graph_csv(export_filename)
+
+            # print ('G- No. Nodes: ', len(g.nodes))
+            # print ('G- No. Edges: ', len(g.edges))
+            # print ('H- No. Nodes: ', len(h.nodes))
+            # print ('H- No. Edges: ', len(h.edges))
+            if len(h.edges) != len(g.edges):
+                print ('********* error *************')
 
 
 

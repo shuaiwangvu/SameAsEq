@@ -164,23 +164,23 @@ with open(path) as csv_file:
                 # print (index, row[i])
                 terms.append(row[i])
 
-        # terms = [ r[1:-1] for r in terms]
+        terms = [ r[1:-1] for r in terms]
 
         size = len(terms)
         if size > 1000:
             count += 1
-            # print ('exporting ', index)
-            # export_filename = 'SB_' + str(index) + '_'  + str(size) +'.csv'
+            print ('exporting ', index)
+            export_filename = 'SB_' + str(index) + '_'  + str(size) +'.csv'
             # file =  open(file_name, 'w', newline='')
             # writer = csv.writer(file)
             # writer.writerow([ "GROUP_ID", "TERMS"])
             # for (k, terms) in Vsample:
             # writer.writerow(terms)
-            # print ('t0: ', terms [0])
-            # g = obtain_graph(terms)
+            print ('t0: ', terms [0])
+            g = obtain_graph(terms)
             # export the graph
             # nx.write_edgelist(g, export_filename)
-            # export_graph_csv(export_filename, g)
+            export_graph_csv(export_filename, g)
             # index += 1
 
             # h = nx.read_edgelist(export_filename)

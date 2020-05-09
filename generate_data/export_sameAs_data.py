@@ -166,7 +166,7 @@ with open(path) as csv_file:
 
         size = len(terms)
         if size > 1000:
-            export_filename = 'SB' + str(k) + '_' + str(size) +'.csv'
+            export_filename = 'SB' + str(index) + '_' + str(size) +'.csv'
             # file =  open(file_name, 'w', newline='')
             # writer = csv.writer(file)
             # writer.writerow([ "GROUP_ID", "TERMS"])

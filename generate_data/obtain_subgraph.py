@@ -42,31 +42,61 @@ def obtain_graph(list_terms):
     return g
 
 
-# read the file
-for i in range(40):
-    eq_file = open('V' + str(i) + '.csv', 'r')
-    reader = csv.reader(eq_file, delimiter=',')
+# # read the file
+# for i in range(40):
+#     eq_file = open('V' + str(i) + '.csv', 'r')
+#     reader = csv.reader(eq_file, delimiter=',')
+#
+#     index = 0
+#     for row in reader:
+#         # print (index, ' has length ', len (row))
+#         row = [ r[1:-1] for r in row]
+#         g = obtain_graph(row)
+#         # export the graph
+#         export_filename = 'V' + str(i) + '_' + str(index) + ".csv"
+#         # nx.write_edgelist(g, export_filename)
+#         export_graph_csv(export_filename, g)
+#         index += 1
+#
+#         # h = nx.read_edgelist(export_filename)
+#         h = read_graph_csv(export_filename)
+#
+#         # print ('G- No. Edges: ', len(g.edges))
+#         # print ('H- No. Edges: ', len(h.edges))
+#         if len(h.edges) != len(g.edges):
+#             print ('********* error *************')
+#
+# print('now dealing with SA')
+#
+# # read the file
+# for i in range(10):
+#     eq_file = open('SA' + str(i) + '.csv', 'r')
+#     reader = csv.reader(eq_file, delimiter=',')
+#     print ('i = ', i)
+#     index = 0
+#     for row in reader:
+#         print (index, ' has length ', len (row))
+#         row = [ r[1:-1] for r in row]
+#         g = obtain_graph(row)
+#         # export the graph
+#         export_filename = 'SA' + str(i) + '_' + str(index) + ".csv"
+#         # nx.write_edgelist(g, export_filename)
+#         export_graph_csv(export_filename, g)
+#         index += 1
+#
+#         # h = nx.read_edgelist(export_filename)
+#         h = read_graph_csv(export_filename)
+#
+#         # print ('G- No. Nodes: ', len(g.nodes))
+#         # print ('G- No. Edges: ', len(g.edges))
+#         # print ('H- No. Nodes: ', len(h.nodes))
+#         # print ('H- No. Edges: ', len(h.edges))
+#         if len(h.edges) != len(g.edges):
+#             print ('********* error *************')
 
-    index = 0
-    for row in reader:
-        # print (index, ' has length ', len (row))
-        row = [ r[1:-1] for r in row]
-        g = obtain_graph(row)
-        # export the graph
-        export_filename = 'V' + str(i) + '_' + str(index) + ".csv"
-        # nx.write_edgelist(g, export_filename)
-        export_graph_csv(export_filename, g)
-        index += 1
 
-        # h = nx.read_edgelist(export_filename)
-        h = read_graph_csv(export_filename)
 
-        # print ('G- No. Edges: ', len(g.edges))
-        # print ('H- No. Edges: ', len(h.edges))
-        if len(h.edges) != len(g.edges):
-            print ('********* error *************')
-
-print('now dealing with SA')
+print('now dealing with SB')
 
 # read the file
 for i in range(10):
@@ -79,7 +109,7 @@ for i in range(10):
         row = [ r[1:-1] for r in row]
         g = obtain_graph(row)
         # export the graph
-        export_filename = 'SA' + str(i) + '_' + str(index) + ".csv"
+        export_filename = 'SB' + str(i) + '_' + str(index) + ".csv"
         # nx.write_edgelist(g, export_filename)
         export_graph_csv(export_filename, g)
         index += 1

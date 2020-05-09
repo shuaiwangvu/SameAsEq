@@ -164,6 +164,8 @@ with open(path) as csv_file:
                 # print (index, row[i])
                 terms.append(row[i])
 
+        terms = [ r[1:-1] for r in terms]
+        
         size = len(terms)
         if size > 1000:
             print ('exporting ', index)

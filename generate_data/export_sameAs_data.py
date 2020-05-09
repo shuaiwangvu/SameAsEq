@@ -166,7 +166,8 @@ with open(path) as csv_file:
 
         size = len(terms)
         if size > 1000:
-            export_filename = 'SB' + str(index) + '_' + str(size) +'.csv'
+            print ('exporting ', index)
+            export_filename = 'SB_' + str(index) + '_'  + str(size) +'.csv'
             # file =  open(file_name, 'w', newline='')
             # writer = csv.writer(file)
             # writer.writerow([ "GROUP_ID", "TERMS"])
@@ -185,11 +186,9 @@ with open(path) as csv_file:
             # print ('G- No. Edges: ', len(g.edges))
             # print ('H- No. Nodes: ', len(h.nodes))
             # print ('H- No. Edges: ', len(h.edges))
+            print ('edges: ', len (g.edges))
+            print ('nodes: ', len (g.nodes))
             if len(h.edges) != len(g.edges):
                 print ('********* error *************')
 
-
-
-
-    count += 1
-    print ('finished exporting for ', count)
+    print ('count  = ', count)

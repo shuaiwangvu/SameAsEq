@@ -173,6 +173,7 @@ with open(path) as csv_file:
             # writer.writerow([ "GROUP_ID", "TERMS"])
             # for (k, terms) in Vsample:
             # writer.writerow(terms)
+            print ('t0: ', terms [0])
             g = obtain_graph(terms)
             # export the graph
             # nx.write_edgelist(g, export_filename)

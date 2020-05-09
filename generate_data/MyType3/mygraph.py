@@ -21,8 +21,9 @@ class MyGraph ():
         # self.edges_between = []
         self.error_degree = {}
         self.term_to_class = {}
-        self.label = {}
+        self.edge_label = {}
         self.should_remove = []
+        self.node_label = {}
 
     def load_graph(self, file_name):
         g = nx.Graph()
@@ -34,7 +35,7 @@ class MyGraph ():
             l = row ["LABEL"]
             if s != o:
                 g.add_edge(s, o)
-                self.label[(s,o)] = l
+                self.edge_label[(s,o)] = l
             if l == 'x':
                 self.should_remove.append((s,o))
         print ('before = ',len(g.edges))
@@ -62,6 +63,16 @@ class MyGraph ():
     #         t = row["Term"]
     #         c = row["Class"]
     #         self.term_to_class [t] = c
+
+
+
+    def load_node_manual_label (self, file_name):
+        file = open(file_name, 'r')
+        reader = csv.DictReader(file)
+        for row in reader:
+            e = row["Entity"]
+            l = row ["Label"]
+            self.node_label[e] = l
 
 
 # https://stackoverflow.com/questions/3567018/how-can-i-specify-an-exact-output-size-for-my-networkx-graph

@@ -188,6 +188,9 @@ class GraphSolver():
     def load_graph(self, file_name):
         self.G.load_graph(file_name)
 
+    def load_node_manual_label (self, file_name):
+        self.G.load_node_manual_label(file_name)
+
     def preprocessing_before_encode(self):
         g = self.G.subgraphs[0]
         self.domain = {}
@@ -447,6 +450,16 @@ class GraphSolver():
         print ('Total edges ', len(self.G.subgraphs[0].edges))
         # print ('There are in total ', count_edges_involving_unknow, ' edges involving unknown')
 
+        count_diff = 0
+        for e in self.G.subgraphs[0].edges:
+            (l,r) = e
+            if self.G.node_label[l] != self.G.node_label[r]:
+                count_diff += 1
+                print('l = ', l, ': ', self.G.node_label[l])
+                print('r = ', r, ': ', self.G.node_label[r])
+        print ('VERIFY: COUNT_DIFF    = ', count_diff)
+        print ('VERIFY: SHOULD_REMOVE = ', len(self.G.should_remove))
+
         print ('==============================')
 
         print ('TP = both remove: ', self.count_TP)
@@ -492,8 +505,10 @@ if __name__ == "__main__":
     for n in name_list:
         print ('\n\n\n\n NOW WORKING ON: ', n)
         filename_labelled_edges = './labelled/SA' + str(n) + '_edges_labelled.csv'
+        filename_labelled_nodes = './labelled/SA' + str(n) + '_nodes_labelled.csv'
         solver = GraphSolver ()
         solver.load_graph(filename_labelled_edges)
+        solver.load_node_manual_label(filename_labelled_nodes)
 
         pos, labels = solver.G.save_graph(file_name = str(n)+'before')
         # compute the size limit

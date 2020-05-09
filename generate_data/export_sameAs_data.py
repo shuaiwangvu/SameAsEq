@@ -190,8 +190,8 @@ with open(path) as csv_file:
             # print ('G- No. Edges: ', len(g.edges))
             # print ('H- No. Nodes: ', len(h.nodes))
             # print ('H- No. Edges: ', len(h.edges))
-            # print ('edges: ', len (g.edges))
-            # print ('nodes: ', len (g.nodes))
+            print ('edges: ', len (g.edges))
+            print ('nodes: ', len (g.nodes))
             # if len(h.edges) != len(g.edges):
             #     print ('********* error *************')
 

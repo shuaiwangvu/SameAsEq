@@ -1,0 +1,169 @@
+z: zhaowei
+g: gongli
+l: langlang
+o: zhouxun 周迅
+j: cuijian
+f: Faye Wong /Fei Wang
+c: CoCo_Lee / 李玟 / 李美林
+m: Leon_Lai / 黎明
+s: 周璇 / Zhou Xuan / Chow_Hsuan / Chow Hsuan / Zhou Xiaohong
+h: 胡歌
+r: 瑞恩
+y: 那英
+d: 陶喆 陶吉吉 David_Tao 陶緒忠
+a: 阿炳 A_bing Abing /Hua_Yanjun
+i: 林夕 Albert_Leung
+w: Cao_Ge / Gary_Cao
+e: 張菲 / 張彥明 Chang Fei/ Fei Ge
+q: Dòu_Weí
+t: Deserts_Chang 張懸
+v: Han_Hong
+n: 何潔
+k: 衛蘭 Janice Vidal / Janice_Wei / Wei_Lan
+p: 溫嵐
+1: 林強 Lim_Giong
+2: Phil_Chang,  張宇
+3: Stephanie_Cheng 鄭融 鄭麗芳
+4: 林俊傑
+5: 夏霖 lawyer
+6: 老狼
+7: 周蕙
+8: 品冠
+9: 艾敬
+0: 郭子
+@: 康康
+$:王蓉
+!: 高旗
+^: 呂方
+(: 姜昕
+): 揚眉
+
+
+终极原因在于 http://zh.wikipedia.org/wiki/??
+
+REMOVE: l ( f ) =  http://rdf.freebase.com/ns/m.01r1jx
+REMOVE: r ( 5 ) =  http://dbpedia.org/resource/Xia_Lin
+
+REMOVE: l ( f ) =  http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000001b861c
+REMOVE: r ( 5 ) =  http://dbpedia.org/resource/Xia_Lin
+其他的都是和这些
+
+?= l ( a ) =  http://dbtune.org/musicbrainz/resource/artist/f96d6a53-2bcc-43af-b0b9-ed1718ea8afa
+?= r ( ? ) =  http://zh.wikipedia.org/wiki/??
+
+?= l ( i ) =  http://dbtune.org/musicbrainz/resource/artist/6d5993a7-ef89-41cd-88c8-9ac4d0b39b0c
+?= r ( ? ) =  http://zh.wikipedia.org/wiki/??
+
+?= l ( e ) =  http://dbtune.org/musicbrainz/resource/artist/b1f39a1c-1b22-49db-bcb6-dd57ed3818bf
+?= r ( ? ) =  http://zh.wikipedia.org/wiki/??
+
+?= l ( c ) =  http://dbtune.org/musicbrainz/resource/artist/f3fd7e43-aca4-4e25-9f2d-a5c992a575fc
+?= r ( ? ) =  http://zh.wikipedia.org/wiki/??
+
+?= l ( j ) =  http://dbtune.org/musicbrainz/resource/artist/d457f05e-8802-4888-83a6-b07d3df3bbf3
+?= r ( ? ) =  http://zh.wikipedia.org/wiki/??
+
+?= l ( d ) =  http://dbtune.org/musicbrainz/resource/artist/38fe7fb3-2bde-4672-8016-2ba6f7d1808f
+?= r ( ? ) =  http://zh.wikipedia.org/wiki/??
+
+?= l ( t ) =  http://dbtune.org/musicbrainz/resource/artist/d7dd2cd8-db65-4dc1-897b-957548393cf5
+?= r ( ? ) =  http://zh.wikipedia.org/wiki/??
+
+?= l ( q ) =  http://dbtune.org/musicbrainz/resource/artist/57488107-e763-4955-abc2-f279548ffe9a
+?= r ( ? ) =  http://zh.wikipedia.org/wiki/??
+
+?= l ( f ) =  http://dbtune.org/musicbrainz/resource/artist/692e367d-2846-442d-b13d-1177c3681c65
+?= r ( ? ) =  http://zh.wikipedia.org/wiki/??
+
+?= l ( w ) =  http://dbtune.org/musicbrainz/resource/artist/c6e4c1a5-695e-4f7a-a69f-55081cf2e170
+?= r ( ? ) =  http://zh.wikipedia.org/wiki/??
+
+?= l ( g ) =  http://dbtune.org/musicbrainz/resource/artist/97a27018-56ac-4e91-92be-06b7817aa4b4
+?= r ( ? ) =  http://zh.wikipedia.org/wiki/??
+
+?= l ( v ) =  http://dbtune.org/musicbrainz/resource/artist/bcb0505f-7884-4a13-a210-760e1b4f651f
+?= r ( ? ) =  http://zh.wikipedia.org/wiki/??
+
+?= l ( h ) =  http://dbtune.org/musicbrainz/resource/artist/69d09a21-ca65-4fe0-b0d0-6263bb1b3f96
+?= r ( ? ) =  http://zh.wikipedia.org/wiki/??
+
+?= l ( k ) =  http://dbtune.org/musicbrainz/resource/artist/7e5b5c8a-bd9f-4106-bce0-e97fd14f6a6d
+?= r ( ? ) =  http://zh.wikipedia.org/wiki/??
+
+?= l ( p ) =  http://dbtune.org/musicbrainz/resource/artist/c75ab3cf-cd43-4c52-9a4c-913ea2b78420
+?= r ( ? ) =  http://zh.wikipedia.org/wiki/??
+
+?= l ( l ) =  http://dbtune.org/musicbrainz/resource/artist/43e1570a-1a0d-479f-9c95-fba971aec91a
+?= r ( ? ) =  http://zh.wikipedia.org/wiki/??
+
+?= l ( m ) =  http://dbtune.org/musicbrainz/resource/artist/603976ae-5e99-4126-8406-23bf7134433c
+?= r ( ? ) =  http://zh.wikipedia.org/wiki/??
+
+?= l ( 1 ) =  http://dbtune.org/musicbrainz/resource/artist/c8502d7b-d8d8-4ed7-b80b-7c0810f4354c
+?= r ( ? ) =  http://zh.wikipedia.org/wiki/??
+
+?= l ( y ) =  http://dbtune.org/musicbrainz/resource/artist/6aa74244-000b-4932-b003-b0636281931e
+?= r ( ? ) =  http://zh.wikipedia.org/wiki/??
+
+?= l ( f ) =  http://dbtune.org/musicbrainz/resource/record/aaaa593a-8389-4be0-b0df-d87aa9e739cd
+?= r ( ? ) =  http://zh.wikipedia.org/wiki/??
+
+?= l ( r ) =  http://dbtune.org/musicbrainz/resource/artist/81efe814-a500-4ae5-8c9c-1b9d4c466663
+?= r ( ? ) =  http://zh.wikipedia.org/wiki/??
+
+?= l ( 3 ) =  http://dbtune.org/musicbrainz/resource/artist/9126cb67-035c-4313-9ff9-0724bc412371
+?= r ( ? ) =  http://zh.wikipedia.org/wiki/??
+
+?= l ( 4 ) =  http://dbtune.org/musicbrainz/resource/record/e7d55782-0262-4527-88ad-7525308d5d4d
+?= r ( ? ) =  http://zh.wikipedia.org/wiki/??
+
+?= l ( z ) =  http://dbtune.org/musicbrainz/resource/artist/b912817f-c95b-4b07-b101-3b900d4137f6
+?= r ( ? ) =  http://zh.wikipedia.org/wiki/??
+
+?= l ( s ) =  http://dbtune.org/musicbrainz/resource/artist/51c3f650-25bc-4ea9-b25a-ef600af6ef80
+?= r ( ? ) =  http://zh.wikipedia.org/wiki/??
+
+?= l ( o ) =  http://dbtune.org/musicbrainz/resource/artist/ca46ca12-82c0-4c0f-955d-5d56c6b95460
+?= r ( ? ) =  http://zh.wikipedia.org/wiki/??
+
+?= l ( 2 ) =  http://dbtune.org/musicbrainz/resource/artist/19f89a7c-008b-4433-91d7-1a1a68d1591d
+?= r ( ? ) =  http://zh.wikipedia.org/wiki/??
+
+?= l ( ? ) =  http://zh.wikipedia.org/wiki/??
+?= r ( 6 ) =  http://dbtune.org/musicbrainz/resource/artist/1bcca86e-484b-4666-b899-bc1ad866d124
+
+?= l ( ? ) =  http://zh.wikipedia.org/wiki/??
+?= r ( 7 ) =  http://dbtune.org/musicbrainz/resource/artist/21d690ae-1e28-4399-92e2-a5b8ab236d84
+
+?= l ( ? ) =  http://zh.wikipedia.org/wiki/??
+?= r ( 8 ) =  http://dbtune.org/musicbrainz/resource/artist/35380fb7-9c3b-48e1-bc10-42776793b217
+
+?= l ( ? ) =  http://zh.wikipedia.org/wiki/??
+?= r ( 9 ) =  http://dbtune.org/musicbrainz/resource/artist/4558b189-74ed-4880-9e57-2af1721241aa
+
+?= l ( ? ) =  http://zh.wikipedia.org/wiki/??
+?= r ( 0 ) =  http://dbtune.org/musicbrainz/resource/artist/60ac21aa-6436-409d-8639-5ae3dd227427
+
+?= l ( ? ) =  http://zh.wikipedia.org/wiki/??
+?= r ( n ) =  http://dbtune.org/musicbrainz/resource/artist/69a68788-2d47-4518-8d43-9f2944ed611a
+
+?= l ( ? ) =  http://zh.wikipedia.org/wiki/??
+?= r ( @ ) =  http://dbtune.org/musicbrainz/resource/artist/76d9cc87-40fd-498c-88b4-8ffc72d3a8b3
+
+?= l ( ? ) =  http://zh.wikipedia.org/wiki/??
+?= r ( $ ) =  http://dbtune.org/musicbrainz/resource/artist/82ee7802-2bc7-4fa6-9bb2-028d1f285816
+
+?= l ( ? ) =  http://zh.wikipedia.org/wiki/??
+?= r ( ! ) =  http://dbtune.org/musicbrainz/resource/artist/a00beda3-77db-4931-a6ee-37cd4904cd1a
+
+?= l ( ? ) =  http://zh.wikipedia.org/wiki/??
+?= r ( ^ ) =  http://dbtune.org/musicbrainz/resource/artist/cac463f6-6355-4670-8689-46f4a1413dda
+
+?= l ( ? ) =  http://zh.wikipedia.org/wiki/??
+?= r ( ( ) =  http://dbtune.org/musicbrainz/resource/artist/d44558d7-20c9-40ef-bb7e-7c826ae29e97
+
+?= l ( ? ) =  http://zh.wikipedia.org/wiki/??
+?= r ( ) ) =  http://dbtune.org/musicbrainz/resource/record/51607db2-1b81-4559-b19e-bce588a163cf
+
+?= l ( ? ) =  http://zh.wikipedia.org/wiki/??
+?= r ( f ) =  http://dbtune.org/musicbrainz/resource/record/800a08fd-8e63-4007-8c77-1956f3bd7779

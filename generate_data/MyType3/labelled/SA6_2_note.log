@@ -1,0 +1,43 @@
+Concepts:
+
+b: Bandon, Oregon
+g: Burgundy_(French_region),list of rulers of provence, County_of_Provence, Duke of province
+s: Golf_van_Biskaje, Bay_Of_Biscay
+k: Cantabrian Sea
+c: Chappaqua_(Nova_York)
+
+
+Now dealing with: http://data.nytimes.com/N30038501401041739851
+	SAMEAS->: http://data.nytimes.com/bay_of_biscay_geo
+	SAMEAS->: http://dbpedia.org/resource/Bay_of_Biscay
+	SAMEAS->: http://dbpedia.org/resource/Bourgogne
+
+
+Not to be confused with Biscay Bay, Newfoundland and Labrador or Biscayne Bay.
+
+l ( b ) =  http://dbpedia.org/resource/Bandon,_Oregon
+r ( g ) =  http://data.nytimes.com/43553777731027839441
+
+l ( s ) =  http://rdf.freebase.com/ns/m.0d5sb
+r ( k ) =  http://dbpedia.org/resource/Cantabrian_Sea
+
+l ( s ) =  http://rdf.freebase.com/ns/m.0d5sb
+r ( k ) =  http://dbpedia.org/resource/Cantabrian_sea
+
+l ( s ) =  http://rdf.freebase.com/ns/m.0d5sb
+r ( k ) =  http://dbpedia.org/resource/Cantabric_Sea
+
+l ( c ) =  http://dbpedia.org/resource/Chappaqua,_New_York
+r ( b ) =  http://data.nytimes.com/N87963426655427413891
+
+l ( k ) =  http://dbpedia.org/resource/Cantabrian_Sea
+r ( s ) =  http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000006170a
+
+l ( g ) =  http://dbpedia.org/resource/Bourgogne
+r ( s ) =  http://data.nytimes.com/N30038501401041739851
+
+l ( s ) =  http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000006170a
+r ( k ) =  http://dbpedia.org/resource/Cantabrian_sea
+
+l ( s ) =  http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000006170a
+r ( k ) =  http://dbpedia.org/resource/Cantabric_Sea

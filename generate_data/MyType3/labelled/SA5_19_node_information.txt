@@ -18887,7 +18887,7 @@ Now dealing with: http://dbpedia.org/resource/Sacred_mysteries
 	LABEL: "Misterij"@hr
 	LABEL: "Mistério"@pt
 	LABEL: "Sacred mysteries"@en
-	LABEL: "Мистерия"@bg
+	LABEL: "Тайнство"@bg
 	LABEL: "الأسرار السبعة المقدسة"@ar
 	LABEL: "神秘"@ja
 	COMMENT: "Misterije su naziv za tajne obrede u starim religijama, povezanih s kultom pojedinih božanstava i nastalih vjerojatno iz običaja inicijacije. Takve misterije prakticirale su se u drevnom Egiptu, Grčkoj i Feniciji, a kasnije i u Rimu."@hr
@@ -25318,7 +25318,7 @@ Now dealing with: http://hu.dbpedia.org/resource/Misztériumvallás
 	SAMEAS->: http://uk.dbpedia.org/resource/Містерії
 	SAMEAS->: http://www.wikidata.org/entity/Q505821
 	SAMEAS->: http://zh.dbpedia.org/resource/希臘羅馬密教
-	SAMEAS->: http://hu.dbpedia.org/resource/Miszt%C3%A9riumvall%C3%A1s
+	SAMEAS->: http://hu.dbpedia.org/resource/Miszt%C3%A9riumvall%CRejt%C3%A9ly_(egy%C3%A9rtelm%C5%B1s%C3%A1s
 	SAMEAS<-: http://ar.dbpedia.org/resource/ديانة_غامضة
 	SAMEAS<-: http://bg.dbpedia.org/resource/Религиозни_мистерии
 	SAMEAS<-: http://ca.dbpedia.org/resource/Religió_mistèrica
@@ -29444,7 +29444,7 @@ Now dealing with: http://sw.opencyc.org/concept/Mx4rq0dgAHS_EdaAAACgyZzFrg
 	SUBCLASSOF: http://sw.opencyc.org/concept/Mx4rv5L5vZwpEbGdrcN5Y29ycA
 	LABEL: "mystery"
 	LABEL: "mystery"@en
-	COMMENT: "The collection of instances of <a href="http://sw.opencyc.org/concept/Mx4rv5L5vZwpEbGdrcN5Y29ycA" class="cyc_term">PropositionalConceptualWork</a> that are of the 
+	COMMENT: "The collection of instances of <a href="http://sw.opencyc.org/concept/Mx4rv5L5vZwpEbGdrcN5Y29ycA" class="cyc_term">PropositionalConceptualWork</a> that are of the
 mystery genre. <a href="http://sw.opencyc.org/concept/Mx4rwLehQpwpEbGdrcN5Y29ycA" class="cyc_term">SirArthurConanDoyle</a> is a famous writer that wrote stories in this genre.   "@en
 	COMMENT: "The collection of instances of PropositionalConceptualWork that are of the  mystery genre. SirArthurConanDoyle is a famous writer that wrote stories in this genre."
 	COMMENT: "The collection of instances of PropositionalConceptualWork that are of the  mystery genre. SirArthurConanDoyle is a famous writer that wrote stories in this genre."@en

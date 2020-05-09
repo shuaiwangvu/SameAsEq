@@ -1,0 +1,17 @@
+u: Utila
+m: Mandison
+n: Natchez
+s: Xi'an
+
+
+Source of error:
+
+http://data.nytimes.com/N42015398622290083051,"http://dbpedia.org/resource/Madison,_Wisconsin",x
+should be Natchez
+
+http://data.nytimes.com/56399731571712931101,"http://dbpedia.org/resource/Natchez,_Mississippi",x
+xi'an linked to Natchez
+
+
+http://data.nytimes.com/N75304497924591241091,http://dbpedia.org/resource/%C3%9Atila,x
+Madison linked to Natchez

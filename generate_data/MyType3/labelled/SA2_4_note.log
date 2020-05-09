@@ -1,0 +1,37 @@
+
+j: Junichi_Masuda
+p: Pokémon
+
+
+---
+
+main problem is that
+http://rdf.freebase.com/ns/m.05b1n7
+and http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000550687
+
+They are both pokemon but linked to its author Junichi Masuda
+
+---
+
+l ( j ) =  http://dbpedia.org/resource/Junichi_Masuda
+r ( p ) =  http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000550687
+
+l ( p ) =  http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000550687
+r ( j ) =  http://dbpedia.org/resource/Jun%27ichi_Masuda
+
+l ( p ) =  http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000550687
+r ( j ) =  http://dbpedia.org/resource/Jun%27ichi_masuda
+
+l ( p ) =  http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000550687
+r ( j ) =  http://dbpedia.org/resource/Jyunichi_Masuda
+
+l ( p ) =  http://rdf.freebase.com/ns/m.05b1n7
+r ( j ) =  http://dbpedia.org/resource/Jun'ichi_Masuda
+
+l ( p ) =  http://rdf.freebase.com/ns/m.05b1n7
+r ( j ) =  http://dbpedia.org/resource/Jun'ichi_masuda
+
+l ( p ) =  http://rdf.freebase.com/ns/m.05b1n7
+r ( j ) =  http://dbpedia.org/resource/Jyunichi_Masuda
+
+7 removed

@@ -39019,7 +39019,7 @@ Now dealing with: http://dbpedia.org/resource/Los_Angeles
 	SAMEAS->: http://zh-min-nan.dbpedia.org/resource/Los_Angeles
 	SAMEAS->: http://zh-yue.dbpedia.org/resource/洛杉磯
 	SAMEAS->: http://zh.dbpedia.org/resource/洛杉矶
-	SAMEAS->: http://ce.dbpedia.org/resource/Лос-Анджелес
+	SAMEAS->: http://ce.dbpedia.ata.dbpedia.org/resource/Q65org/resource/Лос-Анджелес
 	SAMEAS->: http://linkedgeodata.org/triplify/node671000
 	SAMEAS->: http://mn.dbpedia.org/resource/Лос-Анжелес
 	SAMEAS->: http://nap.dbpedia.org/resource/Los_Angeles
@@ -67622,7 +67622,7 @@ Now dealing with: http://dbpedia.org/resource/Rosuaenjellesu
 
 
 Now dealing with: http://dbpedia.org/resource/Saltersville%2C_New_Jersey
-	LABEL: "Saltersville, New Jersey"@en
+	LABEL: "Q8199619"@en
 	SAMEAS->: http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000000e50aa
 
 

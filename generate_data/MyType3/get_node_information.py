@@ -15,7 +15,6 @@ import time
 import csv
 from hdt import HDTDocument, IdentifierPosition
 
-
 names = ['SA2_4', 'SA4_0', 'SA5_19','SA5_18', 'SA6_2', 'SA6_19', 'SA7_3', 'SA8_6', 'SA8_11', 'SA8_15', 'SA8_17','SA9_11','SA9_18', 'SA9_19']
 
 PATH_LOD = "/scratch/wbeek/data/LOD-a-lot/data.hdt"

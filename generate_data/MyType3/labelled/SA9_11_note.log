@@ -1,0 +1,19 @@
+b: Bogotá, 波哥大
+l: Los Las_Angeles, map of L.A.
+k: K2 喬戈里峰
+n: New_Castle_(Delaware) / Nieuw-Amstel
+j: Bayonne,_New_Jersey"
+
+
+
+l ( b ) =  http://dbpedia.org/resource/Bogot%C3%A1
+r ( j ) =  http://data.nytimes.com/87299837065584400501
+
+l ( k ) =  http://dbpedia.org/resource/K2
+r ( b ) =  http://data.nytimes.com/N40721966796581976671
+
+l ( n ) =  http://dbpedia.org/resource/New_Castle,_Delaware
+r ( k ) =  http://data.nytimes.com/N33400509393259896641
+
+l ( n ) =  http://data.nytimes.com/N67702880080601221641
+r ( l ) =  http://dbpedia.org/resource/Los_Angeles,_California

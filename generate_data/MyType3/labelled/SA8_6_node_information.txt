@@ -64313,7 +64313,7 @@ Now dealing with: http://www.wikidata.org/entity/Q10897781
 
 
 Now dealing with: http://es.dbpedia.org/resource/Pen%C3%ADnsula_de_Gaspesia
-	SAMEAS<-: http://es.dbpedia.org/resource/Península_de_Gaspesia
+	SAMEAS<-: http://es.dbpedia.org/resource/Penínsm/dic/geo#DE3ula_de_Gaspesia
 
 
 Now dealing with: http://estatwrap.ontologycentral.com/dic/geo#DE30

@@ -1,0 +1,13 @@
+concepts:
+a: 天体物理学 Astrofísica 占星術 Astrologie
+b: Boston
+p: Pensacola_(Florida)
+
+
+l ( a ) =  http://rdf.freebase.com/ns/m.0dc_v
+r ( b ) =  http://dbpedia.org/resource/The_Hub_of_the_Universe
+
+l ( p ) =  http://data.nytimes.com/25227798254860164971
+r ( b ) =  http://dbpedia.org/resource/Boston,_Massachusetts
+
+count =  2  edges removed

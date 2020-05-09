@@ -1,0 +1,32 @@
+b: berlin
+j: Jersey_City
+t: Tirana/地拉那
+g: Gaspésie/加斯佩半岛
+f: Flint_(Michigan) /弗林特
+p: Point_Reyes_National_Seashore
+
+
+Same encoding  = same entity
+
+http://wikidata.dbpedia.org/resource/Q2100791,p
+http://www.wikidata.org/entity/Q2100791,p
+http://wikidata.org/entity/Q2100791,p
+
+
+
+l ( b ) =  http://dbpedia.org/resource/Berlin
+r ( g ) =  http://data.nytimes.com/16057429728088573361
+
+l ( j ) =  http://dbpedia.org/resource/Jersey_City,_New_Jersey
+r ( b ) =  http://data.nytimes.com/N50987186835223032381
+
+l ( t ) =  http://dbpedia.org/resource/Tirana
+r ( p ) =  http://data.nytimes.com/80989572077620084871
+
+l ( f ) =  http://dbpedia.org/resource/Flint,_Michigan
+r ( t ) =  http://data.nytimes.com/N15100443101042130241
+
+l ( p ) =  http://dbpedia.org/resource/Point_Reyes_National_Seashore
+r ( j ) =  http://data.nytimes.com/N42814424980517559061
+
+count =  5  edges removed

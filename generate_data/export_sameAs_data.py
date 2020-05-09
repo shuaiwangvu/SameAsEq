@@ -105,16 +105,17 @@ print('max = ', max)
 sample_size = 10
 # Generate the VM group
 # sameAs_dic
-for V in range (10): # 0 - 49999, 10 groups
+for V in range (10): # 0 - 99999, 10 groups
     collect_data_VM = []
     for k in sameAs_dic.keys():
         terms = sameAs_dic[k] # k = group_id
-        VM_id = int(len(terms) / 5000) # an VM id
+        VM_id = int(len(terms) / 10000) # an VM id
         if VM_id == V:
             collect_data_VM.append((k,sameAs_dic[k]))
     # select 100 randomly from them # size
-    print ('size = ', len (collect_data_VM))
-
+    print (V, ' : size = ', len (collect_data_VM))
+    if len (collect_data_VM) < sample_size:
+        sample_size = len (collect_data_VM)
     Vsample = random.sample(collect_data_VM, sample_size)
     # export these 100 to a file
     file_name = 'SB' + str(V) + '.csv'

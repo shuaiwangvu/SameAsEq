@@ -1,0 +1,143 @@
+Too big:
+
+142063: 21191 nodes and 101530 edges: many drugs nested together. 
+- less than 10000 nodes
+38792: 4921 nodes 12041 edges (The_Beatles)
+32236: 5076 nodes and 7061 edges (one big cluster , fine)
+--
+
+
+SB_15274_3680_46836.csv
+15274 is very complicated with many cities in it.
+There are in total:  127914  additional attacking edges!
+existing_attacking_edges:  ('http://sw.opencyc.org/concept/Mx4rvViIeZwpEbGdrcN5Y29ycA', 'http://sw.opencyc.org/2008/06/10/concept/en/Country')
+existing_attacking_edges:  ('http://sw.opencyc.org/2008/06/10/concept/Mx4rvVj975wpEbGdrcN5Y29ycA', 'http://sw.opencyc.org/2008/06/10/concept/en/Cabinet_StorageConstruction')
+existing_attacking_edges:  ('http://sw.opencyc.org/concept/Mx4rvVj975wpEbGdrcN5Y29ycA', 'http://sw.opencyc.org/2008/06/10/concept/en/Cabinet_StorageConstruction')
+existing_attacking_edges:  ('http://sw.opencyc.org/2008/06/10/concept/Mx4rvViIeZwpEbGdrcN5Y29ycA', 'http://sw.opencyc.org/2008/06/10/concept/en/Country')
+existing_attacking_edges:  ('http://sw.opencyc.org/concept/Mx4rYmxx1hO_QdiX_dcQsHDtOg', 'http://sw.opencyc.org/2008/06/10/concept/en/Force')
+existing_attacking_edges:  ('http://sw.opencyc.org/2008/06/10/concept/en/Force', 'http://sw.opencyc.org/2008/06/10/concept/Mx4rYmxx1hO_QdiX_dcQsHDtOg')
+existing_attacking_edges:  ('http://sw.opencyc.org/2008/06/10/concept/Mx4rwCAhkHseQdeRivkpwzBa0Q', 'http://sw.opencyc.org/2008/06/10/concept/en/GovernmentProgram')
+existing_attacking_edges:  ('http://sw.opencyc.org/concept/Mx4rwCAhkHseQdeRivkpwzBa0Q', 'http://sw.opencyc.org/2008/06/10/concept/en/GovernmentProgram')
+existing_attacking_edges:  ('http://sw.opencyc.org/concept/Mx4rvVjcq5wpEbGdrcN5Y29ycA', 'http://sw.opencyc.org/2008/06/10/concept/en/Power')
+existing_attacking_edges:  ('http://sw.opencyc.org/2008/06/10/concept/Mx4rvVjcq5wpEbGdrcN5Y29ycA', 'http://sw.opencyc.org/2008/06/10/concept/en/Power')
+existing_attacking_edges:  ('http://sw.opencyc.org/2008/06/10/concept/Mx4rvuARhJwpEbGdrcN5Y29ycA', 'http://sw.opencyc.org/2008/06/10/concept/en/PowerOfAttorney')
+existing_attacking_edges:  ('http://sw.opencyc.org/concept/Mx4rvuARhJwpEbGdrcN5Y29ycA', 'http://sw.opencyc.org/2008/06/10/concept/en/PowerOfAttorney')
+existing_attacking_edges:  ('http://sw.opencyc.org/2008/06/10/concept/Mx4rpKb4HskwEdmAAAACs6hRjg', 'http://sw.opencyc.org/2008/06/10/concept/en/Region')
+existing_attacking_edges:  ('http://sw.opencyc.org/concept/Mx4rpKb4HskwEdmAAAACs6hRjg', 'http://sw.opencyc.org/2008/06/10/concept/en/Region')
+	There are in total:  14  existing attacking edges!
+
+there are in total  20  subgraphs in the solution
+===
+NOW WORKING ON:  360175
+file is at:  SB_360175_1769_12186.csv
+very complicated, many concepts.
+there are in total  13  subgraphs in the solution
+
+==
+NOW WORKING ON:  15801748
+file is at:  SB_15801748_1198_3236.csv
+timeout =  1.0 mins
+before =  3216
+after =  3216
+saved to:  15801748before
+There are in total  3216
+ There are in total:  0  existing attacking edges!
+ There are in total:  89  existing equivalence edges!
+Now there are normal 3127  edges left
+There are in total:  9222  additional attacking edges!
+now solve
+solving result =  unknown
+SMT value is 469366.0
+now decode
+there are in total  16  subgraphs in the solution
+==
+
+ NOW WORKING ON:  81656
+file is at:  SB_81656_1620_6828.csv
+timeout =  1.0 mins
+before =  6818
+after =  6818
+saved to:  81656before
+There are in total  6818
+existing_attacking_edges:  ('http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseases/1098', 'http://www4.wiwiss.fu-berlin.de/sider/resource/side_effects/C0038454')
+existing_attacking_edges:  ('http://data.nytimes.com/68712649665703805812', 'http://data.nytimes.com/strokes_the_org')
+existing_attacking_edges:  ('http://sw.opencyc.org/2008/06/10/concept/Mx4rwP1bPpwpEbGdrcN5Y29ycA', 'http://sw.opencyc.org/2008/06/10/concept/en/Stroke_PhysiologicalCondition')
+existing_attacking_edges:  ('http://sw.opencyc.org/concept/Mx4rwP1bPpwpEbGdrcN5Y29ycA', 'http://sw.opencyc.org/2008/06/10/concept/en/Stroke_PhysiologicalCondition')
+	There are in total:  4  existing attacking edges!
+	There are in total:  97  existing equivalence edges!
+Now there are normal 6717  edges left
+There are in total:  1718  additional attacking edges!
+now solve
+solving result =  sat
+SMT value is 1010274.0
+now decode
+there are in total  6  subgraphs in the solution
+and they have  6813  edges
+SHOULD BE EQUAL:  5  =  5
+saved to:  81656after
+==
+NOW WORKING ON:  55653
+file is at:  SB_55653_1379_19577.csv
+timeout =  1.0 mins
+before =  19568
+after =  19568
+saved to:  55653before
+There are in total  19568
+existing_attacking_edges:  ('http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseases/818', 'http://www4.wiwiss.fu-berlin.de/sider/resource/side_effects/C0392525')
+existing_attacking_edges:  ('http://data.nytimes.com/N90198902728332193200', 'http://data.nytimes.com/rock_music_des')
+existing_attacking_edges:  ('http://sw.opencyc.org/2008/06/10/concept/Mx4rkcSM4v34QdiEMZABeA1NZQ', 'http://sw.opencyc.org/2008/06/10/concept/en/Kiwi_Bird')
+existing_attacking_edges:  ('http://sw.opencyc.org/concept/Mx4rkcSM4v34QdiEMZABeA1NZQ', 'http://sw.opencyc.org/2008/06/10/concept/en/Kiwi_Bird')
+existing_attacking_edges:  ('http://sw.opencyc.org/concept/Mx4rvViOBJwpEbGdrcN5Y29ycA', 'http://sw.opencyc.org/2008/06/10/concept/en/StoneStuff')
+existing_attacking_edges:  ('http://sw.opencyc.org/concept/Mx4rwPudOZwpEbGdrcN5Y29ycA', 'http://sw.opencyc.org/2008/06/10/concept/en/StoneObject_Natural')
+existing_attacking_edges:  ('http://sw.opencyc.org/2008/06/10/concept/Mx4rwPudOZwpEbGdrcN5Y29ycA', 'http://sw.opencyc.org/2008/06/10/concept/en/StoneObject_Natural')
+existing_attacking_edges:  ('http://sw.opencyc.org/2008/06/10/concept/en/StoneStuff', 'http://sw.opencyc.org/2008/06/10/concept/Mx4rvViOBJwpEbGdrcN5Y29ycA')
+existing_attacking_edges:  ('http://sw.opencyc.org/2008/06/10/concept/Mx4rvhBZ_5wpEbGdrcN5Y29ycA', 'http://sw.opencyc.org/2008/06/10/concept/en/RockMusic')
+existing_attacking_edges:  ('http://sw.opencyc.org/concept/Mx4rvhBZ_5wpEbGdrcN5Y29ycA', 'http://sw.opencyc.org/2008/06/10/concept/en/RockMusic')
+existing_attacking_edges:  ('http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseases/1163', 'http://www4.wiwiss.fu-berlin.de/sider/resource/side_effects/C0451641')
+ There are in total:  11  existing attacking edges!
+ There are in total:  303  existing equivalence edges!
+Now there are normal 19254  edges left
+There are in total:  14306  additional attacking edges!
+now solve
+solving result =  sat
+SMT value is 2885674.0
+now decode
+there are in total  9  subgraphs in the solution
+and they have  19559  edges
+SHOULD BE EQUAL:  9  =  9
+====
+
+
+
+
+ NOW WORKING ON:  27624
+file is at:  SB_27624_1588_7737.csv
+timeout =  1.0 mins
+before =  7736
+after =  7736
+saved to:  27624before
+There are in total  7736
+existing_attacking_edges:  ('http://data.nytimes.com/N6065691136699265983', 'http://data.nytimes.com/jackson_michael_per')
+	There are in total:  1  existing attacking edges!
+	There are in total:  51  existing equivalence edges!
+Now there are normal 7684  edges left
+There are in total:  320  additional attacking edges!
+now solve
+solving result =  sat
+SMT value is 1154308.0
+now decode
+there are in total  3  subgraphs in the solution
+and they have  7734  edges
+SHOULD BE EQUAL:  2  =  2
+saved to:  27624after
+it says it's three subgraphs but actually there are more. the subgraphs needs to be further checked!!!!!!
+==
+
+
+ NOW WORKING ON:  142063
+file is at:  SB_142063_21191_101530.csv
+timeout =  1.0 mins
+before =  101269
+after =  101269
+This is too big to be handelled.
+===

@@ -62,13 +62,15 @@ class GraphSolver():
         self.count_FP = 0.0
         self.count_TP = 0.0
 
+        self.M1 = 0
+
         self.precision = 0.0
         self.recall = 0.0
         self.accuracy = 0.0
         self.SMTvalue = 0.0
 
         self.o = Optimize()
-        timeout = 1000 * 60 * 5 # one minute
+        timeout = 1000 * 60 * 1 # one minute
         self.o.set("timeout", timeout)
         print('timeout = ',timeout/1000/60, 'mins')
 
@@ -393,7 +395,7 @@ class GraphSolver():
         self.num_removed_edges = len(self.G.subgraphs[0].edges) - acc_num_edges
         print ('SHOULD BE EQUAL: ', self.num_removed_edges, ' = ',len(self.removed_edges))
         self.num_subgraphs = ind
-    #
+
     # def obtain_statistics(self, file_name):
     #     # dict_al = {}
     #     #
@@ -507,6 +509,27 @@ class GraphSolver():
     #     print('accuracy = ', self.accuracy) #
 
 
+    def obtain_new_statistics(self):
+        # calculae M1 using self.removed_edges
+
+        count_P = 0 # edges cross domain
+        for e in self.G.subgraphs[0].edges:
+            # compare l and r and see if they are in the same domain_domain
+            (l, r) = e
+            if not self.same_domain (l, r):
+                count_P += 1
+
+        count_P_minus = 0 # remained
+        for e in self.removed_edges:
+            (l,r) = e
+            if not self.same_domain (l, r):
+                count_P_minus += 1
+        self.M1 = (count_P - count_P_minus) / count_P
+        # print ('countP = ', count_P)
+        # print ('countP- = ', count_P_minus)
+        print ('M1 = ',self.M1)
+
+
 
 if __name__ == "__main__":
 
@@ -524,6 +547,7 @@ if __name__ == "__main__":
     avg_FP = 0.0
     avg_TN = 0.0
     avg_FN = 0.0
+    avg_M1 = 0.0
     avg_precision = 0.0
     avg_recall = 0.0
     avg_accuracy = 0.0
@@ -531,7 +555,7 @@ if __name__ == "__main__":
     SMTvalues = []
     count_too_big = 0
     for n in lg1000:
-        if n.num_nodes >= 10000:
+        if n.num_nodes <= 10000:
         #     count_too_big += 1
         #     print (n.index)
         # elif n.num_nodes > 4000 :
@@ -555,6 +579,8 @@ if __name__ == "__main__":
             print ('now decode')
             solver.decode()
             solver.H.save_graph(file_name = str(n.index) + 'after',  pos=pos, labels = labels)
+            solver.obtain_new_statistics()
+            avg_M1 += solver.M1
 
         # also obtain obtain statistics
         # solver.obtain_statistics(filename_labelled_edges)
@@ -573,6 +599,8 @@ if __name__ == "__main__":
     # avg_TN /= len(name_list)
     # avg_FN /= len(name_list)
     # avg_FP /= len(name_list)
+    avg_M1 /= len(name_list)
+    print('average M1 = ', avg_M1)
     # avg_precision /= len(name_list)
     # avg_recall /= len(name_list)
     # avg_accuracy /= len(name_list)

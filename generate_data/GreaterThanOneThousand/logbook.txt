@@ -1,9 +1,9 @@
 Too big:
 
-142063: 21191 nodes and 101530 edges: many drugs nested together. 
+142063: 21191 nodes and 101530 edges: many drugs nested together.
 - less than 10000 nodes
 38792: 4921 nodes 12041 edges (The_Beatles)
-32236: 5076 nodes and 7061 edges (one big cluster , fine)
+32236: 5076 nodes and 7061 edges (one big cluster , fine. a lot of lodlaundromat triples)
 --
 
 

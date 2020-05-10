@@ -36,6 +36,10 @@ class GraphSolver():
         self.count_FP = 0.0
         self.count_TP = 0.0
 
+        self.M1 = 0.0
+        self.M2 = 0.0
+        self.M3 = 0.0
+
         self.precision = 0.0
         self.recall = 0.0
         self.accuracy = 0.0
@@ -480,6 +484,56 @@ class GraphSolver():
         self.accuracy = (self.count_TN + self.count_TP) / (len(self.G.subgraphs[0].edges))
         print('accuracy = ', self.accuracy) #
 
+    def obtain_new_statistics(self):
+        # calculae M1 using self.removed_edges
+
+        collect_P = []
+        for e in self.G.subgraphs[0].edges:
+            # compare l and r and see if they are in the same domain_domain
+            (l, r) = e
+            if not self.same_domain (l, r):
+                collect_P.append(e)
+
+        collect_P_pos = [] # remained
+        for e in self.removed_edges:
+            (l,r) = e
+            if not self.same_domain (l, r):
+                collect_P_pos.append(e)
+
+        collect_P_neg = [p for p in collect_P if p not in collect_P_pos]
+
+        self.M1 = len(collect_P_neg) / len (collect_P)
+
+        print ('M1 = ',self.M1)
+
+        # compute M2 : out of all those to remain, which ones are correct.
+        tmp = 0
+        for e in collect_P_pos:
+            (l, r) = e
+            f = (r, l)
+            if e not in self.G.should_remove and f not in self.G.should_remove:
+                tmp += 1
+        self.M2 = (tmp + len(collect_P_neg)) / len(collect_P)
+
+        print ('type 1 error: M2 = ', self.M2)
+
+
+        # compute M3 : out of all those to remain, which ones are correct.
+        tmp = 0
+        for e in collect_P_pos:
+            (l, r) = e
+            f = (r, l)
+            if e in self.G.should_remove or f in self.G.should_remove:
+                tmp += 1
+        self.M2 = (tmp + len(collect_P_neg)) / len(collect_P)
+
+        print ('type 2 error: M3 = ', self.M3)
+
+
+
+        # error rate for now
+
+
 
 
 if __name__ == "__main__":
@@ -501,6 +555,9 @@ if __name__ == "__main__":
     avg_recall = 0.0
     avg_accuracy = 0.0
     avg_SMTvalue = 0.0
+    avg_M1 = 0.0
+    avg_M2 = 0.0
+    avg_M3 = 0.0
     SMTvalues = []
     for n in name_list:
         print ('\n\n\n\n NOW WORKING ON: ', n)
@@ -524,21 +581,31 @@ if __name__ == "__main__":
 
         # also obtain obtain statistics
         solver.obtain_statistics(filename_labelled_edges)
+        solver.obtain_new_statistics()
 
         avg_TP += solver.count_TP
         avg_TN += solver.count_TN
         avg_FN += solver.count_FN
         avg_FP += solver.count_FP
+        avg_M1 += solver.M1
+        avg_M2 += solver.M2
+        avg_M3 += solver.M3
         avg_precision += solver.precision
         avg_recall += solver.recall
         avg_accuracy += solver.accuracy
         avg_SMTvalue += solver.SMTvalue
         SMTvalues.append(solver.SMTvalue)
+
     # ===============
     avg_TP /= len(name_list)
     avg_TN /= len(name_list)
     avg_FN /= len(name_list)
     avg_FP /= len(name_list)
+
+    avg_M1 /= len(name_list)
+    avg_M2 /= len(name_list)
+    avg_M3 /= len(name_list)
+
     avg_precision /= len(name_list)
     avg_recall /= len(name_list)
     avg_accuracy /= len(name_list)
@@ -548,7 +615,10 @@ if __name__ == "__main__":
     print('average recall: ', avg_recall)
     print('average accuracy: ', avg_accuracy)
     print('\n The average SMT values', SMTvalues)
-    print('\n Average SMTvalue:', avg_SMTvalue)
+    # print('\n Average SMTvalue:', avg_SMTvalue)
+    print ('***Avergage M1', avg_M1)
+    print ('***Avergage M2', avg_M2)
+    print ('***Avergage M3', avg_M3)
     end = time.time()
     hours, rem = divmod(end-start, 3600)
     minutes, seconds = divmod(rem, 60)

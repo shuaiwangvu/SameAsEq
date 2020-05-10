@@ -170,29 +170,30 @@ with open(path) as csv_file:
         if size > 1000:
             count += 1
             print ('exporting ', index)
-            export_filename = 'SB_' + str(index) + '_'  + str(size) +'.csv'
-            # file =  open(file_name, 'w', newline='')
-            # writer = csv.writer(file)
-            # writer.writerow([ "GROUP_ID", "TERMS"])
-            # for (k, terms) in Vsample:
-            # writer.writerow(terms)
-            print ('t0: ', terms [0])
-            g = obtain_graph(terms)
-            # export the graph
-            # nx.write_edgelist(g, export_filename)
-            export_graph_csv(export_filename, g)
-            # index += 1
+            if index != 4073: # the largest one
+                # file =  open(file_name, 'w', newline='')
+                # writer = csv.writer(file)
+                # writer.writerow([ "GROUP_ID", "TERMS"])
+                # for (k, terms) in Vsample:
+                # writer.writerow(terms)
+                print ('t0: ', terms [0])
+                g = obtain_graph(terms)
+                # export the graph
+                # nx.write_edgelist(g, export_filename)
+                print ('edges: ', len (g.edges))
+                print ('nodes: ', len (g.nodes))
+                export_filename = 'SB_' + str(index) + '_'  + str(size) + '_' + str(len(g.edges)) +'.csv'
+                export_graph_csv(export_filename, g)
+                # index += 1
 
-            # h = nx.read_edgelist(export_filename)
-            # h = read_graph_csv(export_filename)
+                # h = nx.read_edgelist(export_filename)
+                # h = read_graph_csv(export_filename)
 
-            # print ('G- No. Nodes: ', len(g.nodes))
-            # print ('G- No. Edges: ', len(g.edges))
-            # print ('H- No. Nodes: ', len(h.nodes))
-            # print ('H- No. Edges: ', len(h.edges))
-            print ('edges: ', len (g.edges))
-            print ('nodes: ', len (g.nodes))
-            # if len(h.edges) != len(g.edges):
-            #     print ('********* error *************')
+                # print ('G- No. Nodes: ', len(g.nodes))
+                # print ('G- No. Edges: ', len(g.edges))
+                # print ('H- No. Nodes: ', len(h.nodes))
+                # print ('H- No. Edges: ', len(h.edges))
+                # if len(h.edges) != len(g.edges):
+                #     print ('********* error *************')
 
-            print ('count  = ', count)
+                print ('count  = ', count)

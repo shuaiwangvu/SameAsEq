@@ -540,7 +540,7 @@ if __name__ == "__main__":
 
     start = time.time()
 
-    name_list = ['4_0','5_19','6_2','8_6','8_11','9_11']
+    name_list = ['2_4','4_0','5_19','6_2','8_6','8_11','9_11']
 
     # f = open("process3.txt", "r")
     # for l in f:

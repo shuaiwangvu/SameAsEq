@@ -70,7 +70,7 @@ class GraphSolver():
         self.SMTvalue = 0.0
 
         self.o = Optimize()
-        timeout = 1000 * 60 * 1 # one minute
+        timeout = 1000 * 60 * 5 # one minute
         self.o.set("timeout", timeout)
         print('timeout = ',timeout/1000/60, 'mins')
 
@@ -554,11 +554,14 @@ if __name__ == "__main__":
     avg_SMTvalue = 0.0
     SMTvalues = []
     count_too_big = 0
+
+    count_processed = 0
     for n in lg1000:
         if n.num_nodes <= 10000:
-        #     count_too_big += 1
-        #     print (n.index)
-        # elif n.num_nodes > 4000 :
+            count_processed += 1
+            #     count_too_big += 1
+            #     print (n.index)
+            # elif n.num_nodes > 4000 :
             print ('\n\n\n\n NOW WORKING ON: ', n.index)
             # filename_labelled_edges = './labelled/SA' + str(n) + '_edges_labelled.csv'
             # filename_labelled_nodes = './labelled/SA' + str(n) + '_nodes_labelled.csv'
@@ -599,7 +602,7 @@ if __name__ == "__main__":
     # avg_TN /= len(name_list)
     # avg_FN /= len(name_list)
     # avg_FP /= len(name_list)
-    avg_M1 /= len(name_list)
+    avg_M1 /= count_processed
     print('average M1 = ', avg_M1)
     # avg_precision /= len(name_list)
     # avg_recall /= len(name_list)
